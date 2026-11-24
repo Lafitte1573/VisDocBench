@@ -1,0 +1,302 @@
+[
+  {
+    "question": "在《The Strange Case of Dr. Jekyll and Mr. Hyde》中，当杰基尔博士第一次变成海德先生并试图在走廊行走时，文中描述他觉得自己是哪种生物？",
+    "answer": "那种生物是星座（constellations）第一次向其不眠的警觉所揭示的生物",
+    "source_quote": "I crossed the yard, wherein the constellations looked down upon me, I could have thought, with wonder, the fi rst creature of that sort that their unsleeping vigilance had yet disclosed to them;",
+    "id": "1",
+    "file_key": "pg43-images",
+    "file_path": "VisDocBench-parsed/e-books-en/pg43-images/auto/pg43-images.md",
+    "choices": [
+      "那种生物是他在实验室里试图通过化学药剂召唤的未知生物",
+      "那种生物是星座（constellations）第一次向其不眠的警觉所揭示的生物",
+      "那种生物是他在童年噩梦中反复见到的古老恶魔",
+      "那种生物是他在镜子中看到的扭曲且充满恶意的倒影"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在《The Republic》中，作者提到年轻人在追求真理时，容易像什么疾病一样迅速被传播并感染上相反的信念？",
+    "answer": "diseases (疾病)",
+    "source_quote": "They catch opinions, as diseases are caught—when they are in the air.",
+    "id": "8",
+    "file_key": "pg1497-images",
+    "file_path": "VisDocBench-parsed/e-books-en/pg1497-images/auto/pg1497-images.md",
+    "choices": [
+      "diseases (疾病)",
+      "plagues (瘟疫)",
+      "infections (感染)",
+      "fevers (发烧)"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "在《The Blue Castle》（《蓝城堡》）第17章中，关于 Cissy 的病状，文中描述她是否经常咳嗽？",
+    "answer": "不，她甚至没有怎么咳嗽（did not even cough a great deal）。",
+    "source_quote": "She did not even cough a great deal.",
+    "id": "4",
+    "file_key": "pg67979-images",
+    "file_path": "VisDocBench-parsed/e-books-en/pg67979-images/auto/pg67979-images.md",
+    "choices": [
+      "她主要表现出发烧症状，几乎没有咳嗽。",
+      "她偶尔会咳嗽，但症状并不严重。",
+      "不，她甚至没有怎么咳嗽（did not even cough a great deal）。",
+      "是的，她经常剧烈咳嗽，几乎无法停止。"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "在文档'What if? Emulative Simulation with World Models for Situated Reasoning'中，为了减少 MLLMs 中不同视频处理流程引入的偏差，用于推理生成的视频帧采样间隔是多少？",
+    "answer": "每 5 帧采样一次",
+    "source_quote": "The generated videos used for reasoning are sampled every five frames ( $s _ { \\varDelta 5 } )$ to reduce biases introduced by different video-processing pipelines in MLLMs.",
+    "id": "8",
+    "file_key": "2603.06445",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/cs/2603.06445/auto/2603.06445.md",
+    "choices": [
+      "每 3 帧采样一次",
+      "每 1 帧采样一次",
+      "每 5 帧采样一次",
+      "每 10 帧采样一次"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "在论文'CLoPA: Continual Low-Parameter Adaptation of Interactive Segmentation for Medical Image Annotation'中，CLoPA 方法微调的参数比例具体是多少？",
+    "answer": "<0.01%",
+    "source_quote": "该方法不引入新参数，仅微调 nnInteractive 模型中极少部分的参数（<0.01%）。",
+    "id": "1",
+    "file_key": "2603.06426",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/cs/2603.06426/auto/2603.06426.md",
+    "choices": [
+      "CLoPA 方法微调的参数比例约为 0.1%",
+      "CLoPA 方法微调的参数比例约为 1%",
+      "<0.01%",
+      "CLoPA 方法微调的参数比例约为 10%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "在文档'Fly360: Omnidirectional Obstacle Avoidance within Drone View'的实验评估中，用于测试全向避障能力的四个高保真仿真环境具体名称是什么？",
+    "answer": "公园（Park）、森林（Forest）、城市街道（Urban Street）和工厂（Factory）",
+    "source_quote": "Bottom: The four high-fidelity simulation environments used in our evaluation, including (d) Park, (e) Forest, (f) Urban Street, and (g) Factory.",
+    "id": "7",
+    "file_key": "2603.06573",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/cs/2603.06573/auto/2603.06573.md",
+    "choices": [
+      "公园（Park）、森林（Forest）、城市街道（Urban Street）和实验室（Lab）",
+      "公园（Park）、森林（Forest）、城市街道（Urban Street）和沙漠（Desert）",
+      "公园（Park）、森林（Forest）、城市街道（Urban Street）和工厂（Factory）",
+      "公园（Park）、森林（Forest）、城市街道（Urban Street）和地下隧道（Underground Tunnel）"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "在文档'EgoReasoner: Learning Egocentric 4D Reasoning via Task-Adaptive Structured Thinking'中，第二阶段（强化微调）所使用的具体强化学习算法名称是什么？",
+    "answer": "GRPO",
+    "source_quote": "并通过 GRPO 算法选择性强化特定的推理路径。",
+    "id": "8",
+    "file_key": "2603.06561",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/cs/2603.06561/auto/2603.06561.md",
+    "choices": [
+      "DPO",
+      "GRPO",
+      "PPO",
+      "SFT"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在《The\"Gold Rush\"in AI and Robotics Patenting Activity. Do innovation systems have a role?》的Table A2中，CPC分类号B64C 2201/125属于哪个大类？",
+    "answer": "B64C（飞行器）",
+    "source_quote": "B64C2201/125",
+    "id": "7",
+    "file_key": "2603.05034",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/q-fin/2603.05034/auto/2603.05034.md",
+    "choices": [
+      "B64C属于船舶及水上运输工具的分类号",
+      "B64C（飞行器）",
+      "B64C属于陆地交通工具的分类号",
+      "B64C属于航空器地面支持设备的分类号"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在文档'Machine Learning for Complex Systems Dynamics: Detecting Bifurcations in Dynamical Systems with Deep Neural Networks'中，作者将提出的新方法命名为什么？",
+    "answer": "Equilibrium-Informed Neural Networks (EINNs)",
+    "source_quote": "Since this approach uses the possible equilibrium points as input to the DNN, we refer to it as the equilibrium-informed neural networks (EINNs) method.",
+    "id": "0",
+    "file_key": "2603.04420",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/stat/2603.04420/auto/2603.04420.md",
+    "choices": [
+      "Equilibrium-Informed Neural Networks (EINNs)",
+      "Equilibrium-Informed Neural Networks (EINNs) are named after the authors' previous work on Equilibrium-Driven Neural Networks.",
+      "The proposed method is referred to as Bifurcation-Aware Deep Neural Networks (BADNNs).",
+      "The authors named their new approach Dynamic System Inference Networks (DSINs)."
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "在编号为2024年09月30日编制的资产负债表和利润表文档中，‘减：营业外支出’在左侧列（本期数）的具体数值是多少？",
+    "answer": "4,357,353.16",
+    "source_quote": "<td>减：营业外支出</td><td>4,357,353.16</td><td>2,519,847.72</td>",
+    "id": "6",
+    "file_key": "806520413075",
+    "file_path": "VisDocBench-parsed/fin-report/806520413075/auto/806520413075.md",
+    "choices": [
+      "4,357,353.16",
+      "4,357,353.16",
+      "4,357,353.16",
+      "4,357,353.16"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "在《新疆国际实业股份有限公司 2025 年半年度报告摘要》中，通过客户信用交易担保证券账户持有股票的股东是哪两位？",
+    "answer": "仇国芳、毛学泓",
+    "source_quote": "仇国芳、毛学泓通过客户信用交易担保证券账户持有股票。",
+    "id": "3",
+    "file_key": "806701693025",
+    "file_path": "VisDocBench-parsed/fin-report/806701693025/auto/806701693025.md",
+    "choices": [
+      "仇国芳、毛学泓",
+      "毛学泓、李建国",
+      "赵明、仇国芳",
+      "仇国芳、王志强"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "在《北方光电股份有限公司 2023 年度向特定对象发行 A 股股票上市公告书》中，截至 2025 年 3 月 31 日（发行前），前十名股东中“嘉实基金一中兵投资管理有限责任公司一嘉实基金－天璇单一资产管理计划”的持股比例精确是多少？",
+    "answer": "2.00%",
+    "source_quote": "4 | 嘉实基金一中兵投资管理有限责 任公司一嘉实基金－天璇单一资 产管理计划 | 10,170,000 | 2.00 | A 股流通股 | =",
+    "id": "4",
+    "file_key": "806433133337",
+    "file_path": "VisDocBench-parsed/fin-report/806433133337/auto/806433133337.md",
+    "choices": [
+      "截至2025年3月31日，该资产管理计划的持股比例为2.05%",
+      "截至2025年3月31日，该资产管理计划的持股比例为2.10%",
+      "2.00%",
+      "截至2025年3月31日，该资产管理计划的持股比例为1.95%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "在文档标题为'您好！您似乎尚未提供需要分析的文档内容或标题。'的回复中，系统承诺收到材料后立即执行哪三项具体操作？",
+    "answer": "1. 严格在摘要首句声明文档标题（如有）；2. 提炼核心论点与关键信息；3. 控制在 100 字以内的简明概述。",
+    "source_quote": "收到具体内容后，我将立即为您：✅ 严格在摘要首句声明文档标题（如有）✅ 提炼核心论点与关键信息✅ 控制在 100 字以内的简明概述",
+    "id": "1",
+    "file_key": "CN113241166B",
+    "file_path": "VisDocBench-parsed/patents_pdf/CN113241166B/auto/CN113241166B.md",
+    "choices": [
+      "1. 在摘要首句声明文档作者；2. 提炼核心论点与关键信息；3. 控制在 100 字以内的简明概述",
+      "1. 在摘要首句声明文档标题（如有）；2. 罗列所有细节数据；3. 控制在 50 字以内的极简概述",
+      "1. 在摘要首句声明文档来源；2. 提炼核心论点与关键信息；3. 控制在 200 字以内的详细概述",
+      "1. 严格在摘要首句声明文档标题（如有）；2. 提炼核心论点与关键信息；3. 控制在 100 字以内的简明概述。"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "在文档《2024 年火星探测任务技术白皮书》第 5.3 节关于燃料消耗的记录中，主引擎点火时的瞬时压力读数是多少 PSI？",
+    "answer": "3,842 PSI",
+    "source_quote": "5.3 节燃料系统：'点火瞬间，主引擎舱内压力读数稳定在 3,842 PSI，未出现任何波动。'",
+    "id": "1",
+    "file_key": "US12238140B2",
+    "file_path": "VisDocBench-parsed/patents_pdf/US12238140B2/auto/US12238140B2.md",
+    "choices": [
+      "主引擎点火时的瞬时压力读数为3,942 PSI",
+      "主引擎点火时的瞬时压力读数为3,842 kPa",
+      "主引擎点火时的瞬时压力读数为3,824 PSI",
+      "3,842 PSI"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "在文档《基于人工智能的预测分类模型获取方法及装置、存储介质》中，公式(6)所描述的相似度计算具体采用什么数学方法？",
+    "answer": "Cosine相似性计算",
+    "source_quote": "示例性的，相似度计算可以采用cosine相似性计算相似度，相似度模型为公式(6)，如下: [0128]",
+    "id": "5",
+    "file_key": "CN110490251B",
+    "file_path": "VisDocBench-parsed/patents_pdf/CN110490251B/auto/CN110490251B.md",
+    "choices": [
+      "Cosine相似性计算",
+      "曼哈顿距离计算",
+      "欧几里得距离计算",
+      "皮尔逊相关系数计算"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "在《OA publishing: Eastern European focus》文档中，2018年2月26日生成的实验性业务模型项目具体包含哪六个学者领导的开放获取图书出版社？",
+    "answer": "兰卡斯特大学/Mattering Press、Open Book Publishers、Open Humanities Press、Mayfly Books、Meson Press、Punctum Books",
+    "source_quote": "Consortium of six scholar-led OA book publishers (Lancaster University / Mattering Press, Open Book Publishers, Open Humanities Press, Mayfly Books, Meson Press, Punctum Books) will investigate how to transition away from charging book processing charges...",
+    "id": "0",
+    "file_key": "1bb49a6c5b50345e045482481a2330a0-Eastern-Europe",
+    "file_path": "VisDocBench-parsed/PPT/Zenodo-tiny/1bb49a6c5b50345e045482481a2330a0-Eastern-Europe/auto/1bb49a6c5b50345e045482481a2330a0-Eastern-Europe.md",
+    "choices": [
+      "这六个由学者领导的出版社分别是：MIT Press、Stanford University Press、University of Chicago Press、Harvard University Press、Yale University Press和Princeton University Press",
+      "项目包含的六家出版社分别为：伦敦大学学院出版社、曼彻斯特大学出版社、爱丁堡大学出版社、都柏林大学学院出版社、贝尔法斯特女王大学出版社和格拉斯哥大学出版社",
+      "该实验性业务模型项目由剑桥大学出版社、牛津大学出版社、爱思唯尔、施普林格·自然、泰勒弗朗西斯和Wiley六家大型商业出版商领导",
+      "兰卡斯特大学/Mattering Press、Open Book Publishers、Open Humanities Press、Mayfly Books、Meson Press、Punctum Books"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "在文档'ANALYZING AGGREGATE IR USE DATA FROM RAMP'中，关于'UNM RAMP vs. BePress Data Comparisons'的对比数据，具体涵盖了哪两个月份？",
+    "answer": "2018 年 8 月和 2018 年 9 月",
+    "source_quote": "# UNM RAMP vs. BePress Data Comparisons for August 2018\n# UNM RAMP vs. BePress Data Comparisons for September 2018",
+    "id": "6",
+    "file_key": "49d85c8d3af74630dcd8bea23c1fbbfd-OR19-RAMP-data_2019-06-11-2",
+    "file_path": "VisDocBench-parsed/PPT/Zenodo-tiny/49d85c8d3af74630dcd8bea23c1fbbfd-OR19-RAMP-data_2019-06-11-2/auto/49d85c8d3af74630dcd8bea23c1fbbfd-OR19-RAMP-data_2019-06-11-2.md",
+    "choices": [
+      "2018 年 9 月和 2018 年 10 月",
+      "2018 年 6 月和 2018 年 7 月",
+      "2018 年 7 月和 2018 年 8 月",
+      "2018 年 8 月和 2018 年 9 月"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "在文档'SAVITZKY-GOLAY FILTERING TO IMPROVE INDIVIDUAL ALPHA FREQUENCY ESTIMATION'中，Ziegler (1980)引用文献的DOI编号前缀部分（10.1366之后）是多少？",
+    "answer": "0003702814731798",
+    "source_quote": "Ziegler (1980). Applied Spect, 35:88. 10.1366/0003702814731798",
+    "id": "9",
+    "file_key": "41851dac78cd2de7322cb05e4cb78b35-corcoran_SGF_UoB_20180710",
+    "file_path": "VisDocBench-parsed/PPT/Zenodo-tiny/41851dac78cd2de7322cb05e4cb78b35-corcoran_SGF_UoB_20180710/auto/41851dac78cd2de7322cb05e4cb78b35-corcoran_SGF_UoB_20180710.md",
+    "choices": [
+      "0003702814731798",
+      "0003702814731800",
+      "0003702814731850",
+      "0003702814731795"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "在文档'Research data Repositories'中，关于Re3data.org项目的开发合作伙伴，除了德国地质研究中心（GFZ）之外，还列出了柏林洪堡大学的哪个具体研究所？",
+    "answer": "Library and Information Services (LIS) Humboldt University Berlin, Institute for Library and Information Science (IBI)",
+    "source_quote": "• Library and Information Services (LIS) Humboldt University Berlin, Institute for Library and Information Science (IBI)",
+    "id": "0",
+    "file_key": "31292bc1ce8e4d12687aef47e1eb0c0f-FoDaKo-RDM-Repositories",
+    "file_path": "VisDocBench-parsed/PPT/Zenodo-tiny/31292bc1ce8e4d12687aef47e1eb0c0f-FoDaKo-RDM-Repositories/auto/31292bc1ce8e4d12687aef47e1eb0c0f-FoDaKo-RDM-Repositories.md",
+    "choices": [
+      "柏林洪堡大学哲学与人文学院 (Faculty of Philosophy and Humanities)",
+      "柏林洪堡大学地球科学与地理研究所 (Institute of Geosciences)",
+      "Library and Information Services (LIS) Humboldt University Berlin, Institute for Library and Information Science (IBI)",
+      "柏林洪堡大学计算机科学与应用数学研究所 (Institute of Computer Science and Applied Mathematics)"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "在文档《Analysis of Airlines Delays, Safety, and Their Popularity》中，United Airlines 在 2014 年的最高单笔年收入是多少？",
+    "answer": "38.90 billion",
+    "source_quote": "United had the highest revenue of 38.90 billion in 2014.",
+    "id": "1",
+    "file_key": "1f28cfdef372f5cc0790425390f281b9-Presentation",
+    "file_path": "VisDocBench-parsed/PPT/Zenodo-tiny/1f28cfdef372f5cc0790425390f281b9-Presentation/auto/1f28cfdef372f5cc0790425390f281b9-Presentation.md",
+    "choices": [
+      "United Airlines 在 2014 年的最高单笔年收入为 38.90 million",
+      "United Airlines 在 2014 年的最高单笔年收入为 42.15 billion",
+      "United Airlines 在 2014 年的最高单笔年收入为 35.20 billion",
+      "38.90 billion"
+    ],
+    "correct_index": 3
+  }
+]

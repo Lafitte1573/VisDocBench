@@ -1,0 +1,348 @@
+{
+  "meta": {
+    "benchmark": "VisDocBench mini-bench",
+    "model": "Deepseek-V4.1-Flash-1017",
+    "limit_per_subset": 1,
+    "workers": 1,
+    "created_at": "2026-11-24 18:24:42",
+    "elapsed_sec": 22.8,
+    "dry_run": false,
+    "render": {
+      "dpi": 120,
+      "max_pages_total": 6,
+      "max_pages_per_doc": 2,
+      "max_doc_pages": 12
+    }
+  },
+  "summary": {
+    "mc": {
+      "overall": {
+        "total": 9,
+        "correct": 9,
+        "accuracy": 1.0,
+        "errors": 0
+      },
+      "by_subset": {
+        "chart_analysis": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "errors": 0
+        },
+        "cross_page_blocks": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "errors": 0
+        },
+        "interline_equation": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "errors": 0
+        },
+        "mm_multi_hop_qa": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "errors": 0
+        },
+        "mm_single_hop_qa": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "errors": 0
+        },
+        "multi_hop_qa": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "errors": 0
+        },
+        "needle_in_a_haystack": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "errors": 0
+        },
+        "single_hop_qa": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "errors": 0
+        },
+        "single_hop_qa_mm": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "errors": 0
+        }
+      }
+    },
+    "oq": {
+      "overall": {
+        "total": 6,
+        "correct": 5,
+        "accuracy": 0.8333,
+        "errors": 0
+      },
+      "by_subset": {
+        "mm_multi_hop_qa": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "errors": 0
+        },
+        "mm_single_hop_qa": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "errors": 0
+        },
+        "multi_hop_qa": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "errors": 0
+        },
+        "needle_in_a_haystack": {
+          "total": 1,
+          "correct": 0,
+          "accuracy": 0.0,
+          "errors": 0
+        },
+        "single_hop_qa": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "errors": 0
+        },
+        "single_hop_qa_mm": {
+          "total": 1,
+          "correct": 1,
+          "accuracy": 1.0,
+          "errors": 0
+        }
+      }
+    }
+  },
+  "predictions": {
+    "mc": [
+      {
+        "subset": "chart_analysis",
+        "index": 0,
+        "file_key": "2603.06503",
+        "question": "Results. Table 1 presents retrieval performance across all five embedding models at K { = } 5 and K { = } 1 0 . NVIDIA NeMo Retriever achieves the highest Recall @ 1 0 ([MASK]) and also leads in \\mathrm { n D C G } @ 1 0 ([MASK]) and \\mathbf { M A P @ 1 0 } ([MASK]), demonstrating the strongest overall retrieval quality. Co- here v4 excels at early-stage ranking, achieving the best \\mathrm { n D C G } @ 5 ([MASK]) and \\mathbf { M A P @ 5 } ([MASK]), suggesting it places relevant results higher, a property that is valuable when retrieving fewer chunks to minimize token consumption. Amazon Nova ",
+        "gold": "D",
+        "predicted": "D",
+        "correct": true,
+        "num_images": 1,
+        "raw_output": "**答案：D**",
+        "finish_reason": "stop",
+        "latency": 0.6
+      },
+      {
+        "subset": "cross_page_blocks",
+        "index": 0,
+        "file_key": "KR102644088B1",
+        "question": "메모리(120)는 전자 장치(100)의 적어도 하나의 다른 구성요소에 관계된 명령 또는 데이터를 저장할 수 있다.특히, 메모리(120)는 비휘발성 메모리, 휘발성 메모리, 플래시메모리(flash-memory), 하드디스크 드라이브(HDD)또는 솔리드 스테이트 드라이브(SSD) 등으로 구현될 수 있다. 메모리(120)는 프로세서(140)에 의해 액세스되며,프로세서(140)에 의한 데이터의 독취/기록/수정/삭제/갱신 등이 수행될 수 있다. 본 개시에서 메모리라는 용어는 메모리(120), 프로세서(140) 내 롬(미도시), 램(미도시) 또는 전자 장치(100)에 장착되는 메모리 카드(미도시)(예를 들어, micro SD 카드, 메모리 스틱)를 포함할 수 있다. 또한, 메모리(120)에는 디스플레이부(110)의",
+        "gold": "B",
+        "predicted": "B",
+        "correct": true,
+        "num_images": 12,
+        "raw_output": "**答案：B**",
+        "finish_reason": "stop",
+        "latency": 1.29
+      },
+      {
+        "subset": "interline_equation",
+        "index": 0,
+        "file_key": "CN110738984B",
+        "question": "",
+        "gold": "B",
+        "predicted": "B",
+        "correct": true,
+        "num_images": 1,
+        "raw_output": "**答案：B**",
+        "finish_reason": "stop",
+        "latency": 0.37
+      },
+      {
+        "subset": "mm_multi_hop_qa",
+        "index": 0,
+        "file_key": "",
+        "question": "基于人工智能的道路施工质量检测方法中，若最终缺陷区域像素点数量为1200，道路灰度图像总像素点数量为20000，则该道路质量评价指标对应的等级是什么？",
+        "gold": "A",
+        "predicted": "A",
+        "correct": true,
+        "num_images": 6,
+        "raw_output": "**答案：A**",
+        "finish_reason": "stop",
+        "latency": 0.61
+      },
+      {
+        "subset": "mm_single_hop_qa",
+        "index": 0,
+        "file_key": "",
+        "question": "在UR5机械臂实验中，第六个连杆的长度（米）与质量（千克）的比值是多少？",
+        "gold": "D",
+        "predicted": "D",
+        "correct": true,
+        "num_images": 6,
+        "raw_output": "**答案：D**",
+        "finish_reason": "stop",
+        "latency": 2.13
+      },
+      {
+        "subset": "multi_hop_qa",
+        "index": 0,
+        "file_key": "",
+        "question": "《St. John's College, Cambridge》这本书的作者是谁，他所在的学院是由谁在什么年份建立的？",
+        "gold": "A",
+        "predicted": "A",
+        "correct": true,
+        "num_images": 6,
+        "raw_output": "**答案：A**",
+        "finish_reason": "stop",
+        "latency": 1.74
+      },
+      {
+        "subset": "needle_in_a_haystack",
+        "index": 0,
+        "file_key": "pg43-images",
+        "question": "在《The Strange Case of Dr. Jekyll and Mr. Hyde》中，当杰基尔博士第一次变成海德先生并试图在走廊行走时，文中描述他觉得自己是哪种生物？",
+        "gold": "B",
+        "predicted": "B",
+        "correct": true,
+        "num_images": 2,
+        "raw_output": "**答案：B**",
+        "finish_reason": "stop",
+        "latency": 0.51
+      },
+      {
+        "subset": "single_hop_qa",
+        "index": 0,
+        "file_key": "",
+        "question": "专利CN113724695B的专利权人是谁？",
+        "gold": "D",
+        "predicted": "D",
+        "correct": true,
+        "num_images": 6,
+        "raw_output": "**答案：D**",
+        "finish_reason": "stop",
+        "latency": 0.82
+      },
+      {
+        "subset": "single_hop_qa_mm",
+        "index": 0,
+        "file_key": "",
+        "question": "在2025年，挪威电动重型货车车队中300公里续航车辆的占比是多少？",
+        "gold": "A",
+        "predicted": "A",
+        "correct": true,
+        "num_images": 6,
+        "raw_output": "**答案：A**",
+        "finish_reason": "stop",
+        "latency": 0.69
+      }
+    ],
+    "oq": [
+      {
+        "subset": "mm_multi_hop_qa",
+        "index": 0,
+        "file_key": "",
+        "question": "基于人工智能的道路施工质量检测方法中，若最终缺陷区域像素点数量为1200，道路灰度图像总像素点数量为20000，则该道路质量评价指标对应的等级是什么？",
+        "gold": "良好",
+        "predicted": "良好",
+        "judge": 1,
+        "correct": true,
+        "num_images": 6,
+        "raw_output": "良好",
+        "latency": 0.56,
+        "finish_reason": "stop",
+        "judge_raw": "1",
+        "f1": 1.0
+      },
+      {
+        "subset": "mm_single_hop_qa",
+        "index": 0,
+        "file_key": "",
+        "question": "在UR5机械臂实验中，第六个连杆的长度（米）与质量（千克）的比值是多少？",
+        "gold": "0.315",
+        "predicted": "0.315",
+        "judge": 1,
+        "correct": true,
+        "num_images": 6,
+        "raw_output": "0.315",
+        "latency": 2.1,
+        "finish_reason": "stop",
+        "judge_raw": "1",
+        "f1": 1.0
+      },
+      {
+        "subset": "multi_hop_qa",
+        "index": 0,
+        "file_key": "",
+        "question": "《St. John's College, Cambridge》这本书的作者是谁，他所在的学院是由谁在什么年份建立的？",
+        "gold": "Robert Forsyth Scott，Lady Margaret Beaufort，1511年",
+        "predicted": "ROBERT FORSYTH SCOTT；Lady Margaret Beaufort，1511年",
+        "judge": 1,
+        "correct": true,
+        "num_images": 6,
+        "raw_output": "ROBERT FORSYTH SCOTT；Lady Margaret Beaufort，1511年",
+        "latency": 1.99,
+        "finish_reason": "stop",
+        "judge_raw": "1",
+        "f1": 1.0
+      },
+      {
+        "subset": "needle_in_a_haystack",
+        "index": 0,
+        "file_key": "pg43-images",
+        "question": "在《The Strange Case of Dr. Jekyll and Mr. Hyde》中，当杰基尔博士第一次变成海德先生并试图在走廊行走时，文中描述他觉得自己是哪种生物？",
+        "gold": "那种生物是星座（constellations）第一次向其不眠的警觉所揭示的生物",
+        "predicted": "a stranger in my own house",
+        "judge": 0,
+        "correct": false,
+        "num_images": 2,
+        "raw_output": "a stranger in my own house",
+        "latency": 0.8,
+        "finish_reason": "stop",
+        "judge_raw": "0",
+        "f1": 0.0
+      },
+      {
+        "subset": "single_hop_qa",
+        "index": 0,
+        "file_key": "",
+        "question": "专利CN113724695B的专利权人是谁？",
+        "gold": "深圳平安智慧医健科技有限公司",
+        "predicted": "深圳平安智慧医健科技有限公司",
+        "judge": 1,
+        "correct": true,
+        "num_images": 6,
+        "raw_output": "深圳平安智慧医健科技有限公司",
+        "latency": 0.81,
+        "finish_reason": "stop",
+        "judge_raw": "1",
+        "f1": 1.0
+      },
+      {
+        "subset": "single_hop_qa_mm",
+        "index": 0,
+        "file_key": "",
+        "question": "在2025年，挪威电动重型货车车队中300公里续航车辆的占比是多少？",
+        "gold": "90%",
+        "predicted": "90%",
+        "judge": 1,
+        "correct": true,
+        "num_images": 6,
+        "raw_output": "90%",
+        "latency": 0.69,
+        "finish_reason": "stop",
+        "judge_raw": "1",
+        "f1": 1.0
+      }
+    ]
+  }
+}

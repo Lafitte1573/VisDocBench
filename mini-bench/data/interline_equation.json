@@ -1,0 +1,402 @@
+[
+  {
+    "file_key": "CN110738984B",
+    "file_path": "VisDocBench-parsed/patents_pdf/CN110738984B/auto/CN110738984B_middle.json",
+    "page_idx": 6,
+    "bbox": [
+      87,
+      390,
+      207,
+      404
+    ],
+    "formula": "\\scriptstyle \\mathrm { n e t _ { i } , _ { t } = w _ { i h } h _ { t - 1 } + w _ { i x } x _ { t } + b _ { i } }",
+    "block_index": 12,
+    "choices": [
+      "\\scriptstyle \\mathrm { n e t _ { i , t } = w _ { i h } h _ { t - 1 } - w _ { i x } x _ { t } + b _ { i } }",
+      "\\scriptstyle \\mathrm { n e t _ { i } , _ { t } = w _ { i h } h _ { t - 1 } + w _ { i x } x _ { t } + b _ { i } }",
+      "\\scriptstyle \\mathrm { n e t _ { i , t } = w _ { i h } h _ { t - 1 } + w _ { i x } x _ { t } }",
+      "\\scriptstyle \\mathrm { n e t _ { i , t } = w _ { i h } h _ { t } + w _ { i x } x _ { t } + b _ { i } }"
+    ],
+    "correct_index": 1
+  },
+  {
+    "file_key": "2603.01186",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.01186/auto/2603.01186_middle.json",
+    "page_idx": 23,
+    "bbox": [
+      124,
+      296,
+      480,
+      327
+    ],
+    "formula": "\\begin{array} { r } { D f ( E ^ { * } , \\theta ) = \\left( \\begin{array} { l l } { J _ { \\mathrm { t a n g } } ( \\bar { x } ^ { * } , \\theta ) } & { 0 } \\\\ { * } & { M _ { \\sigma } ( \\bar { x } ^ { * } , \\theta ) } \\end{array} \\right) , \\qquad M _ { \\sigma } ( \\bar { x } ^ { * } , \\theta ) : = D _ { x _ { \\sigma } } f _ { \\sigma } ( \\bar { x } ^ { * } , 0 , \\theta ) . } \\end{array}",
+    "block_index": 15,
+    "choices": [
+      "\\begin{array} { r } { D f ( E ^ { * } , \\theta ) = \\left( \\begin{array} { l l } { J _ { \\mathrm { t a n g } } ( \\bar { x } ^ { * } , \\theta ) } & { 0 } \\\\ { * } & { M _ { \\sigma } ( \\bar { x } ^ { * } , \\theta ) } \\end{array} \\right) , \\qquad M _ { \\sigma } ( \\bar { x } ^ { * } , \\theta ) : = D _ { x _ { \\sigma } } f _ { \\sigma } ( \\bar { x } ^ { * } , 1 , \\theta ) . } \\end{array}",
+      "\\begin{array} { r } { D f ( E ^ { * } , \\theta ) = \\left( \\begin{array} { l l } { J _ { \\mathrm { t a n g } } ( \\bar { x } ^ { * } , \\theta ) } & { 0 } \\\\ { * } & { M _ { \\sigma } ( \\bar { x } ^ { * } , \\theta ) } \\end{array} \\right) , \\qquad M _ { \\sigma } ( \\bar { x } ^ { * } , \\theta ) : = D _ { x _ { \\sigma } } f _ { \\sigma } ( \\bar { x } ^ { * } , 0 , \\theta ) + C . } \\end{array}",
+      "\\begin{array} { r } { D f ( E ^ { * } , \\theta ) = \\left( \\begin{array} { l l } { J _ { \\mathrm { t a n g } } ( \\bar { x } ^ { * } , \\theta ) } & { 0 } \\\\ { * } & { M _ { \\sigma } ( \\bar { x } ^ { * } , \\theta ) } \\end{array} \\right) , \\qquad M _ { \\sigma } ( \\bar { x } ^ { * } , \\theta ) : = D _ { x _ { \\sigma } } f _ { \\sigma } ( \\bar { x } ^ { * } , 0 , \\theta ) . } \\end{array}",
+      "\\begin{array} { r } { D f ( E ^ { * } , \\theta ) = \\left( \\begin{array} { l l } { J _ { \\mathrm { t a n g } } ( \\bar { x } ^ { * } , \\theta ) } & { 0 } \\\\ { * } & { M _ { \\sigma } ( \\bar { x } ^ { * } , \\theta ) } \\end{array} \\right) , \\qquad M _ { \\sigma } ( \\bar { x } ^ { * } , \\theta ) : = D _ { x _ { \\sigma } } f _ { \\sigma } ( \\bar { x } ^ { * } , 0 , \\theta ) . } \\end{array}"
+    ],
+    "correct_index": 2
+  },
+  {
+    "file_key": "2603.06478",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.06478/auto/2603.06478_middle.json",
+    "page_idx": 115,
+    "bbox": [
+      75,
+      289,
+      485,
+      317
+    ],
+    "formula": "M ^ { ( n ) } ( t ) : = h _ { \\bar { Z } } ^ { N , T , x , n } ( t _ { 1 } , \\eta ^ { N } ( t ) ) - h _ { \\bar { Z } } ^ { N , T , x , n } ( t _ { 1 } , \\eta ^ { N } ( 0 ) ) - \\int _ { 0 } ^ { t } \\mathcal { L } ^ { N } \\big ( h _ { \\bar { Z } } ^ { N , T , x , n } ( t _ { 1 } , \\cdot ) \\big ) ( \\eta ^ { N } ( \\tau - ) ) d \\tau",
+    "block_index": 9,
+    "choices": [
+      "M ^ { ( n ) } ( t ) : = h _ { \\bar { Z } } ^ { N , T , x , n } ( t _ { 1 } , \\eta ^ { N } ( t ) ) - h _ { \\bar { Z } } ^ { N , T , x , n } ( t _ { 1 } , \\eta ^ { N } ( 0 ) ) - \\int _ { 0 } ^ { t } \\mathcal { L } ^ { N } \\big ( h _ { \\bar { Z } } ^ { N , T , x , n } ( t _ { 1 } , \\cdot ) \\big ) ( \\eta ^ { N } ( \\tau - ) ) d \\tau + C",
+      "M ^ { ( n ) } ( t ) : = h _ { \\bar { Z } } ^ { N , T , x , n } ( t _ { 1 } , \\eta ^ { N } ( t ) ) - h _ { \\bar { Z } } ^ { N , T , x , n } ( t _ { 1 } , \\eta ^ { N } ( 0 ) ) - \\int _ { 0 } ^ { t } \\mathcal { L } ^ { N } \\big ( h _ { \\bar { Z } } ^ { N , T , x , n } ( t _ { 1 } , \\cdot ) \\big ) ( \\eta ^ { N } ( \\tau ) ) d \\tau",
+      "M ^ { ( n ) } ( t ) : = h _ { \\bar { Z } } ^ { N , T , x , n } ( t _ { 1 } , \\eta ^ { N } ( t ) ) - h _ { \\bar { Z } } ^ { N , T , x , n } ( t _ { 1 } , \\eta ^ { N } ( 0 ) ) - \\int _ { 0 } ^ { t } \\mathcal { L } ^ { N } \\big ( h _ { \\bar { Z } } ^ { N , T , x , n } ( t _ { 1 } , \\cdot ) \\big ) ( \\eta ^ { N } ( \\tau - ) ) d \\tau",
+      "M ^ { ( n ) } ( t ) : = h _ { \\bar { Z } } ^ { N , T , x , n } ( t _ { 1 } , \\eta ^ { N } ( t ) ) - h _ { \\bar { Z } } ^ { N , T , x , n } ( t _ { 1 } , \\eta ^ { N } ( 0 ) ) + \\int _ { 0 } ^ { t } \\mathcal { L } ^ { N } \\big ( h _ { \\bar { Z } } ^ { N , T , x , n } ( t _ { 1 } , \\cdot ) \\big ) ( \\eta ^ { N } ( \\tau - ) ) d \\tau"
+    ],
+    "correct_index": 2
+  },
+  {
+    "file_key": "2603.04622",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.04622/auto/2603.04622_middle.json",
+    "page_idx": 18,
+    "bbox": [
+      183,
+      329,
+      427,
+      342
+    ],
+    "formula": "p \\mathrm { - v a l u e } = ( 1 - \\pi ) \\cdot [ 1 - F _ { \\Gamma } ( M I _ { \\mathrm { o b s e r v e d } } ; \\hat { \\alpha } , \\hat { \\beta } ) ] < p _ { \\mathrm { t h r e s h o l d } }",
+    "block_index": 14,
+    "choices": [
+      "p \\mathrm { - v a l u e } = ( 1 - \\pi ) \\cdot [ 1 - F _ { \\Gamma } ( M I _ { \\mathrm { o b s e r v e d } } ; \\hat { \\alpha } , \\hat { \\beta } ) ] < p _ { \\mathrm { t h r e s h o l d } }",
+      "p \\mathrm { - v a l u e } = ( 1 - \\pi ) \\cdot [ 1 - F _ { \\Gamma } ( M I _ { \\mathrm { o b s e r v e d } } ; \\hat { \\alpha } , \\hat { \\beta } ) ] > p _ { \\mathrm { t h r e s h o l d } }",
+      "p \\mathrm { - v a l u e } = ( 1 - \\pi ) \\cdot [ 1 - F _ { \\Gamma } ( M I _ { \\mathrm { o b s e r v e d } } ; \\hat { \\alpha } ) ] < p _ { \\mathrm { t h r e s h o l d } }",
+      "p \\mathrm { - v a l u e } = ( 1 - \\pi ) + [ 1 - F _ { \\Gamma } ( M I _ { \\mathrm { o b s e r v e d } } ; \\hat { \\alpha } , \\hat { \\beta } ) ] < p _ { \\mathrm { t h r e s h o l d } }"
+    ],
+    "correct_index": 0
+  },
+  {
+    "file_key": "2603.04880",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/q-fin/2603.04880/auto/2603.04880_middle.json",
+    "page_idx": 9,
+    "bbox": [
+      159,
+      669,
+      451,
+      687
+    ],
+    "formula": "\\begin{array} { r } { \\partial _ { t } u ( t , z ) + ( \\mathcal { L } u ) ( t , z ) - \\frac { 1 } { 2 } f ( t , z ) u ( t , z ) = 0 , ( t , z ) \\in \\mathcal { C } _ { [ 0 , T ) } . } \\end{array}",
+    "block_index": 33,
+    "choices": [
+      "\\begin{array} { r } { \\partial _ { t } u ( t , z ) + ( \\mathcal { L } u ) ( t , z ) - \\frac { 1 } { 2 } f ( t , z ) u ( t , z ) = 0 , ( t , z ) \\in \\mathcal { C } _ { [ 0 , T ) } . } \\end{array}",
+      "\\begin{array} { r } { \\partial _ { t } u ( t , z ) + ( \\mathcal { L } u ) ( t , z ) - \\frac { 1 } { 2 } f ( t , z ) u ( t , z ) = 0 , ( t , z ) \\in \\mathcal { C } _ { [ 0 , T ] } . } \\end{array}",
+      "\\begin{array} { r } { \\partial _ { t } u ( t , z ) + ( \\mathcal { L } u ) ( t , z ) + \\frac { 1 } { 2 } f ( t , z ) u ( t , z ) = 0 , ( t , z ) \\in \\mathcal { C } _ { [ 0 , T ) } . } \\end{array}",
+      "\\begin{array} { r } { \\partial _ { t } u ( t , z ) + \\mathcal { L } u ( t , z ) - \\frac { 1 } { 2 } f ( t , z ) u ( t , z ) = 0 , ( t , z ) \\in \\mathcal { C } _ { [ 0 , T ) } . } \\end{array}"
+    ],
+    "correct_index": 0
+  },
+  {
+    "file_key": "2603.04105",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/q-fin/2603.04105/auto/2603.04105_middle.json",
+    "page_idx": 50,
+    "bbox": [
+      181,
+      277,
+      431,
+      334
+    ],
+    "formula": "\\begin{array} { r } { \\left( \\begin{array} { c } { \\log \\omega _ { f } ( x ^ { ( 0 ) } ) } \\\\ { \\vdots } \\\\ { \\log \\omega _ { f } ( x ^ { ( d ) } ) } \\end{array} \\right) = \\left( \\begin{array} { c c } { 1 } & { ( x ^ { ( 0 ) } ) ^ { \\top } } \\\\ { \\vdots } & { \\vdots } \\\\ { 1 } & { ( x ^ { ( d ) } ) ^ { \\top } } \\end{array} \\right) \\left( \\begin{array} { c } { \\alpha _ { f } } \\\\ { \\beta _ { f } } \\end{array} \\right) = X \\left( \\begin{array} { c } { \\alpha _ { f } } \\\\ { \\beta _ { f } } \\end{array} \\right) . } \\end{array}",
+    "block_index": 9,
+    "choices": [
+      "\\begin{array} { r } { \\left( \\begin{array} { c } { \\log \\omega _ { f } ( x ^ { ( 0 ) } ) } \\\\ { \\vdots } \\\\ { \\log \\omega _ { f } ( x ^ { ( d ) } ) } \\\\ { \\end{array} \\right) = \\left( \\begin{array} { c c } { 1 } & { ( x ^ { ( 0 ) } ) ^ { \\top } } \\\\ { \\vdots } & { \\vdots } \\\\ { 1 } & { ( x ^ { ( d ) } ) ^ { \\top } } \\\\ { \\end{array} \\right) \\left( \\begin{array} { c } { \\alpha _ { f } } \\\\ { \\beta _ { f } } \\\\ { \\end{array} \\right) = X \\left( \\begin{array} { c } { \\alpha _ { f } } \\\\ { \\beta _ { f } } \\\\ { \\end{array} \\right) . } \\end{array}",
+      "\\begin{array} { r } { \\left( \\begin{array} { c } { \\log \\omega _ { f } ( x ^ { ( 0 ) } ) } \\\\ { \\vdots } \\\\ { \\log \\omega _ { f } ( x ^ { ( d ) } ) } \\\\ { \\end{array} \\right) = \\left( \\begin{array} { c c } { 1 } & { ( x ^ { ( 0 ) } ) ^ { \\top } } \\\\ { \\vdots } & { \\vdots } \\\\ { 1 } & { ( x ^ { ( d ) } ) ^ { \\top } } \\\\ { \\end{array} \\right) \\left( \\begin{array} { c } { \\alpha _ { f } } \\\\ { \\beta _ { f } } \\\\ { \\end{array} \\right) = X \\left( \\begin{array} { c } { \\alpha _ { f } } \\\\ { \\beta _ { f } } \\\\ { \\end{array} \\right) . } \\end{array}",
+      "\\begin{array} { r } { \\left( \\begin{array} { c } { \\log \\omega _ { f } ( x ^ { ( 0 ) } ) } \\\\ { \\vdots } \\\\ { \\log \\omega _ { f } ( x ^ { ( d ) } ) } \\end{array} \\right) = \\left( \\begin{array} { c c } { 1 } & { ( x ^ { ( 0 ) } ) ^ { \\top } } \\\\ { \\vdots } & { \\vdots } \\\\ { 1 } & { ( x ^ { ( d ) } ) ^ { \\top } } \\end{array} \\right) \\left( \\begin{array} { c } { \\alpha _ { f } } \\\\ { \\beta _ { f } } \\end{array} \\right) = X \\left( \\begin{array} { c } { \\alpha _ { f } } \\\\ { \\beta _ { f } } \\end{array} \\right) . } \\end{array}",
+      "\\begin{array} { r } { \\left( \\begin{array} { c } { \\log \\omega _ { f } ( x ^ { ( 0 ) } ) } \\\\ { \\vdots } \\\\ { \\log \\omega _ { f } ( x ^ { ( d ) } ) } \\\\ { \\end{array} \\right) = \\left( \\begin{array} { c c } { 1 } & { ( x ^ { ( 0 ) } ) ^ { \\top } } \\\\ { \\vdots } & { \\vdots } \\\\ { 1 } & { ( x ^ { ( d ) } ) ^ { \\top } } \\\\ { \\end{array} \\right) \\left( \\begin{array} { c } { \\alpha _ { f } } \\\\ { \\beta _ { f } } \\\\ { \\end{array} \\right) = X \\left( \\begin{array} { c } { \\alpha _ { f } } \\\\ { \\beta _ { f } } \\\\ { \\end{array} \\right) . } \\end{array}"
+    ],
+    "correct_index": 2
+  },
+  {
+    "file_key": "2603.02820",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/q-fin/2603.02820/auto/2603.02820_middle.json",
+    "page_idx": 6,
+    "bbox": [
+      158,
+      455,
+      452,
+      514
+    ],
+    "formula": "\\begin{array} { r l r } {  { \\int _ { 0 } ^ { \\tau _ { n } } \\mathcal { H } _ { s } D _ { s } ( c _ { s } - \\ell ) d s - x = \\int _ { 0 } ^ { \\tau _ { n } } \\mathcal { H } _ { s } D _ { s } ( \\sigma \\pi _ { s } - \\frac { \\beta _ { s } } { \\sigma } X _ { s } ) d W _ { s } } } \\\\ & { } & { + \\int _ { 0 } ^ { \\tau _ { n } } \\mathcal { H } _ { s } X _ { s } d D _ { s - } - \\mathcal { H } _ { \\tau _ { n } } X _ { \\tau _ { n } } D _ { \\tau _ { n } - } , } \\end{array}",
+    "block_index": 22,
+    "choices": [
+      "\\begin{array} { r l r } {  { \\int _ { 0 } ^ { \\tau _ { n } } \\mathcal { H } _ { s } D _ { s } ( c _ { s } - \\ell ) d s - x = \\int _ { 0 } ^ { \\tau _ { n } } \\mathcal { H } _ { s } D _ { s } ( \\sigma \\pi _ { s } - \\frac { \\beta _ { s } } { \\sigma } X _ { s } ) d W _ { s } } } \\\\ & } & { + \\int _ { 0 } ^ { \\tau _ { n } } \\mathcal { H } _ { s } X _ { s } d D _ { s - } - \\mathcal { H } _ { \\tau _ { n } } X _ { \\tau _ { n } } D _ { \\tau _ { n } - } + \\mathcal { H } _ { 0 } X _ { 0 } D _ { 0 - } , } \\\\ & } & { \\end{array}",
+      "\\begin{array} { r l r } {  { \\int _ { 0 } ^ { \\tau _ { n } } \\mathcal { H } _ { s } D _ { s } ( c _ { s } - \\ell ) d s - x = \\int _ { 0 } ^ { \\tau _ { n } } \\mathcal { H } _ { s } D _ { s } ( \\sigma \\pi _ { s } - \\frac { \\beta _ { s } } { \\sigma } X _ { s } ) d W _ { s } } } \\\\ & } & { + \\int _ { 0 } ^ { \\tau _ { n } } \\mathcal { H } _ { s } X _ { s } d D _ { s - } - \\mathcal { H } _ { \\tau _ { n } } X _ { \\tau _ { n } } D _ { \\tau _ { n } } , } \\\\ & } & { \\end{array}",
+      "\\begin{array} { r l r } {  { \\int _ { 0 } ^ { \\tau _ { n } } \\mathcal { H } _ { s } D _ { s } ( c _ { s } - \\ell ) d s - x = \\int _ { 0 } ^ { \\tau _ { n } } \\mathcal { H } _ { s } D _ { s } ( \\sigma \\pi _ { s } - \\frac { \\beta _ { s } } { \\sigma } X _ { s } ) d W _ { s } } } \\\\ & { } & { + \\int _ { 0 } ^ { \\tau _ { n } } \\mathcal { H } _ { s } X _ { s } d D _ { s - } - \\mathcal { H } _ { \\tau _ { n } } X _ { \\tau _ { n } } D _ { \\tau _ { n } - } , } \\end{array}",
+      "\\begin{array} { r l r } {  { \\int _ { 0 } ^ { \\tau _ { n } } \\mathcal { H } _ { s } D _ { s } ( c _ { s } - \\ell ) d s - x = \\int _ { 0 } ^ { \\tau _ { n } } \\mathcal { H } _ { s } D _ { s } ( \\sigma \\pi _ { s } - \\frac { \\beta _ { s } } { \\sigma } X _ { s } ) d W _ { s } } } \\\\ & } & { + \\int _ { 0 } ^ { \\tau _ { n } } \\mathcal { H } _ { s } X _ { s } d D _ { s } - \\mathcal { H } _ { \\tau _ { n } } X _ { \\tau _ { n } } D _ { \\tau _ { n } - } , } \\\\ & } & { \\end{array}"
+    ],
+    "correct_index": 2
+  },
+  {
+    "file_key": "2603.06369",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/cs/2603.06369/auto/2603.06369_middle.json",
+    "page_idx": 20,
+    "bbox": [
+      161,
+      637,
+      429,
+      661
+    ],
+    "formula": "\\begin{array} { r } { \\frac { L _ { t + 1 } } { L _ { t } } \\ : = \\ : \\sqrt { 1 + \\rho ^ { 2 } \\| \\mathbf x _ { t + 1 } - \\mathbf x _ { t } \\| _ { 2 } ^ { 2 } } \\ : \\leq \\ : \\sqrt { 1 + \\rho ^ { 2 } D ^ { 2 } } \\leq 1 + \\rho D , } \\end{array}",
+    "block_index": 23,
+    "choices": [
+      "\\begin{array} { r } { \\frac { L _ { t + 1 } } { L _ { t } } \\ : = \\ : \\sqrt { 1 + \\rho ^ { 2 } \\| \\mathbf x _ { t + 1 } - \\mathbf x _ { t } \\| _ { 2 } ^ { 2 } } \\ : \\leq \\ : \\sqrt { 1 + \\rho ^ { 2 } D ^ { 2 } } \\leq 1 + \\rho D ^ { 2 } , } \\end{array}",
+      "\\begin{array} { r } { \\frac { L _ { t + 1 } } { L _ { t } } \\ : = \\ : \\sqrt { 1 + \\rho ^ { 2 } \\| \\mathbf x _ { t + 1 } - \\mathbf x _ { t } \\| _ { 2 } ^ { 2 } } \\ : \\leq \\ : \\sqrt { 1 + \\rho ^ { 2 } D ^ { 2 } } \\leq 1 + \\rho ^ { 2 } D , } \\end{array}",
+      "\\begin{array} { r } { \\frac { L _ { t + 1 } } { L _ { t } } \\ : = \\ : \\sqrt { 1 + \\rho ^ { 2 } \\| \\mathbf x _ { t + 1 } - \\mathbf x _ { t } \\| _ { 2 } ^ { 2 } } \\ : \\leq \\ : \\sqrt { 1 + \\rho ^ { 2 } D ^ { 2 } } \\leq 1 + \\rho D , } \\end{array}",
+      "\\begin{array} { r } { \\frac { L _ { t + 1 } } { L _ { t } } \\ : = \\ : \\sqrt { 1 + \\rho \\| \\mathbf x _ { t + 1 } - \\mathbf x _ { t } \\| _ { 2 } ^ { 2 } } \\ : \\leq \\ : \\sqrt { 1 + \\rho ^ { 2 } D ^ { 2 } } \\leq 1 + \\rho D , } \\end{array}"
+    ],
+    "correct_index": 2
+  },
+  {
+    "file_key": "2603.06378",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/cs/2603.06378/auto/2603.06378_middle.json",
+    "page_idx": 4,
+    "bbox": [
+      395,
+      521,
+      452,
+      555
+    ],
+    "formula": "z = \\sum _ { i = 1 } ^ { N } a _ { i } h _ { i } ,",
+    "block_index": 69.5,
+    "choices": [
+      "z = \\sum _ { i = 0 } ^ { N } a _ { i } h _ { i }",
+      "z = \\sum _ { i = 1 } ^ { N } a _ { i } h _ { i } ,",
+      "z = \\sum _ { i = 1 } ^ { N } a _ { i } h _ { i + 1 }",
+      "z = \\prod _ { i = 1 } ^ { N } a _ { i } h _ { i }"
+    ],
+    "correct_index": 1
+  },
+  {
+    "file_key": "2603.05661",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/eess/2603.05661/auto/2603.05661_middle.json",
+    "page_idx": 8,
+    "bbox": [
+      340,
+      247,
+      511,
+      265
+    ],
+    "formula": "\\operatorname* { m a x } _ { T _ { \\mathrm { i n i t } } \\leq k \\leq N } B _ { k } \\leq M \\mathrm { p o l y } ( \\beta , \\log ( 1 / \\delta ) ) \\log N",
+    "block_index": 54,
+    "choices": [
+      "\\operatorname* { m a x } _ { T _ { \\mathrm { i n i t } } \\leq k \\leq N } B _ { k } \\leq M \\mathrm { p o l y } ( \\beta , \\log ( 1 / \\delta ) ) \\log N \\cdot \\log N",
+      "\\operatorname* { m a x } _ { T _ { \\mathrm { i n i t } } \\leq k \\leq N } B _ { k } \\leq M \\mathrm { p o l y } ( \\beta , \\log ( 1 / \\delta ) ) \\log N",
+      "\\operatorname* { m a x } _ { T _ { \\mathrm { i n i t } } \\leq k \\leq N } B _ { k } \\leq M \\mathrm { p o l y } ( \\beta , \\log ( 1 / \\delta ) ) \\log ( N + 1 )",
+      "\\operatorname* { m a x } _ { T _ { \\mathrm { i n i t } } \\leq k \\leq N } B _ { k } \\leq M \\mathrm { p o l y } ( \\beta , \\log ( 1 / \\delta ) ) \\log N + \\epsilon"
+    ],
+    "correct_index": 1
+  },
+  {
+    "file_key": "2603.05251",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/eess/2603.05251/auto/2603.05251_middle.json",
+    "page_idx": 3,
+    "bbox": [
+      349,
+      396,
+      524,
+      416
+    ],
+    "formula": "\\tilde { s } _ { m } = \\sqrt { P _ { 0 } } e ^ { - \\left( \\frac { \\alpha } { 2 } + j \\frac { 2 \\pi } { \\lambda _ { g } } \\right) \\operatorname * { m i n } \\left( x _ { m } , L _ { x } - x _ { m } \\right) } s _ { m } .",
+    "block_index": 75,
+    "choices": [
+      "\\tilde { s } _ { m } = \\sqrt { P _ { 0 } } e ^ { - \\left( \\frac { \\alpha } { 2 } + j \\frac { 2 \\pi } { \\lambda _ { g } } \\right) \\operatorname * { m i n } \\left( x _ { m } , L _ { x } - x _ { m } \\right) } s _ { m } .",
+      "\\tilde { s } _ { m } = \\sqrt { P _ { 0 } } e ^ { - \\left( \\frac { \\alpha } { 2 } + j \\frac { 2 \\pi } { \\lambda _ { g } } \\right) \\operatorname * { m i n } \\left( x _ { m } , L _ { x } + x _ { m } \\right) } s _ { m }",
+      "\\tilde { s } _ { m } = \\sqrt { P _ { 0 } } e ^ { - \\left( \\frac { \\alpha } { 2 } + j \\frac { 2 \\pi } { \\lambda _ { g } } \\right) \\operatorname * { m i n } \\left( x _ { m } , L _ { x } - x _ { m } \\right) } s _ { m } ^ { 2 }",
+      "\\tilde { s } _ { m } = \\sqrt { P _ { 0 } } e ^ { - \\left( \\frac { \\alpha } { 2 } + j \\frac { 2 \\pi } { \\lambda _ { g } } \\right) \\operatorname * { m i n } \\left( x _ { m } , L _ { x } - x _ { m } \\right) } s _ { m } \\cdot \\frac { 1 } { 2 }"
+    ],
+    "correct_index": 0
+  },
+  {
+    "file_key": "2603.05363",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/eess/2603.05363/auto/2603.05363_middle.json",
+    "page_idx": 31,
+    "bbox": [
+      263,
+      287,
+      346,
+      302
+    ],
+    "formula": "\\hat { x } _ { R } \\sim { \\cal N } ( \\bar { x } _ { R } , P _ { R } )",
+    "block_index": 7,
+    "choices": [
+      "\\hat { x } _ { R } \\sim { \\cal N } ( \\bar { x } _ { R } , P _ { R } )",
+      "\\hat { x } _ { R } \\sim { \\cal N } ( \\bar { x } _ { R } , P _ { R } ^ { 2 } )",
+      "\\hat { x } _ { R } \\sim { \\cal N } ( \\bar { x } _ { R } , P _ { R } )",
+      "\\hat { x } _ { R } \\sim { \\cal N } ( \\bar { x } _ { R } , P _ { R } )"
+    ],
+    "correct_index": 0
+  },
+  {
+    "file_key": "2603.06027",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/stat/2603.06027/auto/2603.06027_middle.json",
+    "page_idx": 4,
+    "bbox": [
+      253,
+      171,
+      357,
+      187
+    ],
+    "formula": "\\| f \\| _ { L _ { 1 } ( N _ { n } ) } \\leq \\| f \\| _ { L _ { 2 } ( N _ { n } ) } .",
+    "block_index": 6,
+    "choices": [
+      "\\| f \\| _ { L _ { 1 } ( N _ { n } ) } \\leq \\| f \\| _ { L _ { 2 } ( N _ { n } ) } + C .",
+      "\\| f \\| _ { L _ { 1 } ( N _ { n } ) } \\leq \\| f \\| _ { L _ { 2 } ( N _ { n + 1 } ) } .",
+      "\\| f \\| _ { L _ { 2 } ( N _ { n } ) } \\leq \\| f \\| _ { L _ { 1 } ( N _ { n } ) } .",
+      "\\| f \\| _ { L _ { 1 } ( N _ { n } ) } \\leq \\| f \\| _ { L _ { 2 } ( N _ { n } ) } ."
+    ],
+    "correct_index": 3
+  },
+  {
+    "file_key": "2603.04347",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/stat/2603.04347/auto/2603.04347_middle.json",
+    "page_idx": 8,
+    "bbox": [
+      219,
+      221,
+      391,
+      252
+    ],
+    "formula": "\\left\\{ x \\in \\mathbb { R } ^ { d } : H D ( x \\mid X ) \\geq { \\frac { 1 - \\alpha ^ { 2 } } { M _ { \\gamma } } } \\right\\}",
+    "block_index": 6,
+    "choices": [
+      "\\left\\{ x \\in \\mathbb { R } ^ { d } : H D ( x \\mid X ) \\geq { \\frac { 1 - \\alpha ^ { 2 } } { M _ { \\gamma } } } + \\epsilon \\right\\}",
+      "\\left\\{ x \\in \\mathbb { R } ^ { d } : H D ( x \\mid X ) \\leq { \\frac { 1 - \\alpha ^ { 2 } } { M _ { \\gamma } } } \\right\\}",
+      "\\left\\{ x \\in \\mathbb { R } ^ { d } : H D ( x \\mid X ) \\geq { \\frac { 1 - \\alpha } { M _ { \\gamma } } } \\right\\}",
+      "\\left\\{ x \\in \\mathbb { R } ^ { d } : H D ( x \\mid X ) \\geq { \\frac { 1 - \\alpha ^ { 2 } } { M _ { \\gamma } } } \\right\\}"
+    ],
+    "correct_index": 3
+  },
+  {
+    "file_key": "2603.06176",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/stat/2603.06176/auto/2603.06176_middle.json",
+    "page_idx": 31,
+    "bbox": [
+      79,
+      304,
+      504,
+      345
+    ],
+    "formula": "\\sqrt { s } \\| A - \\hat { A } \\| _ { 2 } + \\sum _ { i = s + 1 } ^ { d ^ { 2 } } \\operatorname { v e c } ( A - \\hat { A } ) _ { i } ^ { \\# } \\geq 2 \\log ( 2 / \\varepsilon ) ^ { 1 / 2 } \\frac { \\| A - \\hat { A } \\| _ { l _ { n } ^ { 2 } ( B , X , \\eta ) } } { ( \\log ( 2 \\mathrm { e } d ^ { 2 } / s ) \\lambda _ { \\operatorname* { m i n } } ( C _ { \\infty } ( B ) ) \\mathbb { P } ( \\| \\Delta \\widetilde { Z } _ { 1 } \\| \\leq \\eta _ { - } ) ) ^ { 1 } } ,",
+    "block_index": 9,
+    "choices": [
+      "\\sqrt { s } \\| A - \\hat { A } \\| _ { 2 } + \\sum _ { i = s + 1 } ^ { d ^ { 2 } } \\operatorname { v e c } ( A - \\hat { A } ) _ { i } ^ { \\# } \\geq 2 \\log ( 2 / \\varepsilon ) ^ { 1 / 2 } \\frac { \\| A - \\hat { A } \\| _ { l _ { n } ^ { 2 } ( B , X , \\eta ) } } { ( \\log ( 2 \\mathrm { e } d ^ { 2 } / s ) \\lambda _ { \\operatorname* { m i n } } ( C _ { \\infty } ( B ) ) \\mathbb { P } ( \\| \\Delta \\widetilde { Z } _ { 1 } \\| \\leq \\eta _ { - } ) ) ^ { 1 } } ,",
+      "\\sqrt { s } \\| A - \\hat { A } \\| _ { 2 } + \\sum _ { i = s + 1 } ^ { d ^ { 2 } } \\operatorname { v e c } ( A - \\hat { A } ) _ { i } ^ { \\# } \\geq 2 \\log ( 2 / \\varepsilon ) ^ { 1 / 2 } \\frac { \\| A - \\hat { A } \\| _ { l _ { n } ^ { 2 } ( B , X , \\eta ) } } { ( \\log ( 2 \\mathrm { e } d ^ { 2 } / s ) \\lambda _ { \\operatorname* { m i n } } ( C _ { \\infty } ( B ) ) \\mathbb { P } ( \\| \\Delta \\widetilde { Z } _ { 1 } \\| \\leq \\eta _ { - } ) ) ^ { 2 } }",
+      "\\sqrt { s } \\| A - \\hat { A } \\| _ { 2 } + \\sum _ { i = s + 1 } ^ { d ^ { 2 } } \\operatorname { v e c } ( A - \\hat { A } ) _ { i } ^ { \\# } \\geq 2 \\log ( 2 / \\varepsilon ) ^ { 1 / 2 } \\frac { \\| A - \\hat { A } \\| _ { l _ { n } ^ { 2 } ( B , X , \\eta ) } } { \\log ( 2 \\mathrm { e } d ^ { 2 } / s ) \\lambda _ { \\operatorname* { m i n } } ( C _ { \\infty } ( B ) ) \\mathbb { P } ( \\| \\Delta \\widetilde { Z } _ { 1 } \\| \\leq \\eta _ { - } ) }",
+      "\\sqrt { s } \\| A - \\hat { A } \\| _ { 2 } + \\sum _ { i = s + 1 } ^ { d ^ { 2 } } \\operatorname { v e c } ( A - \\hat { A } ) _ { i } ^ { \\# } \\geq 2 \\log ( 2 / \\varepsilon ) ^ { 1 / 2 } \\frac { \\| A - \\hat { A } \\| _ { l _ { n } ^ { 2 } ( B , X , \\eta ) } } { ( \\log ( 2 \\mathrm { e } d ^ { 2 } / s ) \\lambda _ { \\operatorname* { m i n } } ( C _ { \\infty } ( B ) ) \\mathbb { P } ( \\| \\Delta \\widetilde { Z } _ { 1 } \\| \\leq \\eta _ { - } ) ) ^ { 1 } } + \\delta"
+    ],
+    "correct_index": 0
+  },
+  {
+    "file_key": "2603.05149",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/stat/2603.05149/auto/2603.05149_middle.json",
+    "page_idx": 3,
+    "bbox": [
+      113,
+      287,
+      234,
+      303
+    ],
+    "formula": "\\mu ( \\eta ) \\approx \\mu ^ { ( t ) } + J ^ { ( t ) } ( \\eta - \\eta ^ { ( t ) } ) ,",
+    "block_index": 19,
+    "choices": [
+      "\\mu ( \\eta ) \\approx \\mu ^ { ( t ) } - J ^ { ( t ) } ( \\eta - \\eta ^ { ( t ) } )",
+      "\\mu ( \\eta ) \\approx \\mu ^ { ( t ) } + J ^ { ( t ) } ( \\eta - \\eta ^ { ( t ) } ) ^ { 2 }",
+      "\\mu ( \\eta ) \\approx \\mu ^ { ( t ) } + J ^ { ( t ) } ( \\eta - \\eta ^ { ( t ) } ) ,",
+      "\\mu ( \\eta ) \\approx \\mu ^ { ( t ) } + J ^ { ( t ) } ( \\eta + \\eta ^ { ( t ) } )"
+    ],
+    "correct_index": 2
+  },
+  {
+    "file_key": "2603.05919",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/stat/2603.05919/auto/2603.05919_middle.json",
+    "page_idx": 28,
+    "bbox": [
+      113,
+      414,
+      505,
+      428
+    ],
+    "formula": "\\{ N _ { a } ^ { \\pi _ { i } \\mathrm { - s } } ( r ) = t \\} = \\{ N _ { a } ^ { \\pi _ { i } \\mathrm { - s } } ( r - 1 ) = t - 1 , A _ { r } ^ { \\pi _ { i } \\mathrm { - s } } = a \\} \\cup \\{ N _ { a } ^ { \\pi _ { i } \\mathrm { - s } } ( r - 1 ) = t , A _ { r } ^ { \\pi _ { i } \\mathrm { - s } } \\neq a \\} .",
+    "block_index": 15,
+    "choices": [
+      "\\{ N _ { a } ^ { \\pi _ { i } \\mathrm { - s } } ( r ) = t \\} = \\{ N _ { a } ^ { \\pi _ { i } \\mathrm { - s } } ( r - 1 ) = t - 1 , A _ { r } ^ { \\pi _ { i } \\mathrm { - s } } = a \\} \\cup \\{ N _ { a } ^ { \\pi _ { i } \\mathrm { - s } } ( r - 1 ) = t , A _ { r } ^ { \\pi _ { i } \\mathrm { - s } } = a \\} .",
+      "\\{ N _ { a } ^ { \\pi _ { i } \\mathrm { - s } } ( r ) = t \\} = \\{ N _ { a } ^ { \\pi _ { i } \\mathrm { - s } } ( r - 1 ) = t - 1 , A _ { r } ^ { \\pi _ { i } \\mathrm { - s } } = a \\} \\cup \\{ N _ { a } ^ { \\pi _ { i } \\mathrm { - s } } ( r - 1 ) = t , A _ { r } ^ { \\pi _ { i } \\mathrm { - s } } \\neq a \\} .",
+      "\\{ N _ { a } ^ { \\pi _ { i } \\mathrm { - s } } ( r ) = t \\} = \\{ N _ { a } ^ { \\pi _ { i } \\mathrm { - s } } ( r + 1 ) = t - 1 , A _ { r } ^ { \\pi _ { i } \\mathrm { - s } } = a \\} \\cup \\{ N _ { a } ^ { \\pi _ { i } \\mathrm { - s } } ( r - 1 ) = t , A _ { r } ^ { \\pi _ { i } \\mathrm { - s } } \\neq a \\} .",
+      "\\{ N _ { a } ^ { \\pi _ { i } \\mathrm { - s } } ( r ) = t \\} = \\{ N _ { a } ^ { \\pi _ { i } \\mathrm { - s } } ( r - 1 ) = t - 1 , A _ { r } ^ { \\pi _ { i } \\mathrm { - s } } = a \\} \\cap \\{ N _ { a } ^ { \\pi _ { i } \\mathrm { - s } } ( r - 1 ) = t , A _ { r } ^ { \\pi _ { i } \\mathrm { - s } } \\neq a \\} ."
+    ],
+    "correct_index": 1
+  },
+  {
+    "file_key": "2603.05163",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/stat/2603.05163/auto/2603.05163_middle.json",
+    "page_idx": 11,
+    "bbox": [
+      187,
+      399,
+      408,
+      432
+    ],
+    "formula": "d _ { K o l } \\left( \\frac { 1 } { \\sigma } V _ { n } ( X ) , \\mathcal { N } ( 0 , 1 ) \\right) ~ \\leq ~ \\frac { C } { \\sqrt { T _ { n } } } + C \\psi _ { n } ,",
+    "block_index": 15,
+    "choices": [
+      "d _ { K o l } \\left( \\frac { 1 } { \\sigma } V _ { n } ( X ) , \\mathcal { N } ( 0 , 1 ) \\right) ~ \\leq ~ \\frac { C } { \\sqrt { T _ { n } } } + C \\psi _ { n } ,",
+      "d _ { K o l } \\left( \\frac { 1 } { \\sigma } V _ { n } ( X ) , \\mathcal { N } ( 0 , 1 ) \\right) ~ \\leq ~ \\frac { C } { T _ { n } } + C \\psi _ { n }",
+      "d _ { K o l } \\left( \\frac { 1 } { \\sigma } V _ { n } ( X ) , \\mathcal { N } ( 0 , 1 ) \\right) ~ \\leq ~ \\frac { C } { \\sqrt { T _ { n } } } - C \\psi _ { n }",
+      "d _ { K o l } \\left( \\frac { 1 } { \\sigma } V _ { n } ( X ) , \\mathcal { N } ( 0 , 1 ) \\right) ~ \\leq ~ \\frac { C } { \\sqrt { T _ { n } } } + C \\psi _ { n } + \\epsilon"
+    ],
+    "correct_index": 0
+  },
+  {
+    "file_key": "2603.06251",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/stat/2603.06251/auto/2603.06251_middle.json",
+    "page_idx": 3,
+    "bbox": [
+      247,
+      493,
+      363,
+      506
+    ],
+    "formula": "\\tilde { \\beta _ { S } } = ( X _ { S } ^ { T } X _ { S } + P ) ^ { - 1 } X _ { S } ^ { T } y ,",
+    "block_index": 28,
+    "choices": [
+      "\\tilde { \\beta _ { S } } = ( X _ { S } ^ { T } X _ { S } + P ) ^ { - 1 } X _ { S } ^ { T } y ,",
+      "\\tilde { \\beta _ { S } } = ( X _ { S } ^ { T } X _ { S } + P ) ^ { - 1 } X _ { S } y",
+      "\\tilde { \\beta _ { S } } = ( X _ { S } ^ { T } X _ { S } + P ) ^ { - 1 } X _ { S } ^ { T } y + \\lambda",
+      "\\tilde { \\beta _ { S } } = ( X _ { S } ^ { T } X _ { S } - P ) ^ { - 1 } X _ { S } ^ { T } y"
+    ],
+    "correct_index": 0
+  },
+  {
+    "file_key": "2603.04369",
+    "file_path": "VisDocBench-parsed/arxiv_pdfs/stat/2603.04369/auto/2603.04369_middle.json",
+    "page_idx": 5,
+    "bbox": [
+      270,
+      237,
+      340,
+      261
+    ],
+    "formula": "\\frac { d } { d t } \\varphi ( t , \\pmb \\theta _ { 0 } ) = \\pmb \\alpha .",
+    "block_index": 11,
+    "choices": [
+      "\\frac { d } { d t } \\varphi ( t , \\pmb \\theta _ { 0 } ) + \\pmb \\alpha = 0 .",
+      "\\frac { d } { d t } \\varphi ( t , \\pmb \\theta _ { 1 } ) = \\pmb \\alpha .",
+      "\\frac { d } { d t } \\varphi ( t , \\pmb \\theta _ { 0 } ) = \\pmb \\alpha .",
+      "\\frac { d } { d t } \\varphi ( t , \\pmb \\theta _ { 0 } ) = \\pmb \\beta ."
+    ],
+    "correct_index": 2
+  }
+]

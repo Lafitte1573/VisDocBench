@@ -1,0 +1,51 @@
+{
+  "benchmark": "VisDocBench",
+  "subset": "mini-bench",
+  "version": "1.0",
+  "note": "Optional 300-item subset of VisDocBench. Full annotations live in release/annotations.",
+  "seed": 42,
+  "per_subset": 20,
+  "subsets": {
+    "chart_analysis": {
+      "total": 1594,
+      "sampled": 20
+    },
+    "cross_page_blocks": {
+      "total": 8385,
+      "sampled": 20
+    },
+    "interline_equation": {
+      "total": 5699,
+      "sampled": 20
+    },
+    "mm_multi_hop_qa": {
+      "total": 1954,
+      "sampled": 20
+    },
+    "mm_single_hop_qa": {
+      "total": 1756,
+      "sampled": 20
+    },
+    "multi_hop_qa": {
+      "total": 1654,
+      "sampled": 20
+    },
+    "needle_in_a_haystack": {
+      "total": 6493,
+      "sampled": 20
+    },
+    "single_hop_qa": {
+      "total": 1738,
+      "sampled": 20
+    },
+    "single_hop_qa_mm": {
+      "total": 1755,
+      "sampled": 20
+    }
+  },
+  "totals": {
+    "items": 300,
+    "mc_items": 300,
+    "oq_items": 120
+  }
+}

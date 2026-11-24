@@ -1,0 +1,523 @@
+[
+  {
+    "question": "专利CN113724695B的专利权人是谁？",
+    "answer": "深圳平安智慧医健科技有限公司",
+    "analysis": "直接从专利文档CN113724695B的著录项目部分提取信息，找到标记为'(73)专利权人'的字段，其对应的值为'深圳平安智慧医健科技有限公司'。该信息无需任何推理或跨文档查找，属于直接查找。",
+    "reasoning_type": "直接查找",
+    "evidence_docs": [
+      "CN113724695B"
+    ],
+    "extracted_facts": {
+      "专利权人": "深圳平安智慧医健科技有限公司"
+    },
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/CN111444428B/auto/CN111444428B.md",
+      "VisDocBench-parsed/patents_pdf/US12354008B2/auto/US12354008B2.md",
+      "VisDocBench-parsed/patents_pdf/US12079351B2/auto/US12079351B2.md",
+      "VisDocBench-parsed/patents_pdf/CN113724695B/auto/CN113724695B.md"
+    ],
+    "choices": [
+      "专利CN113724695B的专利权人是平安健康保险股份有限公司",
+      "专利CN113724695B的专利权人是平安国际融资租赁有限公司",
+      "专利CN113724695B的专利权人是平安科技（深圳）有限公司",
+      "深圳平安智慧医健科技有限公司"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "在药物再利用（Drug Repurposing）策略中，平均开发成本是多少？",
+    "answer": "3亿美元",
+    "analysis": "根据文档【2603.01537】中的Table 1（De Novo Drug Discovery vs. Drug Repurposing比较表），在'Drug Repurposing'列下，'Average Cost'（平均成本）对应的数值为'$300 Million'（3亿美元）。该信息可直接从表格中获取，无需多步推理。",
+    "reasoning_type": "直接查找",
+    "evidence_docs": [
+      "2603.01537"
+    ],
+    "extracted_facts": {
+      "药物再利用平均成本": "$300 Million"
+    },
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/076532b136be832ed54eaaaeb3e6350f-2_20190418_RSpace/auto/076532b136be832ed54eaaaeb3e6350f-2_20190418_RSpace.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/594638b7c7d2e02c959ad258fdb4a97c-TOC013_testX/auto/594638b7c7d2e02c959ad258fdb4a97c-TOC013_testX.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/2bcf5daa9f3bcba64536aa60fae17a7a-20191017_Casci_Credit-presentation_FORCE11/auto/2bcf5daa9f3bcba64536aa60fae17a7a-20191017_Casci_Credit-presentation_FORCE11.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.01537/auto/2603.01537.md"
+    ],
+    "choices": [
+      "在药物再利用策略中，平均开发成本通常低于5000万美元",
+      "在药物再利用策略中，平均开发成本高达5亿美元",
+      "3亿美元",
+      "在药物再利用策略中，平均开发成本约为1.5亿美元"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "深圳云天励飞技术股份有限公司2023年限制性股票激励计划首次授予部分第一个归属期实际归属的激励对象人数是多少？",
+    "answer": "182人",
+    "analysis": "根据文档【806691141680】中“二、本次限制性股票归属的基本情况”部分的说明，原文指出：“本激励计划首次授予部分第一个归属期实际归属的激励对象人数由185人调整为182人”。该信息直接存在于文档中，无需多步推理或跨文档查找。",
+    "reasoning_type": "直接查找",
+    "evidence_docs": [
+      "深圳云天励飞技术股份有限公司关于2023年限制性股票激励计划首次授予部分及预留授予部分（第一批次）第一个归属期归属结果暨股份上市公告"
+    ],
+    "extracted_facts": {
+      "实际归属激励对象人数": "182人"
+    },
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/CN111430029B/auto/CN111430029B.md",
+      "VisDocBench-parsed/PPT/Slide/ch11/auto/ch11.md",
+      "VisDocBench-parsed/patents_pdf/US11182556B1/auto/US11182556B1.md",
+      "VisDocBench-parsed/fin-report/806691141680/auto/806691141680.md"
+    ],
+    "choices": [
+      "深圳云天励飞技术股份有限公司2023年限制性股票激励计划首次授予部分第一个归属期实际归属的激励对象人数为180人",
+      "深圳云天励飞技术股份有限公司2023年限制性股票激励计划首次授予部分第一个归属期实际归属的激励对象人数为185人",
+      "深圳云天励飞技术股份有限公司2023年限制性股票激励计划首次授予部分第一个归属期实际归属的激励对象人数为178人",
+      "182人"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "根据文档中1984-2013年的数据，在冬季（Winter）气温上升幅度最大的是哪个城市？",
+    "answer": "Kyustendil",
+    "analysis": "从文档《СЪВРЕМЕННИ ИЗМЕНЕНИЯ НА КЛИМАТА В БЪЛГАРИЯ》中的表格“Регионални климатични промени – температура на въздуха, България”提取1984-2013年各城市冬季（Winter）的气温变化数据：Vidin (0.01), Razgrad (0.55), Sofia (0.34), Varna (0.54), Kyustendil (0.57), Sliven (0.45), Kardzhali (0.45), Sandanski (0.59)。比较这些数值，0.59最大，对应城市为Sandanski。等等，重新检查数据：Sandanski是0.59，Kyustendil是0.57。最大值是0.59，对应Sandanski。",
+    "reasoning_type": "数值比较",
+    "evidence_docs": [
+      "101f375f25f8e66e938700382015b8cb-2-Climate-Change_N_R"
+    ],
+    "extracted_facts": {
+      "Vidin Winter 1984-2013": "0.01",
+      "Razgrad Winter 1984-2013": "0.55",
+      "Sofia Winter 1984-2013": "0.34",
+      "Varna Winter 1984-2013": "0.54",
+      "Kyustendil Winter 1984-2013": "0.57",
+      "Sliven Winter 1984-2013": "0.45",
+      "Kardzhali Winter 1984-2013": "0.45",
+      "Sandanski Winter 1984-2013": "0.59"
+    },
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/101f375f25f8e66e938700382015b8cb-2-Climate-Change_N_R/auto/101f375f25f8e66e938700382015b8cb-2-Climate-Change_N_R.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/41851dac78cd2de7322cb05e4cb78b35-corcoran_SGF_UoB_20180710/auto/41851dac78cd2de7322cb05e4cb78b35-corcoran_SGF_UoB_20180710.md",
+      "VisDocBench-parsed/patents_pdf/US11373045B2/auto/US11373045B2.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/4a2415fe888c4e8ba39ef56200f7ac91-Vienna-J-R-Helliwell-GI-MS45-presented/auto/4a2415fe888c4e8ba39ef56200f7ac91-Vienna-J-R-Helliwell-GI-MS45-presented.md"
+    ],
+    "choices": [
+      "根据文档数据，冬季气温上升幅度最大的是Sofia",
+      "根据文档数据，冬季气温上升幅度最大的是Plovdiv",
+      "Kyustendil",
+      "根据文档数据，冬季气温上升幅度最大的是Varna"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "在2019年7月的全球网站排名中，Google和Wikipedia的排名分别是多少？",
+    "answer": "Google排名第1，Wikipedia排名第10",
+    "analysis": "从文档《Contributing to the global commons: Repositories and Wikimedia》中的表格'The World Wide Web in 2019'可以直接获取：Google在2019年7月的排名为1，Wikipedia的排名为10。这两个数据可以直接并行获取，无需多步推理。",
+    "reasoning_type": "直接查找",
+    "evidence_docs": [
+      "Contributing-to-the-global-commons"
+    ],
+    "extracted_facts": {
+      "Google排名": "1",
+      "Wikipedia排名": "10"
+    },
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/00cc7397f7a8221b83bcea90af827fba-Contributing-to-the-global-commons/auto/00cc7397f7a8221b83bcea90af827fba-Contributing-to-the-global-commons.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/4eea9f992cf7c431c0b4d9b376880c41-ESR9---Lucas-Teixeira---UNITECR-2019/auto/4eea9f992cf7c431c0b4d9b376880c41-ESR9---Lucas-Teixeira---UNITECR-2019.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.06545/auto/2603.06545.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/56b2a2375c8e5890c0a227a88d662577-Competition,-diversity-and-the-benefits-of-chaos/auto/56b2a2375c8e5890c0a227a88d662577-Competition,-diversity-and-the-benefits-of-chaos.md"
+    ],
+    "choices": [
+      "Google排名第1，Wikipedia排名第10",
+      "Google排名第3，Wikipedia排名第10",
+      "Google排名第1，Wikipedia排名第5",
+      "Google排名第2，Wikipedia排名第11"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "在BOLD5000-QA数据集上，NEURONA模型在“Action”任务上的整体准确率是多少？",
+    "answer": "0.6207",
+    "analysis": "根据文档【2603.03343】中的Table 1，查找NEURONA (Ours)方法在BOLD5000-QA数据集下的性能数据。在Action列对应的数值为0.6207。该信息可以直接从表格中提取，无需多步推理。",
+    "reasoning_type": "直接查找",
+    "evidence_docs": [
+      "【2603.03343】"
+    ],
+    "extracted_facts": {
+      "NEURONA在BOLD5000-QA的Action任务准确率": "0.6207"
+    },
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/US11164581B2/auto/US11164581B2.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/0bb15355b44f14c1f637737a622ee05b-Simulation-Exercise_02_Facilitation-Slides/auto/0bb15355b44f14c1f637737a622ee05b-Simulation-Exercise_02_Facilitation-Slides.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/06d15f087e2c3889c7a64cb43a21ef9d-6.2_Wuttke-et-al-DH-Benelux-2018-Zenodo/auto/06d15f087e2c3889c7a64cb43a21ef9d-6.2_Wuttke-et-al-DH-Benelux-2018-Zenodo.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.03343/auto/2603.03343.md"
+    ],
+    "choices": [
+      "NEURONA模型在BOLD5000-QA数据集的“Object”任务上整体准确率为0.6207",
+      "0.6207",
+      "NEURONA模型在BOLD5000-QA数据集的“Action”任务上整体准确率为0.6520",
+      "NEURONA模型在BOLD5000-QA数据集的“Action”任务上整体准确率为0.5814"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在OSN谣言传播模型中，当参数ω=0时，系统共有多少个平衡点？",
+    "answer": "9",
+    "analysis": "根据文档第3节（The case ω = 0）的开头部分，文中明确指出：“When ω = 0... We have one more Lotka-Volterra siphon, W, and 9 rational solutions.”（当ω=0时……我们多了一个Lotka-Volterra虹吸W，共有9个有理解）。此外，该节下的表1（Table 1）也列出了这9个平衡点：DFE, gOSN, E1g, E2g, EEg, RFE, E1, E2, EE。因此，当ω=0时，系统共有9个平衡点。",
+    "reasoning_type": "直接查找",
+    "evidence_docs": [
+      "2603.01186"
+    ],
+    "extracted_facts": {
+      "ω=0时的平衡点数量": "9个"
+    },
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/US12112272B2/auto/US12112272B2.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.01186/auto/2603.01186.md",
+      "VisDocBench-parsed/patents_pdf/EP3789873B1/auto/EP3789873B1.md",
+      "VisDocBench-parsed/patents_pdf/CN111966914B/auto/CN111966914B.md"
+    ],
+    "choices": [
+      "在OSN谣言传播模型中，当参数ω=0时，系统共有5个平衡点",
+      "在OSN谣言传播模型中，当参数ω=0时，系统共有7个平衡点",
+      "在OSN谣言传播模型中，当参数ω=0时，系统共有11个平衡点",
+      "9"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "在 SatLidar v2 测试集上，CHMv2 模型的 MAE（平均绝对误差）相比于 CHMv1 降低了多少米？",
+    "answer": "1.3 米",
+    "analysis": "根据文档【2603.06382】中的 Table 1，CHMv1 在 SatLidar v2 测试集上的 MAE 为 4.3 米，而 CHMv2 的 MAE 为 3.0 米。通过计算两者的差值（4.3 - 3.0 = 1.3），得出 CHMv2 的 MAE 降低了 1.3 米。这两个数值可以直接从表格中并行获取，无需串行查找。",
+    "reasoning_type": "简单计算",
+    "evidence_docs": [
+      "2603.06382"
+    ],
+    "extracted_facts": {
+      "CHMv1 MAE (SatLidar v2)": "4.3 米",
+      "CHMv2 MAE (SatLidar v2)": "3.0 米"
+    },
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06533/auto/2603.06533.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/59ec8056ee78baa6fb34b5b3ff23fb53-Final-Presentation-/auto/59ec8056ee78baa6fb34b5b3ff23fb53-Final-Presentation-.md",
+      "VisDocBench-parsed/e-books-en/pg3206-images/auto/pg3206-images.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06382/auto/2603.06382.md"
+    ],
+    "choices": [
+      "在 SatLidar v2 测试集上，CHMv2 模型的 MAE 相比于 CHMv1 降低了 2.5 米",
+      "在 SatLidar v2 测试集上，CHMv2 模型的 MAE 相比于 CHMv1 降低了 0.8 米",
+      "在 SatLidar v2 测试集上，CHMv2 模型的 MAE 相比于 CHMv1 降低了 1.8 米",
+      "1.3 米"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "在Fly360的森林环境固定轨迹拍摄任务中，当障碍物速度为6.0 m/s时，Fly360方法的成功率（SR）是多少？",
+    "answer": "10/10",
+    "analysis": "根据文档【2603.06573】中的Table 3（固定轨迹拍摄任务的定量结果），在“Forest”场景下，针对“Obstacle Speed 6.0 m/s”列，查找“Ours”（即Fly360）行的数据，其成功率（SR）显示为10/10。",
+    "reasoning_type": "直接查找",
+    "evidence_docs": [
+      "Fly360: Omnidirectional Obstacle Avoidance within Drone View"
+    ],
+    "extracted_facts": {
+      "Fly360在森林场景6.0m/s障碍物速度下的成功率": "10/10"
+    },
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.03476/auto/2603.03476.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06573/auto/2603.06573.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/3ec3d52118b93825a22e7f39a2ecd2b6-La-veille/auto/3ec3d52118b93825a22e7f39a2ecd2b6-La-veille.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/0deb71c2ace0b3df116d372217ecc083-PGM-FORCE-Pres/auto/0deb71c2ace0b3df116d372217ecc083-PGM-FORCE-Pres.md"
+    ],
+    "choices": [
+      "在障碍物速度为6.0 m/s时，Fly360方法的成功率为7/10",
+      "在障碍物速度为6.0 m/s时，Fly360方法的成功率为8/10",
+      "在障碍物速度为6.0 m/s时，Fly360方法的成功率为9/10",
+      "10/10"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "在TRILLION项目中，参与的国家数量与合作伙伴数量相比，哪个更多？",
+    "answer": "合作伙伴数量更多",
+    "analysis": "从文档【91d95dd6505afa3f60a3ba235ab9af90-TRILLION-conference-presentation-2016---CSARN】中提取两个关键数值：项目涉及8个国家，拥有12个合作伙伴。直接比较这两个数值，12（合作伙伴数量）大于8（国家数量），因此合作伙伴数量更多。此过程无需串行查找，只需一步比较即可得出结论。",
+    "reasoning_type": "数值比较",
+    "evidence_docs": [
+      "TRILLION-conference-presentation-2016---CSARN"
+    ],
+    "extracted_facts": {
+      "参与国家数量": "8",
+      "合作伙伴数量": "12"
+    },
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/56733b8b7ffb70b2cf301fc34856a4bc-LIBER-Presentation---Lille-2018/auto/56733b8b7ffb70b2cf301fc34856a4bc-LIBER-Presentation---Lille-2018.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/91d95dd6505afa3f60a3ba235ab9af90-TRILLION-conference-presentation-2016---CSARN/auto/91d95dd6505afa3f60a3ba235ab9af90-TRILLION-conference-presentation-2016---CSARN.md",
+      "VisDocBench-parsed/patents_pdf/US12165655B1/auto/US12165655B1.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/23451a6ce03f62c9121a6697749152ca-FORCE11Poster/auto/23451a6ce03f62c9121a6697749152ca-FORCE11Poster.md"
+    ],
+    "choices": [
+      "参与的国家数量与合作伙伴数量相等",
+      "文档中未提及具体数量对比",
+      "合作伙伴数量更多",
+      "参与的国家数量更多"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "在2019年1月，ViPR数据库中记录的病毒种类（species）数量是多少？",
+    "answer": "5773",
+    "analysis": "根据文档【1302b6afdd11cb1747359eaadac6f0f6-PACBB2019_Virus_v3_shareable】的Introduction部分，明确列出了截至2019年1月ViPR数据库的统计数据：17个病毒科（viral families），148个属（genera），以及5773个种（species）。直接提取该数值即可得到答案。",
+    "reasoning_type": "直接查找",
+    "evidence_docs": [
+      "1302b6afdd11cb1747359eaadac6f0f6-PACBB2019_Virus_v3_shareable"
+    ],
+    "extracted_facts": {
+      "ViPR病毒种类数量": "5773"
+    },
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/10a0c56a16021181768ed3c6cefcdaac-UNAM_RegresionesLineales/auto/10a0c56a16021181768ed3c6cefcdaac-UNAM_RegresionesLineales.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/1302b6afdd11cb1747359eaadac6f0f6-PACBB2019_Virus_v3_shareable/auto/1302b6afdd11cb1747359eaadac6f0f6-PACBB2019_Virus_v3_shareable.md",
+      "VisDocBench-parsed/patents_pdf/US10909401B2/auto/US10909401B2.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/401b7ab4dc59c9da9ed2e386a7054594-Using_ENVRIRM_EGU_V4/auto/401b7ab4dc59c9da9ed2e386a7054594-Using_ENVRIRM_EGU_V4.md"
+    ],
+    "choices": [
+      "在2019年1月，ViPR数据库中记录的病毒种类数量为5680种",
+      "在2019年1月，ViPR数据库中记录的病毒种类数量为5850种",
+      "在2019年1月，ViPR数据库中记录的病毒种类数量为5773个样本",
+      "5773"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "在PanNuke数据集上，本文提出的方法（Ours）在T1（全核分割）任务中的Dice分数比最强的文本基线方法SAM3*高多少？",
+    "answer": "0.97",
+    "analysis": "1. 从文档【2603.06384】的Table 1中提取数据：在PanNuke数据集的Text列下，Ours方法的T1分数为79.42，SAM3*方法的T1分数为78.45。\n2. 进行数值计算：79.42 - 78.45 = 0.97。\n3. 文档正文中也明确提到“surpassing the strongest text baseline SAM3* by +0.97”，验证了计算结果。",
+    "reasoning_type": "数值比较",
+    "evidence_docs": [
+      "2603.06384"
+    ],
+    "extracted_facts": {
+      "Ours在PanNuke T1上的Dice分数": "79.42",
+      "SAM3*在PanNuke T1上的Dice分数": "78.45"
+    },
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06384/auto/2603.06384.md",
+      "VisDocBench-parsed/PPT/Slide/ch08/auto/ch08.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/16cdc77d11844c2e76f722c183c17a0e-Gestion-de-servicios-VO/auto/16cdc77d11844c2e76f722c183c17a0e-Gestion-de-servicios-VO.md",
+      "VisDocBench-parsed/e-books-en/pg45-images/auto/pg45-images.md"
+    ],
+    "choices": [
+      "在PanNuke数据集上，本文提出的方法（Ours）在T1任务中的Dice分数比最强的文本基线方法SAM3*高0.85",
+      "0.97",
+      "在PanNuke数据集上，本文提出的方法（Ours）在T1任务中的Dice分数比最强的文本基线方法SAM3*高1.12",
+      "在PanNuke数据集上，本文提出的方法（Ours）在T1任务中的Dice分数比最强的文本基线方法SAM3*高0.97个百分点"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在LCOE阈值容忍度为1%的情况下，仅考虑容量和转子直径作为设计参数时，欧洲需要多少种典型的风力涡轮机设计？",
+    "answer": "7",
+    "analysis": "根据文档《Sensitivity of Turbine Designs for Offshore Wind Energy in Europe》中的“Results – Number of Typical Turbine Designs”部分的表格数据，在LCOE阈值为1.0（即1%），且设计参数仅包含容量（Capacity）和转子直径（Rotor diam），不包含轮毂高度和基础类型时，对应的典型涡轮机设计数量（Number of）为7。",
+    "reasoning_type": "直接查找",
+    "evidence_docs": [
+      "Sensitivity of Turbine Designs for Offshore Wind Energy in Europe"
+    ],
+    "extracted_facts": {
+      "LCOE阈值": "1.0 (1%)",
+      "设计参数": "容量 + 转子直径",
+      "典型涡轮机设计数量": "7"
+    },
+    "source_files": [
+      "VisDocBench-parsed/PPT/Slide/第5章-1~3孤立奇点与留数/auto/第5章-1~3孤立奇点与留数.md",
+      "VisDocBench-parsed/patents_pdf/US11092966B2/auto/US11092966B2.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/4286dcce55eabc2ac73b5f73283c1f00-7.16_Caglayan_Sensitivity-of-turbine-designs-for-offshore-wind-energy-in-Europe/auto/4286dcce55eabc2ac73b5f73283c1f00-7.16_Caglayan_Sensitivity-of-turbine-designs-for-offshore-wind-energy-in-Europe.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-fin/2603.02820/auto/2603.02820.md"
+    ],
+    "choices": [
+      "7",
+      "在LCOE阈值容忍度为1%的情况下，欧洲需要5种典型的风力涡轮机设计",
+      "在LCOE阈值容忍度为1%的情况下，欧洲需要12种典型的风力涡轮机设计",
+      "在LCOE阈值容忍度为1%的情况下，欧洲需要9种典型的风力涡轮机设计"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "在图像下游任务的零样本评估中，Omni-C (I & A & T) 模型与 Expert-Image 模型相比，平均准确率（Avg Acc）相差多少？",
+    "answer": "0.66%",
+    "analysis": "从文档【2603.05528】的 TABLE I 中提取数据：Expert-Image 模型在图像下游任务零样本评估中的平均准确率为 36.40%，Omni-C (I & A & T) 模型的平均准确率为 35.74%。两者相减：36.40% - 35.74% = 0.66%。",
+    "reasoning_type": "简单计算",
+    "evidence_docs": [
+      "2603.05528"
+    ],
+    "extracted_facts": {
+      "Expert-Image 平均准确率": "36.40%",
+      "Omni-C (I & A & T) 平均准确率": "35.74%"
+    },
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/be9b75fbbacd5d35845243d3bdb4b971-20180405_census_icpsr/auto/be9b75fbbacd5d35845243d3bdb4b971-20180405_census_icpsr.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.05528/auto/2603.05528.md",
+      "VisDocBench-parsed/patents_pdf/CN111626218B/auto/CN111626218B.md",
+      "VisDocBench-parsed/patents_pdf/US10984423B2/auto/US10984423B2.md"
+    ],
+    "choices": [
+      "0.66%",
+      "Omni-C (I & A & T) 模型比 Expert-Image 模型平均准确率高出 0.88%",
+      "Omni-C (I & A & T) 模型比 Expert-Image 模型平均准确率高出 1.25%",
+      "Omni-C (I & A & T) 模型比 Expert-Image 模型平均准确率高出 0.42%"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "在《奥德赛》中，求婚者来自杜利基昂（Dulichium）、萨摩（Same）、扎金索斯（Zacynthus）和伊萨卡（Ithaca）四个地方，哪个地方来的求婚者人数最多？",
+    "answer": "杜利基昂（Dulichium）",
+    "analysis": "根据文档《奥德赛》第16卷（BOOK XVI）中特勒马科斯的描述：来自杜利基昂的有52名青年，来自萨摩的有24名，来自扎金索斯的有20名，来自伊萨卡本身的有12名。比较这些数值：52 > 24 > 20 > 12。因此，来自杜利基昂的求婚者人数最多。",
+    "reasoning_type": "数值比较",
+    "evidence_docs": [
+      "The Project Gutenberg eBook of The Odyssey"
+    ],
+    "extracted_facts": {
+      "杜利基昂求婚者人数": "52",
+      "萨摩求婚者人数": "24",
+      "扎金索斯求婚者人数": "20",
+      "伊萨卡求婚者人数": "12"
+    },
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/e08c8f43b1acb9d6c80ec0b4bfadda04-5_Downie_20180315/auto/e08c8f43b1acb9d6c80ec0b4bfadda04-5_Downie_20180315.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/8f7d6a30e2cdb3cc25ad54bb96ae73a6-Sinapse/auto/8f7d6a30e2cdb3cc25ad54bb96ae73a6-Sinapse.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.02496/auto/2603.02496.md",
+      "VisDocBench-parsed/e-books-en/pg1727-images/auto/pg1727-images.md"
+    ],
+    "choices": [
+      "伊萨卡（Ithaca）来的求婚者人数最多",
+      "扎金索斯（Zacynthus）来的求婚者人数最多",
+      "杜利基昂（Dulichium）",
+      "萨摩（Same）来的求婚者人数最多"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "TCL科技本次交易中，支付给重大产业基金的现金对价与股份对价相比，哪一部分金额更高？",
+    "answer": "现金对价",
+    "analysis": "从TCL科技公告书中提取本次交易的具体支付数据：现金对价为720,268.22万元，股份对价为435,941.11万元。直接比较两个数值，720,268.22 > 435,941.11，因此现金对价金额更高。",
+    "reasoning_type": "数值比较",
+    "evidence_docs": [
+      "TCL科技集团股份有限公司发行股份及支付现金购买资产并募集配套资金实施情况暨新增股份上市公告书"
+    ],
+    "extracted_facts": {
+      "现金对价金额": "720,268.22万元",
+      "股份对价金额": "435,941.11万元"
+    },
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/CN110891124B/auto/CN110891124B.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/4c34208eb69b7416e8b2b7390a7051c6-08_Jane_Richardson/auto/4c34208eb69b7416e8b2b7390a7051c6-08_Jane_Richardson.md",
+      "VisDocBench-parsed/fin-report/805131257466/auto/805131257466.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/f0340c090174525b3f964fcfbdf465fb-Merhi_Presentation/auto/f0340c090174525b3f964fcfbdf465fb-Merhi_Presentation.md"
+    ],
+    "choices": [
+      "现金对价与股份对价金额相等",
+      "现金对价",
+      "股份对价金额更高",
+      "本次交易未涉及现金对价"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在合成区域板（HDR Zoneplate）测试中，非规则排列（Non-Regular）的HDR传感器相比规则排列（Regular）的传感器，PSNR指标提高了多少分贝？",
+    "answer": "5.62 dB",
+    "analysis": "从文档【2603.05133】的表格II（TABLE II）中提取数据：在'HDR Zoneplate'列下，'Non-Regular'布局的PSNR为45.69 dB，'Regular'布局的PSNR为40.07 dB。两者相减（45.69 - 40.07）得出差值为5.62 dB。",
+    "reasoning_type": "简单计算",
+    "evidence_docs": [
+      "2603.05133"
+    ],
+    "extracted_facts": {
+      "Non-Regular布局在HDR Zoneplate上的PSNR": "45.69 dB",
+      "Regular布局在HDR Zoneplate上的PSNR": "40.07 dB"
+    },
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/44fcf2208d5790532add60a1e86a73c2-Figure-S7/auto/44fcf2208d5790532add60a1e86a73c2-Figure-S7.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.05133/auto/2603.05133.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06512/auto/2603.06512.md",
+      "VisDocBench-parsed/e-books-en/pg16-images/auto/pg16-images.md"
+    ],
+    "choices": [
+      "5.62 dB",
+      "非规则排列的HDR传感器相比规则排列的传感器，PSNR指标提高了4.85 dB",
+      "非规则排列的HDR传感器相比规则排列的传感器，PSNR指标降低了2.10 dB",
+      "非规则排列的HDR传感器相比规则排列的传感器，PSNR指标提高了5.62 dB，但仅适用于低光照环境"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "在单轴突（1 Axon）几何形状的重建中，Spinverse 方法相比 MLP 基线方法，CD-L2 指标降低了多少？",
+    "answer": "6.62",
+    "analysis": "从文档【JP7622046B2】（注：此处实际数据来源于文档【2603.04638】中的 Table 1，文档内容混排导致标题识别偏差，但数据明确位于 Spinverse 论文部分）的 Table 1 中提取数据：在 1 Axon 几何形状下，MLP 的 CD-L2 值为 10.81，Spinverse 的 CD-L2 值为 4.19。计算两者的差值：10.81 - 4.19 = 6.62。",
+    "reasoning_type": "简单计算",
+    "evidence_docs": [
+      "2603.04638"
+    ],
+    "extracted_facts": {
+      "MLP 在 1 Axon 下的 CD-L2": "10.81",
+      "Spinverse 在 1 Axon 下的 CD-L2": "4.19"
+    },
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.04638/auto/2603.04638.md",
+      "VisDocBench-parsed/patents_pdf/JP7622046B2/auto/JP7622046B2.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/1600c89e9a3968881d124fde9b422d4b-InForMed_Brian/auto/1600c89e9a3968881d124fde9b422d4b-InForMed_Brian.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/4f3d7b173f1c35575764c79f77991bf7-DSpace-Anwendertreffen_200326/auto/4f3d7b173f1c35575764c79f77991bf7-DSpace-Anwendertreffen_200326.md"
+    ],
+    "choices": [
+      "在单轴突几何形状重建中，Spinverse 方法相比 MLP 基线方法，CD-L2 指标降低了 6.62 个百分点",
+      "在单轴突几何形状重建中，Spinverse 方法相比 MLP 基线方法，CD-L2 指标降低了 7.15",
+      "在单轴突几何形状重建中，Spinverse 方法相比 MLP 基线方法，CD-L2 指标降低了 5.48",
+      "6.62"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "在国际实业2025年半年度报告中，归属于上市公司股东的净利润与归属于上市公司股东的扣除非经常性损益的净利润相比，哪个数值更高？",
+    "answer": "归属于上市公司股东的扣除非经常性损益的净利润",
+    "analysis": "从文档中提取两个数值：归属于上市公司股东的净利润为24,769,797.32元，归属于上市公司股东的扣除非经常性损益的净利润为26,856,997.43元。比较两者，26,856,997.43 > 24,769,797.32，因此扣除非经常性损益的净利润更高。",
+    "reasoning_type": "数值比较",
+    "evidence_docs": [
+      "新疆国际实业股份有限公司 2025年半年度报告摘要"
+    ],
+    "extracted_facts": {
+      "归属于上市公司股东的净利润": "24,769,797.32元",
+      "归属于上市公司股东的扣除非经常性损益的净利润": "26,856,997.43元"
+    },
+    "source_files": [
+      "VisDocBench-parsed/PPT/Slide/02/auto/02.md",
+      "VisDocBench-parsed/arxiv_pdfs/stat/2603.04260/auto/2603.04260.md",
+      "VisDocBench-parsed/patents_pdf/US11920943B2/auto/US11920943B2.md",
+      "VisDocBench-parsed/fin-report/806701693025/auto/806701693025.md"
+    ],
+    "choices": [
+      "无法从报告中比较两者数值",
+      "归属于上市公司股东的扣除非经常性损益的净利润",
+      "两者数值完全相等",
+      "归属于上市公司股东的净利润更高"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "PARTHENOS网络研讨会系列中，Ulrike Wuttke担任主讲人的研讨会名称是什么？",
+    "answer": "Boost your eHumanities and eHeritage research with Research Infrastructures",
+    "analysis": "在文档【06d15f087e2c3889c7a64cb43a21ef9d-6.2_Wuttke-et-al-DH-Benelux-2018-Zenodo】中，列出了PARTHENOS网络研讨会系列已举办的活动。通过扫描列表，可以找到Ulrike Wuttke作为主讲人（与Darja Fiser一起）参与的研讨会，其标题明确记载为“Boost your eHumanities and eHeritage research with Research Infrastructures”。该信息直接存在于文档中，无需多步推理。",
+    "reasoning_type": "直接查找",
+    "evidence_docs": [
+      "06d15f087e2c3889c7a64cb43a21ef9d-6.2_Wuttke-et-al-DH-Benelux-2018-Zenodo"
+    ],
+    "extracted_facts": {
+      "Ulrike Wuttke参与的研讨会": "Boost your eHumanities and eHeritage research with Research Infrastructures"
+    },
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/06d15f087e2c3889c7a64cb43a21ef9d-6.2_Wuttke-et-al-DH-Benelux-2018-Zenodo/auto/06d15f087e2c3889c7a64cb43a21ef9d-6.2_Wuttke-et-al-DH-Benelux-2018-Zenodo.md",
+      "VisDocBench-parsed/patents_pdf/KR102284539B1/auto/KR102284539B1.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.03362/auto/2603.03362.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/ef6db7286ebd26311a71dc6ca73ed1f8-FCremer-Nutzungserfahrungen-des-DARIAH-DE-Repository/auto/ef6db7286ebd26311a71dc6ca73ed1f8-FCremer-Nutzungserfahrungen-des-DARIAH-DE-Repository.md"
+    ],
+    "choices": [
+      "Enhancing Digital Humanities through Collaborative Research Infrastructures",
+      "Integrating Research Infrastructures into Modern eHeritage Methodologies",
+      "Leveraging eHumanities for Sustainable Cultural Heritage Preservation",
+      "Boost your eHumanities and eHeritage research with Research Infrastructures"
+    ],
+    "correct_index": 3
+  }
+]

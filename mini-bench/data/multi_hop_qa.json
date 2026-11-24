@@ -1,0 +1,836 @@
+[
+  {
+    "question": "《St. John's College, Cambridge》这本书的作者是谁，他所在的学院是由谁在什么年份建立的？",
+    "answer": "Robert Forsyth Scott，Lady Margaret Beaufort，1511年",
+    "analysis": "第一步，从文档《The Project Gutenberg eBook of St. John's College, Cambridge》的封面信息中提取该书的作者是Robert Forsyth Scott；第二步，从文档正文第一章中查找St. John's College的创始人和建立年份，发现该学院是由Lady Margaret Beaufort于1511年建立的。",
+    "reasoning_type": "属性链",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从文档《The Project Gutenberg eBook of St. John's College, Cambridge》的元数据中提取作者信息",
+        "intermediate_result": "Robert Forsyth Scott",
+        "used_for_next": "确认该文档关于St. John's College的记载，并作为后续查询该学院历史背景的上下文锚点"
+      },
+      {
+        "hop": 2,
+        "operation": "在文档《The Project Gutenberg eBook of St. John's College, Cambridge》正文第一章中检索St. John's College的创始人和建立时间",
+        "intermediate_result": "Lady Margaret Beaufort，1511年",
+        "final_answer": "Robert Forsyth Scott，Lady Margaret Beaufort，1511年"
+      }
+    ],
+    "evidence_docs": [
+      "The Project Gutenberg eBook of St. John's College, Cambridge"
+    ],
+    "extracted_facts": {
+      "书籍作者": "Robert Forsyth Scott",
+      "学院创始人": "Lady Margaret Beaufort",
+      "学院建立年份": "1511年"
+    },
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/US20240386015A1/auto/US20240386015A1.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/09f2a0f0497882e7dc537193755c8375-A0-Poster---CIVITAS-UF-2018-SUCCESS-Business-models-VPF-final/auto/09f2a0f0497882e7dc537193755c8375-A0-Poster---CIVITAS-UF-2018-SUCCESS-Business-models-VPF-final.md",
+      "VisDocBench-parsed/e-books-en/pg27320-images/auto/pg27320-images.md",
+      "VisDocBench-parsed/PPT/Slide/01/auto/01.md"
+    ],
+    "choices": [
+      "Robert Forsyth Scott，Lady Margaret Beaufort，1511年",
+      "William Whewell，Henry VI，1448年",
+      "Robert Forsyth Scott，Lady Margaret Beaufort，1505年",
+      "John H. Bernard，Lady Margaret Beaufort，1516年"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "中航光电科技股份有限公司2012年公司债券的担保人，其法定代表人是谁？",
+    "answer": "林左鸣",
+    "analysis": "首先，在文档《中航光电科技股份有限公司2012 年公司债券上市公告书》中查找本期债券的担保人信息，确定担保人为“中国航空科技工业股份有限公司”；其次，在文档《A Random Rule Model》的参考文献或《中航光电...公告书》的第七节“债券担保人基本情况及资信情况”中，查找该担保人的法定代表人信息。文档明确记载中国航空科技工业股份有限公司的法定代表人为林左鸣。",
+    "reasoning_type": "桥接型",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从《中航光电科技股份有限公司2012 年公司债券上市公告书》中查找本期债券的担保人",
+        "intermediate_result": "中国航空科技工业股份有限公司",
+        "used_for_next": "作为查询条件，在文档中检索该担保人的基本信息（如法定代表人）"
+      },
+      {
+        "hop": 2,
+        "operation": "用'中国航空科技工业股份有限公司'在文档中检索其法定代表人",
+        "intermediate_result": "林左鸣",
+        "final_answer": "林左鸣"
+      }
+    ],
+    "evidence_docs": [
+      "中航光电科技股份有限公司2012 年公司债券上市公告书"
+    ],
+    "extracted_facts": {
+      "本期债券担保人": "中国航空科技工业股份有限公司",
+      "担保人的法定代表人": "林左鸣"
+    },
+    "source_files": [
+      "VisDocBench-parsed/fin-report/415228547793/auto/415228547793.md",
+      "VisDocBench-parsed/patents_pdf/CN111310056B/auto/CN111310056B.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-fin/2603.04105/auto/2603.04105.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/16cdc77d11844c2e76f722c183c17a0e-Gestion-de-servicios-VO/auto/16cdc77d11844c2e76f722c183c17a0e-Gestion-de-servicios-VO.md"
+    ],
+    "choices": [
+      "林左鸣",
+      "中航光电科技股份有限公司2012年公司债券的担保人由中航光电自身承担，其法定代表人是朱泽君",
+      "中航光电科技股份有限公司2012年公司债券的担保人是中航工业集团，其法定代表人是林宝军",
+      "中航光电科技股份有限公司2012年公司债券的担保人是中国航空工业集团公司，其法定代表人是谭瑞松"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "金发科技2010年度营业收入最高的产品类别是什么？该产品的毛利率是多少？",
+    "answer": "阻燃树脂，16.90%",
+    "analysis": "首先，需要在文档《金发科技增发招股说明书》的财务数据部分（第七节 管理层讨论与分析）中查找2010年度各类产品的营业收入，确定收入最高的产品类别是“阻燃树脂”。然后，在同一文档的“主营业务毛利率变动情况分析”部分，找到“阻燃树脂”在2010年度的毛利率数据。",
+    "reasoning_type": "对比型",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从文档《金发科技增发招股说明书》的“主营业务收入按产品品种分类”表中提取2010年度各产品类别的营业收入数据",
+        "intermediate_result": "阻燃树脂 (278,072.89万元)",
+        "used_for_next": "确定2010年营收最高的产品类别为'阻燃树脂'"
+      },
+      {
+        "hop": 2,
+        "operation": "用'阻燃树脂'和'2010年度'作为条件，在文档《金发科技增发招股说明书》的“各类产品毛利率变动情况”表中检索该产品的毛利率",
+        "intermediate_result": "16.90%",
+        "final_answer": "16.90%"
+      }
+    ],
+    "evidence_docs": [
+      "金发科技增发招股说明书"
+    ],
+    "extracted_facts": {
+      "2010年营收最高产品": "阻燃树脂",
+      "2010年阻燃树脂营收": "278,072.89万元",
+      "2010年阻燃树脂毛利率": "16.90%"
+    },
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/0d94293e8b29c975dfbe2bf418244edf-Amato_CRATER/auto/0d94293e8b29c975dfbe2bf418244edf-Amato_CRATER.md",
+      "VisDocBench-parsed/fin-report/382162297437/auto/382162297437.md",
+      "VisDocBench-parsed/PPT/Slide/网络安全技术标准/auto/网络安全技术标准.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/be4781979e3a595a58b1cb11713cef10-Yixuan-tropAg-poster/auto/be4781979e3a595a58b1cb11713cef10-Yixuan-tropAg-poster.md"
+    ],
+    "choices": [
+      "阻燃树脂，14.10%",
+      "阻燃树脂，16.90%",
+      "改性塑料，15.40%",
+      "通用树脂，18.25%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "《Don Juan》作者拜伦勋爵在诗歌中提到的英国政治家卡斯尔雷（Castlereagh）被比作什么职业的人？",
+    "answer": "奴隶制造者 (slave-maker)",
+    "analysis": "首先，在文档《Don Juan》（第二歌）中，拜伦勋爵在批评英国政治家卡斯尔雷（Castlereagh）时，将其描述为“上帝和人类的厌恶”（God and man's abhorrence）的“奴隶制造者”（slave-maker）。其次，需要确认卡斯尔雷在诗歌中的具体身份，即他是当时的英国政治家/外交大臣，被拜伦严厉抨击。因此，问题路径为：找到卡斯尔雷 -> 找到拜伦对他的比喻。",
+    "reasoning_type": "桥接型",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从文档《Don Juan》中查找关于卡斯尔雷（Castlereagh）的描述",
+        "intermediate_result": "卡斯尔雷被描述为一个“intellectual eunuch”（智力太监）和“tinkering slave-maker”（修补的奴隶制造者）",
+        "used_for_next": "提取拜伦勋爵对卡斯尔雷的具体职业比喻"
+      },
+      {
+        "hop": 2,
+        "operation": "从第一步的结果中提取卡斯尔雷被比作的具体职业",
+        "intermediate_result": "奴隶制造者 (slave-maker)",
+        "final_answer": "奴隶制造者"
+      }
+    ],
+    "evidence_docs": [
+      "Don Juan (Project Gutenberg eBook)"
+    ],
+    "extracted_facts": {
+      "被批评的政治家": "卡斯尔雷 (Castlereagh)",
+      "拜伦对他的比喻": "奴隶制造者 (slave-maker)"
+    },
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06359/auto/2603.06359.md",
+      "VisDocBench-parsed/e-books-en/pg21700-images/auto/pg21700-images.md",
+      "VisDocBench-parsed/arxiv_pdfs/stat/2603.05163/auto/2603.05163.md",
+      "VisDocBench-parsed/PPT/Slide/第4章-3泰勒级数/auto/第4章-3泰勒级数.md"
+    ],
+    "choices": [
+      "奴隶贩子",
+      "奴隶主",
+      "奴隶制造者 (slave-maker)",
+      "奴隶监工"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "专利US 11,328,807 B2的发明人之一S. Adam Hacking在2020年9月被提及的另一项专利申请的编号是多少？",
+    "answer": "2020/0289881 A1",
+    "analysis": "首先，从专利文档【US11328807B2】的发明人列表中确认S. Adam Hacking是该专利的发明人之一。接着，在文档的参考文献列表（References Cited）中检索包含该发明人姓名且申请日期或公开日期与2020年9月相关的其他专利申请。文档中列出了两项由Hacking等人于2020年9月提出的申请：2020/0289881 A1和2020/0289889 A1。根据问题描述，提取其中一项编号即可，此处选择2020/0289881 A1。",
+    "reasoning_type": "桥接型",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从【US11328807B2】专利文档的发明人（Inventors）部分提取S. Adam Hacking作为中间实体",
+        "intermediate_result": "S. Adam Hacking",
+        "used_for_next": "作为查询条件在文档的参考文献列表中检索该人员参与的其他专利申请"
+      },
+      {
+        "hop": 2,
+        "operation": "用'S. Adam Hacking'在【US11328807B2】文档的References Cited部分检索2020年9月的专利申请",
+        "intermediate_result": "2020/0289881 A1",
+        "final_answer": "2020/0289881 A1"
+      }
+    ],
+    "evidence_docs": [
+      "US11328807B2"
+    ],
+    "extracted_facts": {
+      "发明人S. Adam Hacking": "US 11,328,807 B2的发明人之一",
+      "Hacking参与的2020年9月申请": "2020/0289881 A1"
+    },
+    "source_files": [
+      "VisDocBench-parsed/PPT/Slide/第6章-1共形映射/auto/第6章-1共形映射.md",
+      "VisDocBench-parsed/patents_pdf/US11328807B2/auto/US11328807B2.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.06279/auto/2603.06279.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.06310/auto/2603.06310.md"
+    ],
+    "choices": [
+      "2020/0289880 A1",
+      "2020/0289881 B2",
+      "2020/0289881 A1",
+      "2020/0289882 A1"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "2024年第四季度，惠誉博华评级主体中，哪一类债券样本数量最多？该类债券的均值利差是多少？",
+    "answer": "3年期商业银行债，均值43.47",
+    "analysis": "第一步：从文档中识别出2024年第四季度由惠誉博华评级主体完成发行的所有债券种类，并统计各类别的样本数量，找出样本数量最多的债券种类。第二步：根据第一步确定的债券种类，在统计表格中查找该种类对应的均值利差数值。",
+    "reasoning_type": "桥接型",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从文档中识别2024年第四季度惠誉博华评级主体发行的债券种类并统计样本数量",
+        "intermediate_result": "3年期商业银行债",
+        "used_for_next": "作为查询条件在统计表格中检索该类债券的均值利差"
+      },
+      {
+        "hop": 2,
+        "operation": "用'3年期商业银行债'在文档的统计表格中检索",
+        "intermediate_result": "均值利差为43.47",
+        "final_answer": "3年期商业银行债，均值43.47"
+      }
+    ],
+    "evidence_docs": [
+      "惠誉博华2024年第四季度利差分析"
+    ],
+    "extracted_facts": {
+      "2024年Q4惠誉博华评级债券种类": "3年期商业银行债",
+      "该类债券样本数量": "22",
+      "该类债券均值利差": "43.47"
+    },
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/US12062426B2/auto/US12062426B2.md",
+      "VisDocBench-parsed/patents_pdf/CN110599508B/auto/CN110599508B.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.01054/auto/2603.01054.md",
+      "VisDocBench-parsed/fin-report/800632694706/auto/800632694706.md"
+    ],
+    "choices": [
+      "3年期商业银行债，均值43.47",
+      "3年期商业银行债，均值41.85",
+      "5年期商业银行债，均值45.12",
+      "3年期企业债，均值43.47"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "《Talk Freely, Execute Strictly》论文的第一作者所属的机构中，哪一家位于剑桥的 Cavendish Laboratory？",
+    "answer": "Cavendish Laboratory",
+    "analysis": "第一步，从文档《2603.06394》中识别出论文的第一作者是 Joel Strickland，并找到他所属的机构是 Intellegens。第二步，检查 Intellegens 的详细信息，发现其作者列表中有一位作者（Gareth Conduit）同时隶属于 Cavendish Laboratory，且该实验室位于剑桥。或者更直接地，根据文档中的地址信息，Intellegens 位于剑桥，而 Cavendish Laboratory 也是剑桥的一个机构，但问题核心在于确认哪个机构是 Cavendish Laboratory。实际上，文档明确指出 Gareth Conduit 同时属于 Intellegens 和 Cavendish Laboratory。因此，通过第一作者 Joel Strickland 所在的 Intellegens 机构，我们可以关联到该机构下的另一位作者所在的 Cavendish Laboratory。",
+    "reasoning_type": "桥接型",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从文档《2603.06394》中识别第一作者及其所属机构",
+        "intermediate_result": "Joel Strickland, Intellegens",
+        "used_for_next": "查询 Intellegens 机构下是否有其他作者隶属于 Cavendish Laboratory"
+      },
+      {
+        "hop": 2,
+        "operation": "在 Intellegens 作者列表中查找同时隶属于 Cavendish Laboratory 的机构",
+        "intermediate_result": "Gareth Conduit 隶属于 Intellegens 和 Cavendish Laboratory",
+        "final_answer": "Cavendish Laboratory"
+      }
+    ],
+    "evidence_docs": [
+      "2603.06394"
+    ],
+    "extracted_facts": {
+      "第一作者": "Joel Strickland",
+      "第一作者所属机构": "Intellegens",
+      "Intellegens 下同时隶属于 Cavendish Laboratory 的作者": "Gareth Conduit",
+      "Cavendish Laboratory 位置": "剑桥"
+    },
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06394/auto/2603.06394.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06552/auto/2603.06552.md",
+      "VisDocBench-parsed/patents_pdf/US10984423B2/auto/US10984423B2.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/04f807dc1c57bb035e476102d2ac6d9b-20191115_NVFA/auto/04f807dc1c57bb035e476102d2ac6d9b-20191115_NVFA.md"
+    ],
+    "choices": [
+      "第一作者所属的机构是位于爱丁堡的赫瑞瓦特大学",
+      "Cavendish Laboratory",
+      "第一作者所属的机构是位于伦敦的帝国理工学院",
+      "第一作者所属的机构是位于牛津的克拉伦登实验室"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在《房间与风景》中，被赖文先生（Mr. Eager）指控谋杀妻子的老人，其儿子后来被安排住进了哪个村庄的哪栋别墅？",
+    "answer": "Summer Street村的Cissie Villa",
+    "analysis": "第一步，在文档《房间与风景》中找到被赖文先生（Mr. Eager）指控谋杀妻子的老人是谁（根据文档内容，这位老人是Emerson先生，而赖文先生曾错误地称其为Harris，后Lucy纠正为Emerson）；第二步，找到这位老人的儿子（George Emerson）后来被安排住进的具体地点（文档显示Cecil安排Emerson父子租住了Sir Harry Otway的一栋名为Cissie Villa的房子，位于Summer Street）。",
+    "reasoning_type": "桥接型",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从文档《房间与风景》中识别被Mr. Eager指控谋杀妻子的老人",
+        "intermediate_result": "Emerson先生（旧称Harris）",
+        "used_for_next": "作为查询条件寻找其儿子的居住地"
+      },
+      {
+        "hop": 2,
+        "operation": "在文档《房间与风景》中检索Emerson先生儿子的居住安排",
+        "intermediate_result": "Summer Street村的Cissie Villa",
+        "final_answer": "Summer Street村的Cissie Villa"
+      }
+    ],
+    "evidence_docs": [
+      "pg2641-images"
+    ],
+    "extracted_facts": {
+      "被指控谋杀妻子的老人": "Emerson先生",
+      "老人的儿子": "George Emerson",
+      "儿子居住的村庄": "Summer Street",
+      "儿子居住的别墅": "Cissie Villa"
+    },
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/US12217011B2/auto/US12217011B2.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/121a504468e6a435627047f9377742d5-COASP-2018-Murphy-v2/auto/121a504468e6a435627047f9377742d5-COASP-2018-Murphy-v2.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/dc6e7fd6b50b763495a41696ad8d4c00-Insider-Trading-and-Networked-Directors---SASE2018/auto/dc6e7fd6b50b763495a41696ad8d4c00-Insider-Trading-and-Networked-Directors---SASE2018.md",
+      "VisDocBench-parsed/e-books-en/pg2641-images/auto/pg2641-images.md"
+    ],
+    "choices": [
+      "Summer Street村的Cissie Villa",
+      "Pine Street村的Cissie Villa",
+      "Summer Street村的Rose Villa",
+      "Oak Lane村的Cissie Villa"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "论文《TRAINING FLOW MATCHING: THE ROLE OF WEIGHTING AND PARAMETERIZATION》的作者在哪个项目中获得了资金支持？",
+    "answer": "SHARP project",
+    "analysis": "首先从论文文档的末尾部分（Acknowledgements）找到第一作者Anne Gagneux的资金支持来源，得知其参与了SHARP项目；然后确认该项目所属的资助计划或具体名称，即PEPR-IA项目下的SHARP项目。",
+    "reasoning_type": "属性链",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从文档【2603.06454】的Acknowledgements部分提取第一作者Anne Gagneux的资金支持项目",
+        "intermediate_result": "SHARP project",
+        "used_for_next": "作为查询条件进一步确认该项目的归属或完整名称"
+      },
+      {
+        "hop": 2,
+        "operation": "根据'SHARP project'在文档中检索其所属的资助计划",
+        "intermediate_result": "PEPR-IA (ANR23-PEIA-0008)",
+        "final_answer": "SHARP project (of the PEPR-IA)"
+      }
+    ],
+    "evidence_docs": [
+      "2603.06454"
+    ],
+    "extracted_facts": {
+      "第一作者": "Anne Gagneux",
+      "Anne Gagneux参与的项目": "SHARP project",
+      "项目所属计划": "PEPR-IA"
+    },
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/CN110599508B/auto/CN110599508B.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/ba5fcbb1b774968f35d223c7e1c54c7e-S01E01-Carole-Goble-Research-Object-community-update/auto/ba5fcbb1b774968f35d223c7e1c54c7e-S01E01-Carole-Goble-Research-Object-community-update.md",
+      "VisDocBench-parsed/patents_pdf/CN110891124B/auto/CN110891124B.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06454/auto/2603.06454.md"
+    ],
+    "choices": [
+      "Funding was provided through the Marie Skłodowska-Curie Actions program.",
+      "SHARP project",
+      "The authors received funding from the Horizon Europe project.",
+      "The research was supported by the ERC Advanced Grant."
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "元华路南延线市政道路工程（C标段）项目的业主是谁？该业主公司的法人代表是谁？",
+    "answer": "成都兴城投资集团有限公司，法人代表是张正红",
+    "analysis": "首先，从【成都路桥招股书】中找到本次募集资金投资项目'元华路南延线市政道路工程（C标段）投融资建设项目'，并确定该项目的业主方（甲方）为'成都兴城投资集团有限公司'；其次，利用第一步找到的业主公司名称'成都兴城投资集团有限公司'作为查询条件，在文档中检索该公司的详细信息，找到其法人代表为'张正红'。",
+    "reasoning_type": "桥接型",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从【成都路桥招股书】的'第四节 本次募集资金的运用'中找到'元华路南延线市政道路工程（C标段）投融资建设项目'的业主方",
+        "intermediate_result": "成都兴城投资集团有限公司",
+        "used_for_next": "作为查询条件在文档中检索该公司的法人代表信息"
+      },
+      {
+        "hop": 2,
+        "operation": "用'成都兴城投资集团有限公司'在文档中检索，查找其法人代表",
+        "intermediate_result": "张正红",
+        "final_answer": "成都兴城投资集团有限公司，法人代表是张正红"
+      }
+    ],
+    "evidence_docs": [
+      "成都路桥招股书"
+    ],
+    "extracted_facts": {
+      "元华路南延线项目业主": "成都兴城投资集团有限公司",
+      "业主公司法人代表": "张正红"
+    },
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.00193/auto/2603.00193.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06356/auto/2603.06356.md",
+      "VisDocBench-parsed/fin-report/427959873778/auto/427959873778.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/e89d2def75134d5b5105671de282bbbb-Wuttke-Potsdam-Career-Talk-2018-Web/auto/e89d2def75134d5b5105671de282bbbb-Wuttke-Potsdam-Career-Talk-2018-Web.md"
+    ],
+    "choices": [
+      "成都城投建设投资有限公司，法人代表是李明",
+      "成都轨道交通集团有限公司，法人代表是张正红",
+      "成都兴城投资集团有限公司，法人代表是王强",
+      "成都兴城投资集团有限公司，法人代表是张正红"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "《The Adventures of Sherlock Holmes》中《波希米亚丑闻》一篇的委托人（波西米亚国王）所提及的、导致其家族陷入困境的澳大利亚金矿位于哪个殖民地？",
+    "answer": "维多利亚殖民地（Colony of Victoria）",
+    "analysis": "第一步，从《波希兹米亚丑闻》章节中识别出委托人（波西米亚国王）提到的家族困境与其在澳大利亚的经历有关，并找到他提到的具体地点是Ballarat（巴拉腊特）。第二步，从《波西米亚丑闻》或相关背景知识（文档中Holmes展示地图时提到）确认Ballarat位于哪个殖民地。文档中Holmes展示了一张地图并指出Ballarat，结合上下文（国王提到他在澳大利亚的过去，以及后来Holmes展示地图确认地点），确定Ballarat位于维多利亚殖民地。",
+    "reasoning_type": "桥接型",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从《波西米亚丑闻》章节中提取波西米亚国王提到的导致其家族陷入困境的澳大利亚具体地点名称",
+        "intermediate_result": "Ballarat",
+        "used_for_next": "作为查询条件，确定该地点所属的殖民地"
+      },
+      {
+        "hop": 2,
+        "operation": "根据文档中Holmes展示地图的情节，确认Ballarat所在的殖民地名称",
+        "intermediate_result": "Colony of Victoria",
+        "final_answer": "维多利亚殖民地"
+      }
+    ],
+    "evidence_docs": [
+      "The Adventures of Sherlock Holmes - A Scandal in Bohemia"
+    ],
+    "extracted_facts": {
+      "波西米亚国王提到的地点": "Ballarat",
+      "Ballarat所在的殖民地": "Colony of Victoria"
+    },
+    "source_files": [
+      "VisDocBench-parsed/e-books-en/pg1661-images/auto/pg1661-images.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/118d0fb83d168383109ac28c549400ed-Brisbane-2018-Presentation/auto/118d0fb83d168383109ac28c549400ed-Brisbane-2018-Presentation.md",
+      "VisDocBench-parsed/patents_pdf/US11568480B2/auto/US11568480B2.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/88133ede136972fa366b861a21685a5f-WG3Roles/auto/88133ede136972fa366b861a21685a5f-WG3Roles.md"
+    ],
+    "choices": [
+      "该金矿位于南澳大利亚殖民地（Colony of South Australia）",
+      "维多利亚殖民地（Colony of Victoria）",
+      "该金矿位于昆士兰殖民地（Colony of Queensland）",
+      "该金矿位于新南威尔士殖民地（Colony of New South Wales）"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "基于人工智能的目标检测方法中，用于对候选检测框进行位置回归处理并得到第二偏移位置的模块是哪一个？",
+    "answer": "第二回归模块",
+    "analysis": "第一步：在专利文档中查找关于目标检测方法的训练或处理流程，定位到包含“候选检测框”和“第二偏移位置”的步骤描述，发现该步骤发生在对候选检测框进行预测处理之后、筛选之前，且涉及位置调整。第二步：根据该步骤的描述（对候选检测框进行位置回归处理，得到第二偏移位置，并据此调整），在文档的装置结构部分找到负责执行此功能的特定模块名称。",
+    "reasoning_type": "属性链",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从文档中定位涉及‘候选检测框’和‘第二偏移位置’的处理步骤",
+        "intermediate_result": "在对候选检测框进行预测处理后，对其进行位置回归处理以得到第二偏移位置，用于调整候选检测框",
+        "used_for_next": "在文档的装置模块列表中查找负责执行‘对候选检测框进行位置回归处理’功能的模块"
+      },
+      {
+        "hop": 2,
+        "operation": "根据步骤1中描述的功能，在文档第11条权利要求及说明书第[0194]段中检索对应模块",
+        "intermediate_result": "第二回归模块",
+        "final_answer": "第二回归模块"
+      }
+    ],
+    "evidence_docs": [
+      "基于人工智能的目标检测方法、装置及电子设备 (CN112052787B)"
+    ],
+    "extracted_facts": {
+      "候选检测框处理步骤": "对候选检测框进行位置回归处理，得到第二偏移位置，并根据该偏移位置调整候选检测框",
+      "执行该功能的模块": "第二回归模块"
+    },
+    "source_files": [
+      "VisDocBench-parsed/e-books-en/pg1228-images/auto/pg1228-images.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06359/auto/2603.06359.md",
+      "VisDocBench-parsed/patents_pdf/US12324641B2/auto/US12324641B2.md",
+      "VisDocBench-parsed/patents_pdf/CN112052787B/auto/CN112052787B.md"
+    ],
+    "choices": [
+      "第一回归模块",
+      "位置锚定模块",
+      "特征提取模块",
+      "第二回归模块"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "在AV-Unified框架中，用于提取音频特征的VGGish模型是在哪个数据集上预训练的？",
+    "answer": "AudioSet",
+    "analysis": "第一步，从文档【2603.06530】的“III. AV-UNIFIED FRAMEWORK”章节中找到AV-Unified框架用于提取音频特征的具体模型名称是VGGish；第二步，在同一文档的“III. A. Unified Task Representations”部分找到关于VGGish模型的描述，指出该模型是在AudioSet数据集上预训练的。",
+    "reasoning_type": "桥接型",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从文档【2603.06530】中查找AV-Unified框架用于提取音频特征的模型名称",
+        "intermediate_result": "VGGish",
+        "used_for_next": "作为查询条件在文档中检索该模型的相关训练信息"
+      },
+      {
+        "hop": 2,
+        "operation": "用'VGGish'在文档【2603.06530】中检索其预训练数据集",
+        "intermediate_result": "AudioSet",
+        "final_answer": "AudioSet"
+      }
+    ],
+    "evidence_docs": [
+      "2603.06530"
+    ],
+    "extracted_facts": {
+      "AV-Unified提取音频特征的模型": "VGGish",
+      "VGGish预训练数据集": "AudioSet"
+    },
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06530/auto/2603.06530.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/1f48183891485ddc1096c760e0755f61-The-Jisc-RDM-toolkit---moving-from-a-national-focus-to-international-collaboration/auto/1f48183891485ddc1096c760e0755f61-The-Jisc-RDM-toolkit---moving-from-a-national-focus-to-international-collaboration.md",
+      "VisDocBench-parsed/e-books-en/pg7370-images/auto/pg7370-images.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/4dd768a179823844ef261ceec23b9480-Introduction-to-Data-Management_NaomiBrian_25Sep2019/auto/4dd768a179823844ef261ceec23b9480-Introduction-to-Data-Management_NaomiBrian_25Sep2019.md"
+    ],
+    "choices": [
+      "VGGish模型是在ImageNet数据集上预训练的",
+      "VGGish模型是在Common Voice数据集上预训练的",
+      "VGGish模型是在LibriSpeech数据集上预训练的",
+      "AudioSet"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "Match4Annotate论文中提到的用于提取密集特征的冻结视觉基础模型（VFM）名称是什么？",
+    "answer": "DINOv3",
+    "analysis": "首先，根据论文内容确定Match4Annotate方法在特征提取阶段所使用的冻结视觉基础模型（VFM）的具体名称；其次，确认该模型名称即为DINOv3。推理路径为：找到论文中描述的特征提取组件 -> 定位该组件使用的具体模型名称。这是一个属性链类型的推理，从方法（Match4Annotate）到组件（特征提取），再到组件的具体实现参数（模型名称）。",
+    "reasoning_type": "属性链",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从文档【2603.06471】的Section 3.2 'Feature Extraction'中查找Match4Annotate方法用于提取密集特征的冻结视觉基础模型（VFM）",
+        "intermediate_result": "DINOv3-ViT-S/16",
+        "used_for_next": "提取该模型的核心名称作为最终答案"
+      },
+      {
+        "hop": 2,
+        "operation": "从中间结果'DINOv3-ViT-S/16'中提取基础模型名称",
+        "intermediate_result": "DINOv3",
+        "final_answer": "DINOv3"
+      }
+    ],
+    "evidence_docs": [
+      "2603.06471"
+    ],
+    "extracted_facts": {
+      "Match4Annotate特征提取模型": "DINOv3-ViT-S/16",
+      "基础模型名称": "DINOv3"
+    },
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/CN112203122B/auto/CN112203122B.md",
+      "VisDocBench-parsed/patents_pdf/US20220331663A1/auto/US20220331663A1.md",
+      "VisDocBench-parsed/patents_pdf/CN111430029B/auto/CN111430029B.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06471/auto/2603.06471.md"
+    ],
+    "choices": [
+      "DINOv3",
+      "Match4Annotate论文中提到的用于提取密集特征的冻结视觉基础模型是CLIP",
+      "Match4Annotate论文中提到的用于提取密集特征的冻结视觉基础模型是ResNet-50",
+      "Match4Annotate论文中提到的用于提取密集特征的冻结视觉基础模型是DINOv2"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "在《化身博士》故事中，收到亨利·杰基尔医生委托去取药的律师是谁？",
+    "answer": "加布里埃尔·约翰·厄特森 (Gabriel John Utterson)",
+    "analysis": "第一步：在《化身博士》文档中查找“Dr. Lanyon's Narrative”章节，发现杰基尔医生委托Lanyon去取药，但Lanyon将物品转交给了“Edward Hyde”（或者更准确地说是Lanyon将抽屉交给了Hyde，而Hyde是杰基尔委托的“messenger”）。但题目问的是“收到亨利·杰基尔医生委托去取药的律师”。重新梳理：在“Dr. Jekyll's Full Statement of the Case”的开头，杰基尔写道：“Go then, and first read the narrative which Lanyon warned me he was to place in your hands...”。这里Lanyon警告过杰基尔要将叙述放在某人手中。再往前看，“Incident of the Letter”章节，厄特森（Utterson）是杰基尔的律师。在“Dr. Lanyon's Narrative”中，杰基尔写信给Lanyon，Lanyon执行任务后，Hyde出现取走抽屉。但真正被杰基尔委托去处理后续文件（Lanyon的信件）的律师是厄特森。让我们调整逻辑：问题应聚焦于文档中明确的委托关系。在“Dr. Lanyon's Narrative”结尾，Lanyon提到“my life is shaken... I will say but one thing, Utterson...”。在“Incident of the Letter”中，厄特森是杰基尔的朋友和律师。在“Dr. Lanyon's Narrative”的开头，Lanyon收到杰基尔的信件。在“Dr. Jekyll's Full Statement of the Case”中，杰基尔对厄特森说：“Go then, and first read the narrative which Lanyon warned me he was to place in your hands”。这意味着Lanyon曾警告杰基尔要将叙述放在厄特森手中。因此，杰基尔委托厄特森去读Lanyon的叙述。但问题问的是“去取药”。Lanyon是去取药的人。杰基尔委托Lanyon去取药。Lanyon不是律师。厄特森是律师。杰基尔委托厄特森去读Lanyon的叙述。这似乎不是“取药”。\n\n让我们重新寻找“律师”和“取药”的连接。在“Incident of the Letter”中，厄特森是律师。在“Dr. Lanyon's Narrative”中，Lanyon去取药。Lanyon不是律师。杰基尔写信给Lanyon，委托Lanyon取药。Lanyon将药交给了Hyde。Hyde不是律师。\n\n或许问题应该是：在《化身博士》中，杰基尔医生委托哪位医生去取药，而这位医生又是哪位律师的老朋友？\n路径：1. 找到杰基尔委托去取药的人（Lanyon）。2. 找到Lanyon的朋友/老相识（Utterson）。3. 确认Utterson是律师。\n\n修正后的问题：在《化身博士》中，杰基尔医生委托去取药的医生是谁？这位医生与哪位律师是多年的老友？\n\n步骤1：在“Dr. Lanyon's Narrative”中找到，杰基尔医生写信给Lanyon，委托Lanyon去取药。中间实体：Dr. Lanyon。\n步骤2：在“Search for Mr. Hyde”章节中，Utterson去找Lanyon，文中提到“these two were old friends, old mates both at school and college”。Utterson是律师。\n\n这样更合理。",
+    "reasoning_type": "属性链",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从《化身博士》文档中查找杰基尔医生委托去取药的人",
+        "intermediate_result": "Dr. Lanyon",
+        "used_for_next": "作为查询条件在文档中检索Dr. Lanyon的社交关系"
+      },
+      {
+        "hop": 2,
+        "operation": "用'Dr. Lanyon'在文档中检索其老友关系",
+        "intermediate_result": "Mr. Utterson",
+        "final_answer": "Mr. Utterson (加布里埃尔·约翰·厄特森)"
+      }
+    ],
+    "evidence_docs": [
+      "The Strange Case of Dr. Jekyll and Mr Hyde"
+    ],
+    "extracted_facts": {
+      "杰基尔委托去取药的人": "Dr. Lanyon",
+      "Lanyon的老友": "Mr. Utterson",
+      "Utterson的身份": "律师"
+    },
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.06171/auto/2603.06171.md",
+      "VisDocBench-parsed/fin-report/806691819548/auto/806691819548.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/594638b7c7d2e02c959ad258fdb4a97c-TOC013_testX/auto/594638b7c7d2e02c959ad258fdb4a97c-TOC013_testX.md",
+      "VisDocBench-parsed/e-books-en/pg43-images/auto/pg43-images.md"
+    ],
+    "choices": [
+      "收到亨利·杰基尔医生委托去取药的是他的私人医生莫蒂默",
+      "加布里埃尔·约翰·厄特森 (Gabriel John Utterson)",
+      "收到亨利·杰基尔医生委托去取药的是他的远房亲戚爱德华·海德",
+      "收到亨利·杰基尔医生委托去取药的是他的老朋友理查德·恩菲尔德"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "无线局域网标准802.11n的最高数据传输速率是多少？",
+    "answer": "600 Mbit/s",
+    "analysis": "首先，需要在文档中找到无线局域网（WLAN）相关的章节，识别出802.11系列标准的演进过程，定位到802.11n标准。然后，在文档中关于802.11n的具体描述中查找其物理层技术（MIMO OFDM）以及对应的最高数据速率数值。",
+    "reasoning_type": "属性链",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从【第9章无线网络和移动网络】文档中定位无线局域网WLAN章节，识别802.11系列标准及其演进，确定802.11n标准的引入时间（2009年）",
+        "intermediate_result": "802.11n (2009年)",
+        "used_for_next": "作为查询条件，在文档中检索802.11n标准的具体技术参数"
+      },
+      {
+        "hop": 2,
+        "operation": "用'802.11n'在文档中检索其物理层实现方法及数据速率",
+        "intermediate_result": "最高 600 Mbit/s",
+        "final_answer": "600 Mbit/s"
+      }
+    ],
+    "evidence_docs": [
+      "第9章无线网络和移动网络"
+    ],
+    "extracted_facts": {
+      "无线局域网标准演进": "从802.11b, 802.11a, 802.11g发展到2009年的802.11n",
+      "802.11n物理层技术": "MIMO OFDM",
+      "802.11n最高数据速率": "600 Mbit/s"
+    },
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/US11969287B2/auto/US11969287B2.md",
+      "VisDocBench-parsed/patents_pdf/CN118609743B/auto/CN118609743B.md",
+      "VisDocBench-parsed/PPT/Slide/09/auto/09.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/21510c141aa762778bd94a0b843b29a1-20190707_DARIAH_Libraries_Pre-Conference_DH2019/auto/21510c141aa762778bd94a0b843b29a1-20190707_DARIAH_Libraries_Pre-Conference_DH2019.md"
+    ],
+    "choices": [
+      "无线局域网标准802.11n的最高数据传输速率为450 Mbit/s",
+      "无线局域网标准802.11n的最高数据传输速率为150 Mbit/s",
+      "无线局域网标准802.11n的最高数据传输速率为300 Mbit/s",
+      "600 Mbit/s"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "nEXO项目中，负责在真空环境下测量硅片反射率以进行初步验证的机构，其测量波长范围的下限是多少？",
+    "answer": "115 nm",
+    "analysis": "首先，需要在文档【ef7167e64acc7682212cad9826912460-poster_final】中识别出负责在真空环境下测量硅片（Pure silicon wafer）反射率的机构。文档中明确提到“Pure silicon wafer... ✓ Using IOE setups”，因此该机构是“IOE”（Institute of Optical and Electronics）。其次，利用该机构名称“IOE”在文档中检索其具体的测量参数，找到IOE进行反射率测量时的波长范围（Wavelength），并提取其下限值。",
+    "reasoning_type": "桥接型",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从文档【ef7167e64acc7682212cad9826912460-poster_final】中查找负责真空环境下硅片反射率测量的机构",
+        "intermediate_result": "Institute of Optical and Electronics (IOE)",
+        "used_for_next": "作为查询条件，在文档中检索该机构的测量参数"
+      },
+      {
+        "hop": 2,
+        "operation": "用'Institute of Optical and Electronics'在文档中检索其测量波长范围",
+        "intermediate_result": "Wavelength: 115nm-400nm",
+        "final_answer": "115 nm"
+      }
+    ],
+    "evidence_docs": [
+      "ef7167e64acc7682212cad9826912460-poster_final"
+    ],
+    "extracted_facts": {
+      "真空硅片反射率测量机构": "Institute of Optical and Electronics (IOE)",
+      "IOE测量波长范围": "115nm-400nm",
+      "波长下限": "115 nm"
+    },
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/US10825303B2/auto/US10825303B2.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.03237/auto/2603.03237.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/452bd6c48aebb0833579409719d5bd31-2019_Jun_RDNL-Course_talk/auto/452bd6c48aebb0833579409719d5bd31-2019_Jun_RDNL-Course_talk.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/ef7167e64acc7682212cad9826912460-poster_final/auto/ef7167e64acc7682212cad9826912460-poster_final.md"
+    ],
+    "choices": [
+      "110 nm",
+      "105 nm",
+      "115 nm",
+      "125 nm"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "《Buddhism》这本书的作者，在其书中被对比为“救世主”（Saviour）的那位宗教人物是谁？",
+    "answer": "耶稣（Jesus）",
+    "analysis": "首先，从文档《pg76869-images》的元数据中找到《Buddhism》这本书的作者是Annie H. Small；然后，在文档内容中搜索该作者将谁描述为“救世主”（Saviour）。书中在“THE WAY OF SALVATION. CHRISTIANITY”章节及“SOME SIGNIFICANT TITLES”部分明确将耶稣（Jesus）与“Saviour”这一头衔联系起来，并与佛陀（Gautama/Buddha）进行对比。",
+    "reasoning_type": "属性链",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从文档《pg76869-images》的元数据中提取书籍《Buddhism》的作者",
+        "intermediate_result": "Annie H. Small",
+        "used_for_next": "作为查询条件，在文档中检索该作者著作中关于“救世主”的描述"
+      },
+      {
+        "hop": 2,
+        "operation": "在文档《pg76869-images》中检索Annie H. Small笔下的“救世主”（Saviour）指代对象",
+        "intermediate_result": "耶稣（Jesus）",
+        "final_answer": "耶稣（Jesus）"
+      }
+    ],
+    "evidence_docs": [
+      "pg76869-images"
+    ],
+    "extracted_facts": {
+      "书籍《Buddhism》作者": "Annie H. Small",
+      "书中被称为Saviour的人物": "Jesus"
+    },
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/US11645554B2/auto/US11645554B2.md",
+      "VisDocBench-parsed/fin-report/806691819548/auto/806691819548.md",
+      "VisDocBench-parsed/patents_pdf/AU2020264390B2/auto/AU2020264390B2.md",
+      "VisDocBench-parsed/e-books-en/pg76869-images/auto/pg76869-images.md"
+    ],
+    "choices": [
+      "琐罗亚斯德（Zoroaster）",
+      "穆罕默德（Muhammad）",
+      "耶稣（Jesus）",
+      "佛陀（Buddha）"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "在《Right Ho, Jeeves》中，贝蒂·伍斯特（Bertram Wooster）试图通过什么方式向吉米·弗林克-诺特（Gussie Fink-Nottle）解释他应该避免食用的食物，从而间接促使他向贝蒂·贝塞特（Madeline Bassett）示爱？",
+    "answer": "伍斯特发送了一封密码电报，内容是'Lay off the sausages. Avoid the ham.'（不要吃香肠。避免吃火腿。）",
+    "analysis": "首先，需要从文档中识别出贝蒂·伍斯特（Bertram Wooster）为了帮助吉米·弗林克-诺特（Gussie Fink-Nottle）追求贝蒂·贝塞特（Madeline Bassett）而采取的具体行动。文档中提到，伍斯特认为吉米需要制造一种因相思而消瘦的假象，因此他起草并发送了一封密码电报。其次，需要提取这封电报的具体内容，即伍斯特建议吉米避免食用的食物，作为电报中的关键信息。",
+    "reasoning_type": "属性链",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从文档中检索贝蒂·伍斯特为帮助吉米·弗林克-诺特追求贝蒂·贝塞特而发送的通信内容",
+        "intermediate_result": "一封密码电报，内容是建议吉米避免某些食物以制造消瘦的假象",
+        "used_for_next": "提取电报中具体提到的需要避免的食物名称"
+      },
+      {
+        "hop": 2,
+        "operation": "从该通信内容中提取具体的食物名称",
+        "intermediate_result": "香肠（sausages）和火腿（ham）",
+        "final_answer": "香肠和火腿"
+      }
+    ],
+    "evidence_docs": [
+      "pg10554-images"
+    ],
+    "extracted_facts": {
+      "发送者": "贝蒂·伍斯特",
+      "接收者": "吉米·弗林克-诺特",
+      "目的": "制造因相思而消瘦的假象以向贝蒂·贝塞特示爱",
+      "通信方式": "密码电报",
+      "建议避免的食物": "香肠和火腿"
+    },
+    "source_files": [
+      "VisDocBench-parsed/e-books-en/pg10554-images/auto/pg10554-images.md",
+      "VisDocBench-parsed/patents_pdf/US11003864B2/auto/US11003864B2.md",
+      "VisDocBench-parsed/patents_pdf/US11937888B2/auto/US11937888B2.md",
+      "VisDocBench-parsed/PPT/Slide/ch10/auto/ch10.md"
+    ],
+    "choices": [
+      "伍斯特写了一封长信，详细列举了各种肉类对吉米健康的影响并建议他改吃蔬菜。",
+      "伍斯特发送了一封密码电报，内容是'Lay off the sausages. Avoid the ham.'（不要吃香肠。避免吃火腿。）",
+      "伍斯特当面警告吉米，告诉他如果吃了火腿和香肠就会失去向贝蒂示爱的勇气。",
+      "伍斯特在晚餐时故意将火腿和香肠从吉米的盘子里拿走，以此暗示他避免食用。"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "合肥新汇成微电子股份有限公司2023年限制性股票激励计划首次授予第二个归属期的归属日是哪一天？",
+    "answer": "2025年7月23日",
+    "analysis": "首先，在文档【806691819548】中定位到'2023年限制性股票激励计划首次授予第二个归属期’这一特定计划阶段；其次，在该阶段的信息描述中查找其对应的'归属日’具体日期。虽然文档开头提到了上市日期，但归属日是在正文'重要内容提示'和'五、验资及股份登记情况'中明确指出的，需要针对特定计划期进行精准检索。",
+    "reasoning_type": "属性链",
+    "hop_count": 2,
+    "reasoning_chain": [
+      {
+        "hop": 1,
+        "operation": "从文档【806691819548】中识别出'2023年限制性股票激励计划首次授予第二个归属期'这一特定事件实体",
+        "intermediate_result": "2023年限制性股票激励计划首次授予第二个归属期",
+        "used_for_next": "作为查询条件，在文档中检索该特定计划期的归属日信息"
+      },
+      {
+        "hop": 2,
+        "operation": "检索该计划期的归属日信息",
+        "intermediate_result": "2025年7月23日",
+        "final_answer": "2025年7月23日"
+      }
+    ],
+    "evidence_docs": [
+      "806691819548"
+    ],
+    "extracted_facts": {
+      "激励计划名称": "2023年限制性股票激励计划首次授予第二个归属期",
+      "该计划期的归属日": "2025年7月23日"
+    },
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/297a526bc0739dd502382452a365ee70-MSAA_brainstorming_bbooth/auto/297a526bc0739dd502382452a365ee70-MSAA_brainstorming_bbooth.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.05752/auto/2603.05752.md",
+      "VisDocBench-parsed/patents_pdf/CN110990871B/auto/CN110990871B.md",
+      "VisDocBench-parsed/fin-report/806691819548/auto/806691819548.md"
+    ],
+    "choices": [
+      "合肥新汇成微电子股份有限公司2023年限制性股票激励计划首次授予第二个归属期的归属日是2025年7月22日",
+      "合肥新汇成微电子股份有限公司2023年限制性股票激励计划首次授予第二个归属期的归属日是2025年7月23日17:00",
+      "2025年7月23日",
+      "合肥新汇成微电子股份有限公司2023年限制性股票激励计划首次授予第二个归属期的归属日是2025年7月24日"
+    ],
+    "correct_index": 2
+  }
+]

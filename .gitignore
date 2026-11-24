@@ -1,0 +1,11 @@
+# generated artifacts
+release/
+mini-bench/cache/
+mini-bench/assets/VisDocBench-parsed/
+mini-bench/assets/download_report.json
+mini-bench/assets/manual_sources.csv
+__pycache__/
+*.pyc
+.DS_Store
+
+dist/

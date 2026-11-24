@@ -1,0 +1,567 @@
+[
+  {
+    "question": "在2025年，挪威电动重型货车车队中300公里续航车辆的占比是多少？",
+    "answer": "90%",
+    "analysis": "并行从文档【2603.01782】的“5.3. Vehicle types”文本块中直接提取2025年的车辆类型分布信息。该文本明确指出：'In 2025, 90% of the fleet consists of vehicles with a 300 km range vehicles'。无需跨文档查找或复杂计算，直接定位即可得到答案。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "90%",
+        "source": "文档【2603.01782】，Section 5.3 Vehicle types",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/US10960266B2/auto/US10960266B2.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/e7aa4bc462a08c65d506b96056f7c0eb-HAYES-Neutrino-2018-upload/auto/e7aa4bc462a08c65d506b96056f7c0eb-HAYES-Neutrino-2018-upload.md",
+      "VisDocBench-parsed/patents_pdf/JP7553451B2/auto/JP7553451B2.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-fin/2603.01782/auto/2603.01782.md"
+    ],
+    "choices": [
+      "90%",
+      "在2025年，挪威电动重型货车车队中300公里续航车辆的占比为75%",
+      "在2025年，挪威电动重型货车车队中300公里续航车辆的占比为60%",
+      "在2025年，挪威电动重型货车车队中300公里续航车辆的占比为45%"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "在《格林童话》的《灰姑娘》（Ashputtel）故事中，当灰姑娘第三次去舞会时，她穿的衣服像什么？",
+    "answer": "像星星一样闪耀（sparkling, like the stars）",
+    "analysis": "并行从《格林童话》文档中关于《灰姑娘》（Ashputtel）的故事章节提取事实。在文本中明确描述了灰姑娘三次去舞会时，父亲（通过魔法鸟）送给她三件衣服，其中第三件被描述为“a dress still finer than the former one, and slippers which were all of gold”以及“sparkling, like the stars”（在母亲要求做三件衣服时的描述，对应第三次舞会的穿着）。虽然文本细节分散，但关于第三次舞会衣服样貌的描述是直接的文本事实，无需中间步骤推理。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "A dress sparkling like the stars",
+        "source": "pg2591-images, The Project Gutenberg eBook of Grimms' Fairy Tales, Ashputtel section",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/KR102203135B1/auto/KR102203135B1.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/35c2f1b56bf5597aafcfbb7bff307b12-milan_november_2019_talk/auto/35c2f1b56bf5597aafcfbb7bff307b12-milan_november_2019_talk.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/27e4b3735e7d6cbffecc1ebdea9c8c23-Lineas_investigación/auto/27e4b3735e7d6cbffecc1ebdea9c8c23-Lineas_investigación.md",
+      "VisDocBench-parsed/e-books-en/pg2591-images/auto/pg2591-images.md"
+    ],
+    "choices": [
+      "像星星一样闪耀（sparkling, like the stars）",
+      "像火焰一样通红耀眼",
+      "像珍珠一样洁白无瑕",
+      "像丝绸一样柔软顺滑"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "根据提供的实验数据，哪个机械臂关节的确定系数（R²）最高？",
+    "answer": "joint 3",
+    "analysis": "从文档【2603.06548】的表格（TABLE I）中并行提取各机械臂关节（joint 0 至 joint 3）的确定系数（R²）数值。比较这些数值：joint 0 (0.90), joint 1 (0.88), joint 2 (0.89), joint 3 (0.98)。通过一步数值比较，确定joint 3的R²值最高。",
+    "reasoning_type": "数值比较",
+    "extracted_facts": [
+      {
+        "factor": "joint 0 R² = 0.90, joint 1 R² = 0.88, joint 2 R² = 0.89, joint 3 R² = 0.98",
+        "source": "文档【2603.06548】，TABLE I",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/e-books-en/pg394-images/auto/pg394-images.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/3a4c143784f8d77dadde2181118f55ba-20190917-Yann-Le-Franc-EOSC-Pillar/auto/3a4c143784f8d77dadde2181118f55ba-20190917-Yann-Le-Franc-EOSC-Pillar.md",
+      "VisDocBench-parsed/patents_pdf/US12001964B2/auto/US12001964B2.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06548/auto/2603.06548.md"
+    ],
+    "choices": [
+      "joint 1",
+      "joint 3",
+      "joint 4",
+      "joint 2"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在该研究的数值仿真中，MILP协调方法相比完全去中心化QP方法，将任务完成时间缩短了多少秒？",
+    "answer": "15.10秒",
+    "analysis": "并行从文档【2603.05762】的文本部分（Section V. RESULTS）获取两个关键数值：完全去中心化QP方法的任务完成时间为22.60秒，MILP协调方法的任务完成时间为7.50秒。这两个数值均可直接从同一段落的文本中独立读取，互不依赖。然后执行一步减法运算：22.60 - 7.50 = 15.10秒，得出时间缩短量。",
+    "reasoning_type": "简单计算",
+    "extracted_facts": [
+      {
+        "factor": "22.60秒",
+        "source": "文档【2603.05762】，Section V. RESULTS段落",
+        "modality": "文本"
+      },
+      {
+        "factor": "7.50秒",
+        "source": "文档【2603.05762】，Section V. RESULTS段落",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/US11818136B2/auto/US11818136B2.md",
+      "VisDocBench-parsed/patents_pdf/CN114172765B/auto/CN114172765B.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.05762/auto/2603.05762.md",
+      "VisDocBench-parsed/patents_pdf/US11768893B2/auto/US11768893B2.md"
+    ],
+    "choices": [
+      "15.10秒",
+      "MILP协调方法相比完全去中心化QP方法，将任务完成时间缩短了15.10分钟",
+      "MILP协调方法相比完全去中心化QP方法，将任务完成时间缩短了12.50秒",
+      "MILP协调方法相比完全去中心化QP方法，将任务完成时间缩短了18.25秒"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "根据文档【2603.05581】，GeoAI Hybrid模型在预测公共交通工具（Public Transit）流量时的R平方值（R²）是多少？",
+    "answer": "0.903",
+    "analysis": "直接从文档【2603.05581】中的Table 5（Model performance across three mobility modes and three evaluation metrics）并行提取事实：该表格列出了不同模型在三种交通模式下的性能指标。在表格中找到'GeoAI Hybrid*'行与'Public Transit'列下的'R²'子列，直接读取数值为0.903。此过程仅涉及在单个表格中的一次定位查找，无需跨文档推理或计算。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "0.903",
+        "source": "文档【2603.05581】, Table 5",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.05581/auto/2603.05581.md",
+      "VisDocBench-parsed/patents_pdf/CN117892251B/auto/CN117892251B.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.03237/auto/2603.03237.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/db23085262c6da9aa9dc09f1b29caf39-DEAL_LIBER/auto/db23085262c6da9aa9dc09f1b29caf39-DEAL_LIBER.md"
+    ],
+    "choices": [
+      "GeoAI Hybrid模型在预测公共交通工具流量时的R平方值为0.853",
+      "GeoAI Hybrid模型在预测公共交通工具流量时的R平方值为0.953",
+      "GeoAI Hybrid模型在预测公共交通工具流量时的R平方值为0.9035",
+      "0.903"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "根据2024年度财务数据，伯特利公司的研发费用占营业收入的比重是多少？",
+    "answer": "5.79%",
+    "analysis": "并行从文档【806620138961】的“第九节 财务会计”部分获取信息：1. 从“最近三年主要财务指标”表格中直接读取2024年度“研发费用占营业收入的”比重为5.79%。虽然该表格也提供了营业收入（993,659.94万元）和研发费用（隐含在计算中），但问题直接询问的是比重这一指标，表格中已直接给出该数值，无需进行除法运算。若需验证，可从“合并利润表”获取营业收入993,659.94万元，从“非经常性损益”或相关附注（若未直接列出研发费用总额，则无法进行简单计算验证，但表格直接提供了比率）。根据单跳定义，直接查找表格中的比率数值属于“直接查找”或“多标签筛选”中的直接定位，因为该事实直接存在于文档的表格行中。此处最准确的操作是直接读取表格中对应的数值。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "5.79%",
+        "source": "文档【806620138961】第九节 财务会计 - 最近三年主要财务指标表格",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/5581c5dce00c03559749358dfcd6bd2e-5-11-1130A-215-Maykow-Aguilar/auto/5581c5dce00c03559749358dfcd6bd2e-5-11-1130A-215-Maykow-Aguilar.md",
+      "VisDocBench-parsed/e-books-en/pg3206-images/auto/pg3206-images.md",
+      "VisDocBench-parsed/fin-report/806620138961/auto/806620138961.md",
+      "VisDocBench-parsed/patents_pdf/JP7121214B2/auto/JP7121214B2.md"
+    ],
+    "choices": [
+      "根据2024年度财务数据，伯特利公司的研发费用占营业收入的比重为4.25%",
+      "5.79%",
+      "根据2024年度财务数据，伯特利公司的研发费用占营业收入的比重为5.79亿元",
+      "根据2024年度财务数据，伯特利公司的研发费用占营业收入的比重为6.83%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在ESAA-Security架构中，用于执行安全审计的可执行检查总数比安全域总数多多少？",
+    "answer": "79",
+    "analysis": "并行从文档【2603.06365】的摘要和正文中分别提取安全审计的可执行检查总数（95个）和安全域总数（16个）。然后执行一步减法运算：95 - 16 = 79。两个事实的提取互不依赖，仅需一步计算。",
+    "reasoning_type": "简单计算",
+    "extracted_facts": [
+      {
+        "factor": "95",
+        "source": "文档【2603.06365】，摘要段落",
+        "modality": "文本"
+      },
+      {
+        "factor": "16",
+        "source": "文档【2603.06365】，第3节 ESAA-Security Architecture 描述",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/US20250112779A1/auto/US20250112779A1.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-fin/2603.01782/auto/2603.01782.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.05693/auto/2603.05693.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06365/auto/2603.06365.md"
+    ],
+    "choices": [
+      "在ESAA-Security架构中，用于执行安全审计的可执行检查总数比安全域总数多78",
+      "79",
+      "在ESAA-Security架构中，用于执行安全审计的可执行检查总数比安全域总数多75",
+      "在ESAA-Security架构中，用于执行安全审计的可执行检查总数比安全域总数多80"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在DARIAH-DE Repository的Factsheet中，其满足FAIR数据原则的比例是多少？",
+    "answer": "93%",
+    "analysis": "并行从文档【ef6db7286ebd26311a71dc6ca73ed1f8-FCremer-Nutzungserfahrungen-des-DARIAH-DE-Repository】的“Nutzungserfahrung III: Der Motor”部分提取信息。该部分文本明确指出“Anteil der FAIR-Data-Prinzipien, die das Repository erfüllt: 93%*”。这是一个直接从文本中提取的数值事实，无需其他文档辅助或复杂推理，仅涉及直接查找。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "93%",
+        "source": "文档【ef6db7286ebd26311a71dc6ca73ed1f8-FCremer-Nutzungserfahrungen-des-DARIAH-DE-Repository】，Nutzungserfahrung III: Der Motor",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/US11818136B2/auto/US11818136B2.md",
+      "VisDocBench-parsed/e-books-en/pg730-images/auto/pg730-images.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/ef6db7286ebd26311a71dc6ca73ed1f8-FCremer-Nutzungserfahrungen-des-DARIAH-DE-Repository/auto/ef6db7286ebd26311a71dc6ca73ed1f8-FCremer-Nutzungserfahrungen-des-DARIAH-DE-Repository.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/0d94293e8b29c975dfbe2bf418244edf-Amato_CRATER/auto/0d94293e8b29c975dfbe2bf418244edf-Amato_CRATER.md"
+    ],
+    "choices": [
+      "100%",
+      "93%",
+      "97%",
+      "85%"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在《Underactuated multimodal jumping robot for extraterrestrial exploration》论文中，该机器人的总重量是多少千克？",
+    "answer": "1.25 kg",
+    "analysis": "从文档《Underactuated multimodal jumping robot for extraterrestrial exploration》的摘要（文本模态）中直接提取机器人系统的总重量信息。摘要中明确陈述了该系统的大小为 0.33 m，重量为 1.25 kg。无需跨文档查找或复杂推理，直接定位即可获取答案。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "1.25 kg",
+        "source": "Underactuated multimodal jumping robot for extraterrestrial exploration, Abstract",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.01186/auto/2603.01186.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.02213/auto/2603.02213.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06525/auto/2603.06525.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06578/auto/2603.06578.md"
+    ],
+    "choices": [
+      "该机器人的总重量为1.50 kg",
+      "1.25 kg",
+      "该机器人的总重量为0.85 kg",
+      "该机器人的总重量为2.10 kg"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在论文《Machine Learning for Complex Systems Dynamics》中，用于分析阿尔茨海默病（AD）模型的固定参数值 $a_1$ 是多少？",
+    "answer": "0.25",
+    "analysis": "从文档【2603.04420】的文本内容中直接定位到'3.2. Models based on two coupled equations'章节下的'Examples from neurodegenerative disease studies'部分。该段落明确列出了用于AD模型的固定参数值：'In this example, we adopt the fixed parameter values from [26, 27] as follows: $a_1 = 0 . 2 5$...'。提取该数值即可直接回答问题，无需跨文档查找或复杂推理。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "0.25",
+        "source": "文档【2603.04420】，正文第3.2节阿尔茨海默病研究示例部分",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/a211b167142ab7d0f3d1fdbff48c1e2a-HORSE_Services/auto/a211b167142ab7d0f3d1fdbff48c1e2a-HORSE_Services.md",
+      "VisDocBench-parsed/e-books-en/pg2641-images/auto/pg2641-images.md",
+      "VisDocBench-parsed/arxiv_pdfs/stat/2603.04420/auto/2603.04420.md",
+      "VisDocBench-parsed/patents_pdf/US12259701B2/auto/US12259701B2.md"
+    ],
+    "choices": [
+      "用于分析阿尔茨海默病（AD）模型的固定参数值 $a_1$ 是 0.75",
+      "0.25",
+      "用于分析阿尔茨海默病（AD）模型的固定参数值 $a_1$ 是 0.50",
+      "用于分析阿尔茨海默病（AD）模型的固定参数值 $a_1$ 是 0.20"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "根据专利US11012381B2的描述，计算整体聊天机器人得分时，除了导航效率、合规性、意图和情感这四个核心分数外，还涉及哪个额外类别的分数？",
+    "answer": "其他类别 (Others)",
+    "analysis": "并行从专利US11012381B2的文本描述和图2A的描述中提取信息。从文本部分（[US11012381B2] 第15段及权利要求1）可知核心分数包括导航效率、合规性、意图和情感分数。从图2A的描述（[US11012381B2] 第15段）可知，诊断组件分数显示包含导航、合规、意图、情感以及一个名为“Others”的类别。将两者结合，识别出除了那四个核心分数外的额外类别是“Others”。",
+    "reasoning_type": "多标签筛选",
+    "extracted_facts": [
+      {
+        "factor": "核心分数包括导航效率分数、合规性分数、意图分数和情感分数",
+        "source": "专利US11012381B2 文本部分（摘要及权利要求1）",
+        "modality": "文本"
+      },
+      {
+        "factor": "诊断组件分数显示包含导航、合规、意图、情感及'Others'类别",
+        "source": "专利US11012381B2 文本部分（图2A描述）",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/112ffc71a13eeb764bde8dd59bb9086e-4_RinzeBenedictus/auto/112ffc71a13eeb764bde8dd59bb9086e-4_RinzeBenedictus.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/3a4c143784f8d77dadde2181118f55ba-20190917-Yann-Le-Franc-EOSC-Pillar/auto/3a4c143784f8d77dadde2181118f55ba-20190917-Yann-Le-Franc-EOSC-Pillar.md",
+      "VisDocBench-parsed/patents_pdf/US11012381B2/auto/US11012381B2.md",
+      "VisDocBench-parsed/patents_pdf/CN110490251B/auto/CN110490251B.md"
+    ],
+    "choices": [
+      "安全类别 (Safety)",
+      "响应速度 (Response Speed)",
+      "其他类别 (Others)",
+      "用户满意度 (User Satisfaction)"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "根据能科股份最近三年（2016-2018年）的现金分红情况，2017年度现金分红金额占当期净利润的比例是多少？",
+    "answer": "17.86%",
+    "analysis": "从文档中关于‘公司最近三年现金分红金额及比例’的表格中，并行提取2017年度的‘现金分红金额(含税）’为681.36万元，‘归属于母公司股东的净利润’为3,814.82万元，以及直接给出的‘现金分红额/当期净利润’比例17.86%。虽然表格中已直接给出比例，但根据定义，该答案可以通过获取分子（681.36）和分母（3,814.82）进行一步除法运算（681.36 / 3814.82 ≈ 0.1786）验证得出，或者直接读取表格中的计算结果。这里主要依赖表格中的直接数据，属于直接查找或简单计算验证。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "681.36万元",
+        "source": "第六节 财务会计信息 - 公司最近三年现金分红金额及比例表",
+        "modality": "表格"
+      },
+      {
+        "factor": "3,814.82万元",
+        "source": "第六节 财务会计信息 - 公司最近三年现金分红金额及比例表",
+        "modality": "表格"
+      },
+      {
+        "factor": "17.86%",
+        "source": "第六节 财务会计信息 - 公司最近三年现金分红金额及比例表",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/fin-report/627592959189/auto/627592959189.md",
+      "VisDocBench-parsed/patents_pdf/US10991463B2/auto/US10991463B2.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/1adc6fdfcb2b1fc3a0598a8f477c699a-Immenhauser_OpenundFAIRData_2018-11-02/auto/1adc6fdfcb2b1fc3a0598a8f477c699a-Immenhauser_OpenundFAIRData_2018-11-02.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/9bcd2e542a7982978e5d2f00e5fb7e72-JourneytowardsGOLDOAbyauthors/auto/9bcd2e542a7982978e5d2f00e5fb7e72-JourneytowardsGOLDOAbyauthors.md"
+    ],
+    "choices": [
+      "2017年度现金分红金额占当期净利润的比例为15.20%",
+      "2017年度现金分红金额占当期净利润的比例为17.86%",
+      "2017年度现金分红金额占当期净利润的比例为22.45%",
+      "17.86%"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "在能科科技股份有限公司（能科股份）2018年的现金分红方案中，每10股派发的现金股利是多少元？",
+    "answer": "0.4047元",
+    "analysis": "从招股意向书文本中关于‘公司最近三年现金分红情况’的描述以及‘公司最近三年现金分红金额及比例’的表格中，直接提取2018年度的现金分红数据。文本明确说明‘2018年度利润分配方案...确定每股派发现金红利为0.04047元（含税）...每10股派0.4047元’，表格中‘股票分红情况’一行2018年列也显示‘每10股派0.4047元’。两者信息一致，直接定位即可得到答案，无需复杂推理。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "每10股派0.4047元",
+        "source": "能科科技股份有限公司增发招股意向书 - 第四节 发行人基本情况 - 十一、股利分配政策 - （三）公司最近三年现金分红情况",
+        "modality": "文本"
+      },
+      {
+        "factor": "每10股派0.4047元",
+        "source": "能科科技股份有限公司增发招股意向书 - 第四节 发行人基本情况 - 十一、股利分配政策 - （三）公司最近三年现金分红情况 - 2、公司最近三年现金分红金额及比例表格",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/164f0a769db4f856631627dbbf0e4563-20191211-gdrhype/auto/164f0a769db4f856631627dbbf0e4563-20191211-gdrhype.md",
+      "VisDocBench-parsed/PPT/Slide/第6章-1共形映射/auto/第6章-1共形映射.md",
+      "VisDocBench-parsed/fin-report/627592959189/auto/627592959189.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/e7aa4bc462a08c65d506b96056f7c0eb-HAYES-Neutrino-2018-upload/auto/e7aa4bc462a08c65d506b96056f7c0eb-HAYES-Neutrino-2018-upload.md"
+    ],
+    "choices": [
+      "在能科科技股份有限公司2018年的现金分红方案中，每10股派发的现金股利是0.45元",
+      "0.4047元",
+      "在能科科技股份有限公司2018年的现金分红方案中，每10股派发的现金股利是0.38元",
+      "在能科科技股份有限公司2018年的现金分红方案中，每10股派发的现金股利是0.40元"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "根据文档【806701693025】中的表格数据，新疆国际实业股份有限公司在2025年半年度报告中，归属于上市公司股东的净利润是多少元？",
+    "answer": "24,769,797.32",
+    "analysis": "从文档【806701693025】的表格“主要会计数据和财务指标”中，直接定位到“归属于上市公司股东的净利润（元）”行和“本报告期”列，提取数值24,769,797.32。该事实直接来自表格，无需跨文档查找或串行推理，符合单跳问题定义中的直接查找类型。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "24,769,797.32",
+        "source": "文档【806701693025】，表格“主要会计数据和财务指标”",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/fin-report/806701693025/auto/806701693025.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.04081/auto/2603.04081.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06565/auto/2603.06565.md",
+      "VisDocBench-parsed/PPT/Slide/ch12/auto/ch12.md"
+    ],
+    "choices": [
+      "新疆国际实业股份有限公司在2025年半年度报告中归属于上市公司股东的净利润为24,769,797.32元",
+      "新疆国际实业股份有限公司在2025年半年度报告中归属于上市公司股东的净利润为24,769,797.32元",
+      "新疆国际实业股份有限公司在2025年半年度报告中归属于上市公司股东的净利润为24,769,797.32元",
+      "24,769,797.32"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "根据提供的表格数据，2019年排名第四的网站是哪一个？",
+    "answer": "Baidu",
+    "analysis": "从【00cc7397f7a8221b83bcea90af827fba-Contributing-to-the-global-commons】文档中的表格'The World Wide Web in 2019'中，直接并行提取排名为4的网站信息。表格中有一列显示排名（如'4(1)'），对应的Site列为'Baidu'。无需串行查找，仅一步定位即可得到答案。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "Baidu",
+        "source": "Contributing-to-the-global-commons文档，表格'The World Wide Web in 2019'",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/27e4b3735e7d6cbffecc1ebdea9c8c23-Lineas_investigación/auto/27e4b3735e7d6cbffecc1ebdea9c8c23-Lineas_investigación.md",
+      "VisDocBench-parsed/PPT/Slide/01/auto/01.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/00cc7397f7a8221b83bcea90af827fba-Contributing-to-the-global-commons/auto/00cc7397f7a8221b83bcea90af827fba-Contributing-to-the-global-commons.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/4eea9f992cf7c431c0b4d9b376880c41-ESR9---Lucas-Teixeira---UNITECR-2019/auto/4eea9f992cf7c431c0b4d9b376880c41-ESR9---Lucas-Teixeira---UNITECR-2019.md"
+    ],
+    "choices": [
+      "Baidu",
+      "2019年排名第四的网站是Yahoo",
+      "2019年排名第四的网站是Google",
+      "2019年排名第四的网站是Bing"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "在陕西烽火电子股份有限公司向特定对象发行股票的询价阶段，参与报价的投资者数量与最终确定获配的发行对象数量分别是多少？",
+    "answer": "参与报价的投资者数量为14名，最终确定获配的发行对象数量为10名。",
+    "analysis": "从文档【804282510117】的“第二节 本次新增股份发行情况”中并行提取两个事实：1. 在“申购报价情况”段落中直接获取“共有14名投资者参与报价”；2. 在“发行对象及获配情况”段落中直接获取“本次发行对象最终确定为10名”。这两个信息均位于同一文档的不同段落，获取过程互不依赖，只需直接定位即可，无需中间推理步骤。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "14名投资者参与报价",
+        "source": "文档【804282510117】第二节-申购报价情况",
+        "modality": "文本"
+      },
+      {
+        "factor": "10名发行对象最终获配",
+        "source": "文档【804282510117】第二节-发行对象及获配情况",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/CN111931064B/auto/CN111931064B.md",
+      "VisDocBench-parsed/fin-report/804282510117/auto/804282510117.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/7c652b6d0b262ce2fb5f91faa4980ec9-OpenAIRE-connect_dashboard_RC/auto/7c652b6d0b262ce2fb5f91faa4980ec9-OpenAIRE-connect_dashboard_RC.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/3b54f631669ef0582fcf0b0d675dc8dc-SCD-UPHF_Zotero/auto/3b54f631669ef0582fcf0b0d675dc8dc-SCD-UPHF_Zotero.md"
+    ],
+    "choices": [
+      "参与报价的投资者数量为14名，最终确定获配的发行对象数量为12名",
+      "参与报价的投资者数量为14名，最终确定获配的发行对象数量为10名。",
+      "参与报价的投资者数量为12名，最终确定获配的发行对象数量为10名",
+      "参与报价的投资者数量为10名，最终确定获配的发行对象数量为14名"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在2603.06515文档中，对比OFDM和AFDM在DAFT域内的ISI类型，OFDM的频率域干扰被称为什么，而AFDM的干扰被称为什么？",
+    "answer": "OFDM的频率域干扰被称为ICI（Inter-Carrier Interference），AFDM的干扰被称为DAFT-domain ISI。",
+    "analysis": "并行从2603.06515文档的文本部分（Section IV-A.2 和 Section IV-A.3）直接提取事实：1. 在OFDM中，由于多普勒效应导致子载波正交性丧失，能量泄漏到相邻子载波，这种干扰被称为ICI（Inter-Carrier Interference）。2. 在AFDM中，干扰发生在DAFT域，本质上是一种ISI，被称为DAFT-domain ISI。这两个信息点可以直接从文档的不同段落并行获取，无需依赖前一个事实来查找后一个事实，最后通过简单的对比陈述得出答案。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "OFDM的干扰被称为ICI（Inter-Carrier Interference）",
+        "source": "2603.06515，Section IV-A.2 文本段落",
+        "modality": "文本"
+      },
+      {
+        "factor": "AFDM的干扰被称为DAFT-domain ISI",
+        "source": "2603.06515，Section IV-A.3 文本段落",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.06515/auto/2603.06515.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/ac4592b7a2c9be2646e935e6aebf057d-Kreklow_IALED_radproc/auto/ac4592b7a2c9be2646e935e6aebf057d-Kreklow_IALED_radproc.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.05771/auto/2603.05771.md",
+      "VisDocBench-parsed/patents_pdf/KR102196793B1/auto/KR102196793B1.md"
+    ],
+    "choices": [
+      "OFDM的频率域干扰被称为ICI，而AFDM的干扰被称为ICI",
+      "OFDM的频率域干扰被称为ICI（Inter-Carrier Interference），AFDM的干扰被称为DAFT-domain ISI。",
+      "OFDM的频率域干扰被称为DAFT-domain ISI，而AFDM的干扰被称为ICI",
+      "OFDM的频率域干扰被称为ISI，而AFDM的干扰被称为ICI"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在2603.05902号文档的仿真设置中，机器人的身体质量比脚的质量大多少克？",
+    "answer": "90克",
+    "analysis": "并行从2603.05902号文档的第五节（SIMULATION RESULTS AND DISCUSSION）文本中提取机器人身体质量（95 g）和脚的质量（5 g）。这两个数值均直接位于同一文本段落中，无需依赖关系。通过一步减法计算：95 - 5 = 90，得出身体质量比脚的质量大90克。",
+    "reasoning_type": "简单计算",
+    "extracted_facts": [
+      {
+        "factor": "95 g",
+        "source": "2603.05902文档，第五节文本",
+        "modality": "文本"
+      },
+      {
+        "factor": "5 g",
+        "source": "2603.05902文档，第五节文本",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/JP7458551B2/auto/JP7458551B2.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.05902/auto/2603.05902.md",
+      "VisDocBench-parsed/patents_pdf/US11790256B2/auto/US11790256B2.md",
+      "VisDocBench-parsed/arxiv_pdfs/stat/2603.05612/auto/2603.05612.md"
+    ],
+    "choices": [
+      "机器人的身体质量比脚的质量大100克",
+      "机器人的身体质量比脚的质量大95克",
+      "90克",
+      "机器人的身体质量比脚的质量大80克"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "在文档《The INVoLVED Study: Investigating Lay members' Views in Guideline Development》中，NICE指南开发委员会要求至少包含多少名非专业人士（lay members）？",
+    "answer": "2名",
+    "analysis": "从文档《The INVoLVED Study: Investigating Lay members' Views in Guideline Development》的文本部分（NICE: National Institute for Health and Care Excellence 标题下的 'Patient and public involvement policy' 段落）直接提取规则：'Guideline development committees include at least 2 lay members'。该信息位于文本块中，无需跨模态组合或串行查找，直接定位即可得到答案。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "至少2名 (at least 2)",
+        "source": "文档《The INVoLVED Study: Investigating Lay members' Views in Guideline Development》",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Slide/网络监测预警/auto/网络监测预警.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.05752/auto/2603.05752.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.01537/auto/2603.01537.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/46de1f1353dcf1074dce6ce7264bce52-GIN-2018-Submitted-version/auto/46de1f1353dcf1074dce6ce7264bce52-GIN-2018-Submitted-version.md"
+    ],
+    "choices": [
+      "NICE指南开发委员会要求至少包含5名非专业人士",
+      "NICE指南开发委员会要求至少包含3名非专业人士",
+      "NICE指南开发委员会要求至少包含1名非专业人士",
+      "2名"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "在2000样本量的Scenario 2中，PDRO方法的平均策略价值是多少？",
+    "answer": "1.038",
+    "analysis": "并行从文档【2603.05568】的Table 1中获取信息：在Scenario 2且样本量n=1000时（注意：用户问题询问的是2000样本量，需重新定位），在Scenario 2且样本量n=2000时，PDRO方法的平均策略价值为1.095。修正：用户问题询问的是2000样本量。从Table 1中直接定位到Scenario 2行，n=2000列，Method为PDRO的数值。提取事实：Scenario 2, n=2000, PDRO方法对应的策略价值均值。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "1.095",
+        "source": "文档【2603.05568】，Table 1",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/0f1303938a8afdf70ab02ccd073df2b8-11-efsa2019presentation_FINAL/auto/0f1303938a8afdf70ab02ccd073df2b8-11-efsa2019presentation_FINAL.md",
+      "VisDocBench-parsed/e-books-en/pg219-images/auto/pg219-images.md",
+      "VisDocBench-parsed/arxiv_pdfs/stat/2603.05568/auto/2603.05568.md",
+      "VisDocBench-parsed/patents_pdf/US11227187B1/auto/US11227187B1.md"
+    ],
+    "choices": [
+      "在2000样本量的Scenario 2中，PDRO方法的平均策略价值为1.048",
+      "在2000样本量的Scenario 2中，PDRO方法的平均策略价值为1.028",
+      "在2000样本量的Scenario 2中，PDRO方法的平均策略价值为1.030",
+      "1.038"
+    ],
+    "correct_index": 3
+  }
+]

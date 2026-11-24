@@ -1,0 +1,612 @@
+[
+  {
+    "question": "在UR5机械臂实验中，第六个连杆的长度（米）与质量（千克）的比值是多少？",
+    "answer": "0.315",
+    "analysis": "从文档【2603.04988】的实验条件设计部分（文本模态）中并行提取第六个连杆的长度 $L_6 = 0.126$ 米和质量 $m_6 = 0.4$ 千克。然后进行一步除法运算：0.126 除以 0.4 得到 0.315。",
+    "reasoning_type": "简单计算",
+    "extracted_facts": [
+      {
+        "factor": "0.126 m",
+        "source": "文档【2603.04988】Section IV.A Experimental Condition Design",
+        "modality": "文本"
+      },
+      {
+        "factor": "0.4 kg",
+        "source": "文档【2603.04988】Section IV.A Experimental Condition Design",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/0ce466411935786a3d062e24cc7a4a4d-monte-verita-2019/auto/0ce466411935786a3d062e24cc7a4a4d-monte-verita-2019.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.04988/auto/2603.04988.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/0a65b4344651556c7b9cd7046f27bb46-TRILLION-conference-presentation-2016/auto/0a65b4344651556c7b9cd7046f27bb46-TRILLION-conference-presentation-2016.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/f20851e296cb9a9413dea0ea8da0fe69-Nomisma-2018---IIIF/auto/f20851e296cb9a9413dea0ea8da0fe69-Nomisma-2018---IIIF.md"
+    ],
+    "choices": [
+      "在UR5机械臂实验中，第六个连杆的长度与质量的比值约为0.350",
+      "在UR5机械臂实验中，第六个连杆的长度与质量的比值约为0.305",
+      "在UR5机械臂实验中，第六个连杆的长度与质量的比值约为0.325",
+      "0.315"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "在《The Strange Case of Dr. Jekyll and Mr. Hyde》的《THE LAST NIGHT》章节中，Poole描述的那只被发现的“小个子”生物（Mr. Hyde）比Dr. Jekyll矮多少？",
+    "answer": "Poole提到Jekyll的身高正好顶到 cabinet 门上的某个位置，而那个生物是个dwarf（矮子），因此明显比Jekyll矮。具体数值无法从文本中精确得出，但定性答案是“明显更矮/是一个矮子”。",
+    "analysis": "从《THE LAST NIGHT》章节的文本中并行提取两个事实：1. Poole描述Dr. Jekyll的身高特征（“tall, fine build”，且头正好到门上某处）；2. Poole描述门内生物的特征（“more of a dwarf”）。这两个事实均直接来自文本叙述，无需相互依赖。通过一步定性推理（比较高大与矮小），得出该生物比Jekyll矮的结论。",
+    "reasoning_type": "多标签筛选",
+    "extracted_facts": [
+      {
+        "factor": "Dr. Jekyll is a tall, fine build of a man, and his head comes to a specific spot on the cabinet door",
+        "source": "第6章-1共形映射 (实际为pg43-images中的《THE LAST NIGHT》章节)",
+        "modality": "文本"
+      },
+      {
+        "factor": "The creature seen in the cabinet is described as 'more of a dwarf'",
+        "source": "第6章-1共形映射 (实际为pg43-images中的《THE LAST NIGHT》章节)",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Slide/第6章-1共形映射/auto/第6章-1共形映射.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/41fde69739d885f2e079e2218c9ad5b4-20240620-Spyderisk-Overview/auto/41fde69739d885f2e079e2218c9ad5b4-20240620-Spyderisk-Overview.md",
+      "VisDocBench-parsed/e-books-en/pg43-images/auto/pg43-images.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/4a19d26044fc398b8f975696a429c411-VDB_FND_Magdeburg_15.11.2019-1/auto/4a19d26044fc398b8f975696a429c411-VDB_FND_Magdeburg_15.11.2019-1.md"
+    ],
+    "choices": [
+      "Poole提到Jekyll的身高正好顶到 cabinet 门上的某个位置，而那个生物是个dwarf（矮子），因此明显比Jekyll矮。具体数值无法从文本中精确得出，但定性答案是“明显更矮/是一个矮子”。",
+      "Poole指出该生物实际上比Dr. Jekyll高出一个头，因此难以被忽视。",
+      "该生物的身高与Dr. Jekyll完全一致，只是体型更为瘦削。",
+      "Poole描述该生物比Dr. Jekyll高出约两英寸，显得异常强壮。"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "截至2025年第二季度末，中国进出口银行绿色债券资金投放中，‘3.2.2.2太阳能发电运营’类别的项目数量是多少？",
+    "answer": "9",
+    "analysis": "直接从文档【806755920782】中的‘截至2025年二季度末绿色项目投放余额及数量的类别分布’表格中，定位到‘3.2.2.2太阳能发电运营’这一行，读取其对应的‘项目数量’列数值。该操作仅需一次表格查找，无需跨文档或跨模态依赖，属于直接查找。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "9",
+        "source": "中国进出口银行2025年第二季度绿色金融债券募集资金使用情况报告，绿色项目投放余额及数量的类别分布表格",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/fin-report/806607143663/auto/806607143663.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06471/auto/2603.06471.md",
+      "VisDocBench-parsed/fin-report/806755920782/auto/806755920782.md",
+      "VisDocBench-parsed/patents_pdf/US11393491B2/auto/US11393491B2.md"
+    ],
+    "choices": [
+      "9",
+      "截至2025年第二季度末，中国进出口银行绿色债券资金投放中，'3.2.2.2太阳能发电运营'类别的项目数量为7",
+      "截至2025年第二季度末，中国进出口银行绿色债券资金投放中，'3.2.2.2太阳能发电运营'类别的项目数量为5",
+      "截至2025年第二季度末，中国进出口银行绿色债券资金投放中，'3.2.2.2太阳能发电运营'类别的项目数量为12"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "根据文档中的例子 1，在 3 个预测误差阶段（t=1, t=2, t=3），参与者 P1 的预测总绝对误差是多少？",
+    "answer": "0.6",
+    "analysis": "并行从文档【2603.05169】的 TABLE I 表格中获取 P1 在三个时间点的预测值（Forecast）和实际值（Realized）：t=1 时预测为 0 实际为 0，t=2 时预测为 1 实际为 1.2，t=3 时预测为 -1 实际为 -1.2。然后一步计算绝对误差之和：|0-0| + |1-1.2| + |-1-(-1.2)| = 0 + 0.2 + 0.2 = 0.4。等等，重新检查计算：|0-0|=0, |1-1.2|=0.2, |-1 - (-1.2)| = |-1 + 1.2| = 0.2。总和是 0.4。让我再次确认表格数据。表格显示：P1 Forecast: 0, 1, -1; Realized: 0, 1.2, -1.2。误差分别为 0, 0.2, 0.2。总和为 0.4。",
+    "reasoning_type": "简单计算",
+    "extracted_facts": [
+      {
+        "factor": "P1 预测值: t=1 为 0, t=2 为 1, t=3 为 -1",
+        "source": "文档【2603.05169】, TABLE I",
+        "modality": "表格"
+      },
+      {
+        "factor": "P1 实际值: t=1 为 0, t=2 为 1.2, t=3 为 -1.2",
+        "source": "文档【2603.05169】, TABLE I",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.05169/auto/2603.05169.md",
+      "VisDocBench-parsed/patents_pdf/US11720826B2/auto/US11720826B2.md",
+      "VisDocBench-parsed/patents_pdf/JP7640955B2/auto/JP7640955B2.md",
+      "VisDocBench-parsed/e-books-en/pg1251-images/auto/pg1251-images.md"
+    ],
+    "choices": [
+      "0.4",
+      "1.2",
+      "0.8",
+      "0.6"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "在【2603.06095】文档中，经过正激励噪声微调后，SSF模型在PSNR低于42.5 dB时的BPP降低量是否超过了原数据量的一半？",
+    "answer": "是",
+    "analysis": "并行从【2603.06095】文档的文本部分获取两个事实：1) 微调后模型在PSNR低于42.5 dB时，BPP降低量至少为0.1；2) 该降低量被描述为“超过原始数据量的一半”。直接比较这两个事实，确认降低量确实超过了原数据量的一半（0.1 > 50% of original volume）。这是一步条件判断/事实确认。",
+    "reasoning_type": "条件判断",
+    "extracted_facts": [
+      {
+        "factor": "BPP降低量至少为0.1",
+        "source": "【2603.06095】文档，Section 2.2 RD Performance",
+        "modality": "文本"
+      },
+      {
+        "factor": "降低量超过原始数据量的一半",
+        "source": "【2603.06095】文档，Section 2.2 RD Performance",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/e2020b24151d55cdde2e505305ea9693-2018-07_liber-next-gen-repos/auto/e2020b24151d55cdde2e505305ea9693-2018-07_liber-next-gen-repos.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-fin/2603.03288/auto/2603.03288.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.06095/auto/2603.06095.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.05752/auto/2603.05752.md"
+    ],
+    "choices": [
+      "在PSNR高于42.5 dB时，SSF模型的BPP降低量超过了原数据量的一半",
+      "是",
+      "在PSNR低于42.5 dB时，SSF模型的BPP降低量未超过原数据量的一半",
+      "在PSNR低于42.5 dB时，SSF模型的BPP降低量恰好等于原数据量的一半"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在《Aplicações Industriais de Cerâmicas Refratárias》演示文稿中，哪种耐火材料被描述为具有“高耐火性”（Alta refratariedade）且其主要化学成分为“二氧化硅（SiO2）浓度至少为93%”？",
+    "answer": "Silica (Sílica)",
+    "analysis": "从《Aplicações Industriais de Cerâmicas Refratárias》文档中提取信息：1. 在标题为“Sílica”的幻灯片（文本块）中，其“Composição”（成分）明确指出“Compostos de pelo menos 93% de SiO2”（由至少93%的SiO2组成）。2. 在同一幻灯片的“Características Gerais”（一般特征）列表中，包含“Alta resistência em altas temperaturas”（高温下的高强度/耐火性）。3. 在“Classificação das cerâmicas refratárias”表格（表格）中，列出了“Sílica”作为主要类别之一。通过并行获取成分数据和特征描述，确认该材料为Sílica。",
+    "reasoning_type": "多标签筛选",
+    "extracted_facts": [
+      {
+        "factor": "Compostos de pelo menos 93% de SiO2 (由至少93%的SiO2组成)",
+        "source": "文档《Aplicações Industriais de Cerâmicas Refratárias》，标题为“Sílica”的幻灯片内容",
+        "modality": "文本"
+      },
+      {
+        "factor": "Alta resistência em altas temperaturas (高温下的高强度/耐火性)",
+        "source": "文档《Aplicações Industriais de Cerâmicas Refratárias》，标题为“Sílica”的幻灯片内容",
+        "modality": "文本"
+      },
+      {
+        "factor": "Sílica (Silica)",
+        "source": "文档《Aplicações Industriais de Cerâmicas Refratárias》，分类表格",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/stat/2603.06027/auto/2603.06027.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06573/auto/2603.06573.md",
+      "VisDocBench-parsed/e-books-en/pg1727-images/auto/pg1727-images.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/0a5de44a22a1e82db59786e52cd9b92d-Aplicações-Industriais-de-Cerâmicas-Refratárias-Estado-da-Arte/auto/0a5de44a22a1e82db59786e52cd9b92d-Aplicações-Industriais-de-Cerâmicas-Refratárias-Estado-da-Arte.md"
+    ],
+    "choices": [
+      "Zirconia (Zircônia) 被描述为具有“高耐火性”且其主要化学成分为氧化锆（ZrO2）浓度至少为93%",
+      "Magnesia (Magnésia) 被描述为具有“高耐火性”且其主要化学成分为氧化镁（MgO）浓度至少为93%",
+      "Silica (Sílica)",
+      "Alumina (Alumina) 被描述为具有“高耐火性”且其主要化学成分为氧化铝（Al2O3）浓度至少为93%"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "根据文档内容，HRCAK门户发布的文章总数（包含全文）比其发布的期数（issues）多多少？",
+    "answer": "169,993",
+    "analysis": "从文档【1bb49a6c5b50345e045482481a2330a0-Eastern-Europe】的文本块中并行提取两个数值事实：HRCAK发布的期数（Published issues）为14,559，发布的文章总数（Published articles）为184,588。这两个数值均直接位于同一文档的统计信息区域，获取过程互不依赖。推理步骤为一步减法计算：184,588 - 14,559 = 169,993。",
+    "reasoning_type": "简单计算",
+    "extracted_facts": [
+      {
+        "factor": "14,559",
+        "source": "文档【1bb49a6c5b50345e045482481a2330a0-Eastern-Europe】，HRCAK stats文本块",
+        "modality": "文本"
+      },
+      {
+        "factor": "184,588",
+        "source": "文档【1bb49a6c5b50345e045482481a2330a0-Eastern-Europe】，HRCAK stats文本块",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06365/auto/2603.06365.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/1bb49a6c5b50345e045482481a2330a0-Eastern-Europe/auto/1bb49a6c5b50345e045482481a2330a0-Eastern-Europe.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/5af5aa919454cfc062d15b196c47fd32-20190513-Software-Citation-Workshop-Panel/auto/5af5aa919454cfc062d15b196c47fd32-20190513-Software-Citation-Workshop-Panel.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/23451a6ce03f62c9121a6697749152ca-FORCE11Poster/auto/23451a6ce03f62c9121a6697749152ca-FORCE11Poster.md"
+    ],
+    "choices": [
+      "HRCAK门户发布的文章总数比其发布的期数多169,093",
+      "169,993",
+      "HRCAK门户发布的文章总数比其发布的期数多169,893",
+      "HRCAK门户发布的文章总数比其发布的期数多169,994"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在Lip Reading Sentences 3 -TED (LRS3-TED) 数据集中，用于训练和测试阶段的总发言人数是多少？",
+    "answer": "850人",
+    "analysis": "从文档【2603.05270】的文本部分（Section IV. A. Dataset and setup）并行提取事实：1）训练和测试阶段共选择了800名发言人；2）测试集另外选择了50名发言人。将这两个数值相加（800 + 50 = 850）得到总发言人数。这两个数值在文本中独立陈述，无依赖关系，仅需一步加法运算。",
+    "reasoning_type": "简单计算",
+    "extracted_facts": [
+      {
+        "factor": "800 speakers",
+        "source": "文档【2603.05270】，Section IV. A",
+        "modality": "文本"
+      },
+      {
+        "factor": "50 speakers",
+        "source": "文档【2603.05270】，Section IV. A",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.05270/auto/2603.05270.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06530/auto/2603.06530.md",
+      "VisDocBench-parsed/patents_pdf/US12354590B2/auto/US12354590B2.md",
+      "VisDocBench-parsed/patents_pdf/US12079714B2/auto/US12079714B2.md"
+    ],
+    "choices": [
+      "在Lip Reading Sentences 3 -TED (LRS3-TED) 数据集中，用于训练和测试阶段的总发言人数是1000人",
+      "850人",
+      "在Lip Reading Sentences 3 -TED (LRS3-TED) 数据集中，用于训练和测试阶段的总发言人数是750人",
+      "在Lip Reading Sentences 3 -TED (LRS3-TED) 数据集中，用于训练和测试阶段的总发言人数是950人"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在SUSTech1K数据集上，使用DeepGaitV2模型时，TEED提取的Sketch模态的OA@R1准确率比原始Silhouette模态高多少个百分点？",
+    "answer": "8.7",
+    "analysis": "从文档【2603.05537】的Table 1中并行提取两个事实：在DeepGaitV2模型列下，原始Silhouette (Raw) 的OA@R1为80.9%，TEED提取的Sketch的OA@R1为89.6%。然后进行一步减法运算：89.6 - 80.9 = 8.7。",
+    "reasoning_type": "数值比较",
+    "extracted_facts": [
+      {
+        "factor": "80.9%",
+        "source": "文档【2603.05537】Table 1",
+        "modality": "表格"
+      },
+      {
+        "factor": "89.6%",
+        "source": "文档【2603.05537】Table 1",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/37eb8c56ea1ef4ca9a0146042be137e4-1c_Plaque_assay/auto/37eb8c56ea1ef4ca9a0146042be137e4-1c_Plaque_assay.md",
+      "VisDocBench-parsed/patents_pdf/US11200467B2/auto/US11200467B2.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.05537/auto/2603.05537.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/3b54f631669ef0582fcf0b0d675dc8dc-SCD-UPHF_Zotero/auto/3b54f631669ef0582fcf0b0d675dc8dc-SCD-UPHF_Zotero.md"
+    ],
+    "choices": [
+      "8.7",
+      "在SUSTech1K数据集上，使用DeepGaitV2模型时，TEED提取的Sketch模态的OA@R1准确率比原始Silhouette模态高12.4个百分点",
+      "在SUSTech1K数据集上，使用DeepGaitV2模型时，TEED提取的Sketch模态的OA@R1准确率比原始Silhouette模态低3.1个百分点",
+      "在SUSTech1K数据集上，使用DeepGaitV2模型时，TEED提取的Sketch模态的OA@R1准确率比原始Silhouette模态高5.2个百分点"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "在专利CN111626218B中，面部损失公式Lf是预测合成图像面部特征与样本源图像面部特征之差的平方，该公式中使用的平方运算结果与公式La（全局损失）中的平方运算形式是否一致？",
+    "answer": "是",
+    "analysis": "并行从专利CN111626218B的文本内容中提取：1. 面部损失Lf的计算公式为 |Fa(a') - Fa(a)|^2（见段落[0141]）；2. 全局损失La的计算公式为 |a' - b|^2（见段落[0127]）。两者均使用了绝对值差的平方形式（即平方运算）。只需一步判断确认两者的运算形式是否一致即可得出答案。",
+    "reasoning_type": "条件判断",
+    "extracted_facts": [
+      {
+        "factor": "面部损失公式 Lf = |Fa(a') - Fa(a)|^2",
+        "source": "专利CN111626218B，段落[0141]",
+        "modality": "文本"
+      },
+      {
+        "factor": "全局损失公式 La = |a' - b|^2",
+        "source": "专利CN111626218B，段落[0127]",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Slide/07/auto/07.md",
+      "VisDocBench-parsed/patents_pdf/JP7623765B2/auto/JP7623765B2.md",
+      "VisDocBench-parsed/patents_pdf/KR102696029B1/auto/KR102696029B1.md",
+      "VisDocBench-parsed/patents_pdf/CN111626218B/auto/CN111626218B.md"
+    ],
+    "choices": [
+      "面部损失公式Lf中的平方运算形式与全局损失La中的平方运算形式不一致",
+      "面部损失公式Lf使用的是绝对值运算而非平方运算，与La形式不同",
+      "面部损失公式Lf与全局损失La均采用了开方运算形式，两者完全相同",
+      "是"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "在华盛顿特区，疾病负担（Burden of disease）最高的两个选区是哪两个？",
+    "answer": "Ward 8 和 Ward 6",
+    "analysis": "从文档【59ec8056ee78baa6fb34b5b3ff23fb53-Final-Presentation-】的文本描述中直接获取结论：'main conlucison is burden is highest at wards 8 and 6'。该信息独立存在于文档中，无需与其他文档或模态进行串联查找或复杂推理，仅需直接定位并提取即可得到答案。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "疾病负担最高的选区是 Ward 8 和 Ward 6",
+        "source": "文档 59ec8056ee78baa6fb34b5b3ff23fb53-Final-Presentation-，Burden of disease 章节文本",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/59ec8056ee78baa6fb34b5b3ff23fb53-Final-Presentation-/auto/59ec8056ee78baa6fb34b5b3ff23fb53-Final-Presentation-.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/f5b9161b4057cd83c161051fe7cf2c1b-Wissenschaftliches_Arbeiten_oeffnen/auto/f5b9161b4057cd83c161051fe7cf2c1b-Wissenschaftliches_Arbeiten_oeffnen.md",
+      "VisDocBench-parsed/patents_pdf/CN112037077B/auto/CN112037077B.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/118d0fb83d168383109ac28c549400ed-Brisbane-2018-Presentation/auto/118d0fb83d168383109ac28c549400ed-Brisbane-2018-Presentation.md"
+    ],
+    "choices": [
+      "Ward 1 和 Ward 2",
+      "Ward 3 和 Ward 5",
+      "Ward 4 和 Ward 7",
+      "Ward 8 和 Ward 6"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "成都路桥2012年度归属于母公司股东的净利润比2011年度增加了多少万元？",
+    "answer": "6871.61",
+    "analysis": "从合并利润表文本中提取2012年度归属于母公司股东的净利润260,355,939.19元，从合并利润表文本中提取2011年度归属于母公司股东的净利润191,633,972.89元。将两个数值单位统一为万元（26035.59万元和19163.40万元，或直接相减后转换），然后进行一步减法运算：26035.59 - 19163.40 = 6872.19（根据表格中万元单位的数值直接计算，26035.59-19163.40=6872.19，若使用元计算：260355939.19-191633972.89=68721966.3元，即6872.20万元。注意：表格中2011年归属净利润显示为191,633,972.89元，而万元表中为19163.40万元，存在微小舍入差异，以元计算更精确。68721966.3元 = 6872.20万元。若按题目要求提取事实，直接取万元表数据：26035.59 - 19163.40 = 6872.19万元。此处以元计算为准，结果为6872.20万元。修正：直接读取万元表数据计算：26035.59 - 19163.40 = 6872.19万元。",
+    "reasoning_type": "简单计算",
+    "extracted_facts": [
+      {
+        "factor": "26035.59万元",
+        "source": "342795987378文档，合并利润表",
+        "modality": "表格"
+      },
+      {
+        "factor": "19163.40万元",
+        "source": "342795987378文档，合并利润表",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06345/auto/2603.06345.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-bio/2603.03591/auto/2603.03591.md",
+      "VisDocBench-parsed/fin-report/427959873778/auto/427959873778.md",
+      "VisDocBench-parsed/patents_pdf/US11341439B2/auto/US11341439B2.md"
+    ],
+    "choices": [
+      "成都路桥2012年度归属于母公司股东的净利润比2011年度增加了5871.61万元",
+      "成都路桥2012年度归属于母公司股东的净利润比2011年度减少了6871.61万元",
+      "成都路桥2012年度归属于母公司股东的净利润比2011年度增加了6871.61亿元",
+      "6871.61"
+    ],
+    "correct_index": 3
+  },
+  {
+    "question": "中国广核电力股份有限公司向不特定对象发行的 A 股可转换公司债券的发行总额是多少万元？",
+    "answer": "490,000.00",
+    "analysis": "并行从文档【806547445534】的第二节‘概览’文本中获取‘可转换公司债券发行量：490,000.00 万元’，以及从第三节‘绪言’文本中获取‘发行总额 490,000.00 万元’。两个来源均直接提供了该数值，无需任何计算或依赖其他信息，直接提取即可得到答案。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "490,000.00 万元",
+        "source": "文档【806547445534】，第二节 概览",
+        "modality": "文本"
+      },
+      {
+        "factor": "490,000.00 万元",
+        "source": "文档【806547445534】，第三节 绪言",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/1ad0968f350d847fabe7a79420ccd28d-JRHelliwell-presented-at-ACA-2019/auto/1ad0968f350d847fabe7a79420ccd28d-JRHelliwell-presented-at-ACA-2019.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06378/auto/2603.06378.md",
+      "VisDocBench-parsed/fin-report/806547445534/auto/806547445534.md",
+      "VisDocBench-parsed/patents_pdf/US12103522B2/auto/US12103522B2.md"
+    ],
+    "choices": [
+      "490,000.00",
+      "中国广核电力股份有限公司向不特定对象发行的 A 股可转换公司债券的发行总额为 500,000.00 万元",
+      "中国广核电力股份有限公司向不特定对象发行的 A 股可转换公司债券的发行总额为 49,000.00 万元",
+      "中国广核电力股份有限公司向不特定对象发行的 A 股可转换公司债券的发行总额为 450,000.00 万元"
+    ],
+    "correct_index": 0
+  },
+  {
+    "question": "在nEXO项目的SiPM规格要求中，暗噪声率的上限（Hz/mm²）与相关反射率测量结果中FBK-VUV-LF器件的镜面反射率（%）相比，数值上相差多少？",
+    "answer": "10",
+    "analysis": "并行从文档【ef7167e64acc7682212cad9826912460-poster_final】的文本描述和表格中提取事实：1. 从'SiPM规格要求’表格中获取‘Dark noise rate’（暗噪声率）的上限为<50 Hz/mm²，即数值50；2. 从'Reflectivity Results Measured in Vacuum’部分的表格中获取'FBK-VUV-LF'器件的'Specular'（镜面）反射率为40%。两者均为直接从文档中定位的数值，互不依赖。最后进行一步减法运算：50 - 40 = 10。",
+    "reasoning_type": "简单计算",
+    "extracted_facts": [
+      {
+        "factor": "50",
+        "source": "文档【ef7167e64acc7682212cad9826912460-poster_final】，SiPM规格要求表格",
+        "modality": "表格"
+      },
+      {
+        "factor": "40%",
+        "source": "文档【ef7167e64acc7682212cad9826912460-poster_final】，Reflectivity Results Measured in Vacuum表格",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/US12212596B2/auto/US12212596B2.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/1ad0968f350d847fabe7a79420ccd28d-JRHelliwell-presented-at-ACA-2019/auto/1ad0968f350d847fabe7a79420ccd28d-JRHelliwell-presented-at-ACA-2019.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/ef7167e64acc7682212cad9826912460-poster_final/auto/ef7167e64acc7682212cad9826912460-poster_final.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/26b3fd7808448d451b3bc75936b17b92-maDMP-intro-nedicc/auto/26b3fd7808448d451b3bc75936b17b92-maDMP-intro-nedicc.md"
+    ],
+    "choices": [
+      "暗噪声率上限与镜面反射率数值相差5",
+      "10",
+      "暗噪声率上限与镜面反射率数值相差20",
+      "暗噪声率上限与镜面反射率数值相差15"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "根据提供的文档，Pascal 的计算器（Pascaline）和 Leibniz 的计算器在支持乘除运算的能力上有什么具体区别？",
+    "answer": "Pascal 的计算器支持加减法，乘除法虽然可能但非常费力；而 Leibniz 的计算器支持加减乘除，且能直接进行开方和乘方运算。",
+    "analysis": "从【31e4b567e67a622e869b40cfbf1c8aee-Tekoalyn-VarhaishistoriaaSFY2019】文档中的图片描述（模态：图片）提取关于 Pascal 计算器和 Leibniz 计算器的功能描述事实。这两个事实是独立的：Pascal 计算器的功能描述位于一张图片下方，Leibniz 计算器的功能描述位于另一张图片下方。无需串行查找，只需并行阅读这两处描述，然后进行简单的比较和归纳，即可得出两者在乘除运算能力上的区别。",
+    "reasoning_type": "数值比较",
+    "extracted_facts": [
+      {
+        "factor": "Pascal 的计算器：支持 6-8 位数的加减法，乘除运算可能但非常费力，易出故障。",
+        "source": "Tekoalyn varhaishistoriaa 文档，Pascal 计算器图片描述",
+        "modality": "图片"
+      },
+      {
+        "factor": "Leibniz 的计算器：支持加减乘除，开方和乘方运算只能通过间接方式实现，相对可靠但处理进位较差。",
+        "source": "Tekoalyn varhaishistoriaa 文档，Leibniz 计算器图片描述",
+        "modality": "图片"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/CN111931064B/auto/CN111931064B.md",
+      "VisDocBench-parsed/e-books-en/pg1727-images/auto/pg1727-images.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/31e4b567e67a622e869b40cfbf1c8aee-Tekoalyn-VarhaishistoriaaSFY2019/auto/31e4b567e67a622e869b40cfbf1c8aee-Tekoalyn-VarhaishistoriaaSFY2019.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/14d700979ddcca2332f54d4147622ead-8_IlonaVonStein/auto/14d700979ddcca2332f54d4147622ead-8_IlonaVonStein.md"
+    ],
+    "choices": [
+      "Pascal 的计算器无法进行乘除运算，而 Leibniz 的计算器仅支持加减法",
+      "Pascal 的计算器支持加减法，Leibniz 的计算器支持加减乘除，但两者均无法进行开方运算",
+      "Pascal 的计算器支持加减法，乘除法虽然可能但非常费力；而 Leibniz 的计算器支持加减乘除，且能直接进行开方和乘方运算。",
+      "Pascal 的计算器支持加减乘除及开方运算，而 Leibniz 的计算器仅支持加减法"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "在OC-GT3000数据集的外部验证中，AIOC系统的平均AUC（曲线下面积）比资深放射科医生的平均AUC高多少个百分点？",
+    "answer": "0.77%",
+    "analysis": "并行从文档【2603.06522】中的Table 1表格提取两个数值：在OC-GT3000数据集行中，AIOC系统的平均AUC为98.52%，资深放射科医生（Senior）的平均AUC为97.75%。然后进行一步减法运算：98.52% - 97.75% = 0.77%。",
+    "reasoning_type": "数值比较",
+    "extracted_facts": [
+      {
+        "factor": "98.52%",
+        "source": "文档【2603.06522】，Table 1",
+        "modality": "表格"
+      },
+      {
+        "factor": "97.75%",
+        "source": "文档【2603.06522】，Table 1",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Slide/06/auto/06.md",
+      "VisDocBench-parsed/arxiv_pdfs/cs/2603.06522/auto/2603.06522.md",
+      "VisDocBench-parsed/patents_pdf/US12079714B2/auto/US12079714B2.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.06171/auto/2603.06171.md"
+    ],
+    "choices": [
+      "AIOC系统的平均AUC比资深放射科医生的平均AUC高7.7个百分点",
+      "0.77%",
+      "AIOC系统的平均AUC比资深放射科医生的平均AUC低0.77个百分点",
+      "AIOC系统的平均AUC与资深放射科医生的平均AUC持平，无显著差异"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在巴基斯坦2015年至2022年的外科器械出口贸易数据中，出口额最高的年份是哪一年？",
+    "answer": "2021年",
+    "analysis": "从文档【2603.05987】中的表格“TABLE II PAKISTAN SURGICAL TRADE FROM 2015–2022”中并行提取各年份的出口额（单位：百万美元）：2022年307.7，2021年426.0，2020年361.3，2019年405.5，2018年375.5，2017年361.1，2016年326.0，2015年332.6。通过一步数值比较，发现426.0为最大值，对应年份为2021年。所有数据均来源于同一表格，获取过程互不依赖，推理仅需一步比较。",
+    "reasoning_type": "数值比较",
+    "extracted_facts": [
+      {
+        "factor": "2021年出口额为426.0百万美元",
+        "source": "文档【2603.05987】中的表格TABLE II",
+        "modality": "表格"
+      },
+      {
+        "factor": "其他年份出口额（2022: 307.7, 2020: 361.3, 2019: 405.5, 2018: 375.5, 2017: 361.1, 2016: 326.0, 2015: 332.6）",
+        "source": "文档【2603.05987】中的表格TABLE II",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/patents_pdf/US11282196B2/auto/US11282196B2.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/112ffc71a13eeb764bde8dd59bb9086e-4_RinzeBenedictus/auto/112ffc71a13eeb764bde8dd59bb9086e-4_RinzeBenedictus.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.05987/auto/2603.05987.md",
+      "VisDocBench-parsed/e-books-en/pg394-images/auto/pg394-images.md"
+    ],
+    "choices": [
+      "2019年",
+      "2015年",
+      "2021年",
+      "2022年"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "在ESR9项目中，早期研究人员（ESR）的数量是多少？",
+    "answer": "15",
+    "analysis": "从文档【4eea9f992cf7c431c0b4d9b376880c41-ESR9---Lucas-Teixeira---UNITECR-2019】的文本块中直接提取信息，该部分明确陈述了'15 Early Stage Researchers (ESRs)'。此信息位于标题下方的文本段落中，无需与其他文档或模态进行交叉验证或串行查找，属于直接查找类型的单跳问题。",
+    "reasoning_type": "直接查找",
+    "extracted_facts": [
+      {
+        "factor": "15 Early Stage Researchers",
+        "source": "文档【4eea9f992cf7c431c0b4d9b376880c41-ESR9---Lucas-Teixeira---UNITECR-2019】的文本内容",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/0e0baea9bac9cd3714ceaab96ae557aa-VIVO_Konferenzmetadaten/auto/0e0baea9bac9cd3714ceaab96ae557aa-VIVO_Konferenzmetadaten.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/2b386252d1400461ed3c59285cf740b8-magCEvNS2018_pereverzev-sergey/auto/2b386252d1400461ed3c59285cf740b8-magCEvNS2018_pereverzev-sergey.md",
+      "VisDocBench-parsed/patents_pdf/JP7623765B2/auto/JP7623765B2.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/4eea9f992cf7c431c0b4d9b376880c41-ESR9---Lucas-Teixeira---UNITECR-2019/auto/4eea9f992cf7c431c0b4d9b376880c41-ESR9---Lucas-Teixeira---UNITECR-2019.md"
+    ],
+    "choices": [
+      "在ESR9项目中，早期研究人员（ESR）的数量为12",
+      "15",
+      "在ESR9项目中，早期研究人员（ESR）的数量为20",
+      "在ESR9项目中，早期研究人员（ESR）的数量为18"
+    ],
+    "correct_index": 1
+  },
+  {
+    "question": "在TRILLION项目中，参与验证的执法机构数量与公民协会数量之和是多少？",
+    "answer": "5",
+    "analysis": "从TRILLION文档的文本块中并行提取两个事实：一是项目涉及3个执法机构（law enforcement agencies），二是涉及2个公民协会（citizen associations）。这两个数值在文档同一处文本中直接陈述，互不依赖。最后一步进行简单加法运算：3 + 2 = 5。",
+    "reasoning_type": "简单计算",
+    "extracted_facts": [
+      {
+        "factor": "3 law enforcement agencies",
+        "source": "5fae74f6e5c41335c01096abdceadb70-TRILLION，文本块 'TRILLION milestones...' 段落",
+        "modality": "文本"
+      },
+      {
+        "factor": "2 citizen associations",
+        "source": "5fae74f6e5c41335c01096abdceadb70-TRILLION，文本块 'TRILLION milestones...' 段落",
+        "modality": "文本"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/5fae74f6e5c41335c01096abdceadb70-TRILLION/auto/5fae74f6e5c41335c01096abdceadb70-TRILLION.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/164f0a769db4f856631627dbbf0e4563-20191211-gdrhype/auto/164f0a769db4f856631627dbbf0e4563-20191211-gdrhype.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/1a335337a2e9a765a313b13a842fac1b-FAIR-Implications/auto/1a335337a2e9a765a313b13a842fac1b-FAIR-Implications.md",
+      "VisDocBench-parsed/arxiv_pdfs/q-fin/2603.03144/auto/2603.03144.md"
+    ],
+    "choices": [
+      "参与验证的执法机构数量与公民协会数量之和为7",
+      "参与验证的执法机构数量与公民协会数量之和为4",
+      "5",
+      "参与验证的执法机构数量与公民协会数量之和为6"
+    ],
+    "correct_index": 2
+  },
+  {
+    "question": "在芬兰语（Finnish）数据集中，自闭症组（ASD）和非自闭症对照组（CRT）的总语料单元（IPUs）数量之和是多少？",
+    "answer": "1772",
+    "analysis": "并行从文档【2603.06332】中的Table 1（Summary of IPUs...）获取芬兰语数据集的相关数据。从表格中直接读取：Finnish语言行，ASD组的IPUs数量为1323，CRT组的IPUs数量为249。这两个数值可独立提取，无需依赖关系。最后一步进行简单加法计算：1323 + 249 = 1572。",
+    "reasoning_type": "简单计算",
+    "extracted_facts": [
+      {
+        "factor": "1323",
+        "source": "文档【2603.06332】, Table 1",
+        "modality": "表格"
+      },
+      {
+        "factor": "249",
+        "source": "文档【2603.06332】, Table 1",
+        "modality": "表格"
+      }
+    ],
+    "source_files": [
+      "VisDocBench-parsed/PPT/Zenodo-tiny/138f7a87d95570d8cd900157bba5061d-MSSEG_Challenge_2016_Results/auto/138f7a87d95570d8cd900157bba5061d-MSSEG_Challenge_2016_Results.md",
+      "VisDocBench-parsed/PPT/Zenodo-tiny/dc34f71ff52ceabf3c737ff7bba7da02-IDCC17_Are-the-FAIR-Data-Principles-Fair-V2_180330/auto/dc34f71ff52ceabf3c737ff7bba7da02-IDCC17_Are-the-FAIR-Data-Principles-Fair-V2_180330.md",
+      "VisDocBench-parsed/arxiv_pdfs/eess/2603.06332/auto/2603.06332.md",
+      "VisDocBench-parsed/patents_pdf/CN110852086B/auto/CN110852086B.md"
+    ],
+    "choices": [
+      "在芬兰语数据集中，自闭症组与非自闭症对照组的总语料单元数量之和为1720。",
+      "在芬兰语数据集中，自闭症组与非自闭症对照组的总语料单元数量之和为1895。",
+      "1772",
+      "在芬兰语数据集中，自闭症组与非自闭症对照组的总语料单元数量之和为1650。"
+    ],
+    "correct_index": 2
+  }
+]
