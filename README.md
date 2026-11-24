@@ -4,6 +4,7 @@ VisDocBench 是一个面向文档理解的多模态评测基准，覆盖图表�
 公式、单跳/多跳问答与 needle-in-a-haystack 等 9 类任务。模型以文档页面图像
 为输入，需要在页面中定位证据并作答。
 
+- **代码仓库**：<https://github.com/Lafitte1573/VisDocBench>
 - **31,028 条**标注样本，**947 个**文档
 - 选择题（MC）31,028 条；开放问答（OQ）15,350 条（6 个带参考答案的 QA 子集）
 - 单一评测入口：`mini-bench/evaluate.py`（及 `run_eval.sh`），`LIMIT` 控制每子集样本数

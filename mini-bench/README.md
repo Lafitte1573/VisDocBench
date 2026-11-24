@@ -1,8 +1,9 @@
 # VisDocBench mini-bench
 
 > 本目录是 VisDocBench 的**可选 300 条子集**；完整 benchmark（31,028 条）与
-> 项目整体结构见[项目 README](../README.md)。完整标注与来源清单：
-> <https://www.modelscope.cn/datasets/Pay4Begger/VisDocBench-lite>。
+> 项目整体结构见[项目 README](../README.md)。
+> 代码仓库：<https://github.com/Lafitte1573/VisDocBench>；
+> 完整标注与来源清单：<https://www.modelscope.cn/datasets/Pay4Begger/VisDocBench-lite>。
 
 VisDocBench mini-bench 是 **VisDocBench 的可选轻量评测子集**：从完整 benchmark 中
 按子集抽取 300 条样本，用于快速验证与横向比较。完整 VisDocBench 共 **31,028 条**
